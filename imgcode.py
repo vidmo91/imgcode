@@ -12,10 +12,15 @@
 # requirements contains list of modules I had it working on
 # 
 # todo:
-# offsets are not implemented yet... 
+# offsets are not implemented yet...
+# make zigzag pattern 2 way 
 # check and correct variable types, round floats
 # add some manual
 # add some GUI maybe?
+#
+# 
+# 
+# 
 
 # Copyright 2019 M.Widomski
 # 
