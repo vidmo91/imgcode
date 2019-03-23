@@ -1,1714 +1,4385 @@
+; imgcode generated code 
+; developed by M. "Vidmo" Widomski 
+;  github.com/vidmo91 
+;  hackaday.io/vidmo91 
+ 
+H5 S0 
+F111
+G0 Z0 ; for some grbl senders compatibility 
+ 
+G0 X0.0 Y0.0
+M3 S-1000
+G1 X2.0 Y0.0
+M3 S0
+G0 X5.0 Y0.0
+M3 S-1000
+G1 X5.0 Y0.0
+M3 S-1000
+G1 X6.0 Y0.0
+M3 S0
+G0 X11.0 Y0.0
+M3 S-1000
+G1 X11.0 Y0.0
+M3 S-1000
+G1 X41.0 Y0.0
+M3 S0
+G0 X43.0 Y0.0
+M3 S-1000
+G1 X43.0 Y0.0
+M3 S-1000
+G1 X44.0 Y0.0
+M3 S0
+G0 X74.0 Y0.0
+M3 S-1000
+G1 X74.0 Y0.0
+M3 S-1000
+G1 X79.0 Y0.0
+M3 S0
+G0 X80.0 Y0.0
+M3 S-1000
+G1 X80.0 Y0.0
+M3 S-1000
+G1 X82.0 Y0.0
+M3 S0
+G0 X83.0 Y0.0
+M3 S-1000
+G1 X83.0 Y0.0
+M3 S-1000
+G1 X92.0 Y0.0
+M3 S0
+G0 X93.0 Y0.0
+M3 S-1000
+G1 X93.0 Y0.0
+M3 S-1000
 M5 S0
-G0 X0.0 Y0.0
-M3 S-191; pp: 0 x: 0 y: 0 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.0 Y0.0
-M3 S-128; pp: -191 x: 1 y: 0 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.2 Y0.0
-M3 S-64; pp: -128 x: 2 y: 0 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.4 Y0.0
-M3 S-128; pp: -64 x: 3 y: 0 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X0.6 Y0.0
-M3 S-64; pp: -128 x: 4 y: 0 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y0.0
-M3 S-191; pp: -64 x: 6 y: 0 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.8 Y0.0
-M3 S-128; pp: -191 x: 10 y: 0 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.0 Y0.0
-M3 S-191; pp: -128 x: 11 y: 0 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.4 Y0.0
-M3 S-128; pp: -191 x: 13 y: 0 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.6 Y0.0
-M3 S-191; pp: -128 x: 14 y: 0 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.0 Y0.0
-M3 S-128; pp: -191 x: 16 y: 0 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.2 Y0.0
-M3 S-191; pp: -128 x: 17 y: 0 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.4 Y0.0
-M3 S-128; pp: -191 x: 18 y: 0 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X6.2 Y0.0
-M3 S-64; pp: -128 x: 32 y: 0 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.2 Y0.0
-M3 S-191; pp: -64 x: 37 y: 0 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.4 Y0.0
-M3 S-128; pp: -191 x: 38 y: 0 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.4 Y0.0
-M3 S-191; pp: -128 x: 43 y: 0 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.0 Y0.0
-M3 S-128; pp: -191 x: 46 y: 0 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X9.2 Y0.0
-M3 S-191; pp: -128 x: 47 y: 0 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y0.2
-M3 S-191; pp: 0 x: 49 y: 1 img[y][x]: -191.0 pp: 0 ; rev 1. linia
-G1 X9.2 Y0.2
-M3 S-128; pp: -191 x: 47 y: 1 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X9.0 Y0.2
-M3 S-191; pp: -128 x: 46 y: 1 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.6 Y0.2
-M3 S-128; pp: -191 x: 44 y: 1 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X8.4 Y0.2
-M3 S-191; pp: -128 x: 43 y: 1 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.2 Y0.2
-M3 S-128; pp: -191 x: 42 y: 1 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X7.2 Y0.2
-M3 S-191; pp: -128 x: 37 y: 1 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.0 Y0.2
-M3 S-64; pp: -191 x: 36 y: 1 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.0 Y0.2
-M3 S-128; pp: -64 x: 31 y: 1 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X3.4 Y0.2
-M3 S-191; pp: -128 x: 18 y: 1 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.8 Y0.2
-M3 S-128; pp: -191 x: 15 y: 1 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.4 Y0.2
-M3 S-191; pp: -128 x: 13 y: 1 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.6 Y0.2
-M3 S-128; pp: -191 x: 9 y: 1 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.4 Y0.2
-M3 S-191; pp: -128 x: 8 y: 1 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y0.2
-M3 S-64; pp: -191 x: 5 y: 1 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.4 Y0.2
-M3 S-128; pp: -64 x: 3 y: 1 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.2 Y0.2
-M3 S-64; pp: -128 x: 2 y: 1 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.0 Y0.2
-M3 S-128; pp: -64 x: 1 y: 1 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y0.4
-M3 S-128; pp: 0 x: 0 y: 2 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.2 Y0.4
-M3 S-64; pp: -128 x: 2 y: 2 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.4 Y0.4
-M3 S-128; pp: -64 x: 3 y: 2 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X0.6 Y0.4
-M3 S-64; pp: -128 x: 4 y: 2 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y0.4
-M3 S-128; pp: -64 x: 6 y: 2 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.2 Y0.4
-M3 S-191; pp: -128 x: 7 y: 2 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.8 Y0.4
-M3 S-128; pp: -191 x: 15 y: 2 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.0 Y0.4
-M3 S-191; pp: -128 x: 16 y: 2 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.6 Y0.4
-M3 S-128; pp: -191 x: 19 y: 2 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.8 Y0.4
-M3 S-191; pp: -128 x: 20 y: 2 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.0 Y0.4
-M3 S-128; pp: -191 x: 21 y: 2 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X6.0 Y0.4
-M3 S-64; pp: -128 x: 31 y: 2 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.2 Y0.4
-M3 S-128; pp: -64 x: 37 y: 2 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.6 Y0.4
-M3 S-191; pp: -128 x: 39 y: 2 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.0 Y0.4
-M3 S-64; pp: -191 x: 41 y: 2 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.2 Y0.4
-M3 S-128; pp: -64 x: 42 y: 2 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.4 Y0.4
-M3 S-191; pp: -128 x: 43 y: 2 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.8 Y0.4
-M3 S-128; pp: -191 x: 45 y: 2 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X9.0 Y0.4
-M3 S-191; pp: -128 x: 46 y: 2 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.2 Y0.4
-M3 S-128; pp: -191 x: 47 y: 2 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X9.4 Y0.4
-M3 S-191; pp: -128 x: 48 y: 2 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y0.6
-M3 S-191; pp: 0 x: 49 y: 3 img[y][x]: -191.0 pp: 0 ; rev 1. linia
-G1 X9.4 Y0.6
-M3 S-128; pp: -191 x: 48 y: 3 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X9.2 Y0.6
-M3 S-191; pp: -128 x: 47 y: 3 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.4 Y0.6
-M3 S-128; pp: -191 x: 43 y: 3 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X8.2 Y0.6
-M3 S-64; pp: -128 x: 42 y: 3 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.8 Y0.6
-M3 S-191; pp: -64 x: 40 y: 3 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.4 Y0.6
-M3 S-128; pp: -191 x: 38 y: 3 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.8 Y0.6
-M3 S-64; pp: -128 x: 35 y: 3 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.0 Y0.6
-M3 S-128; pp: -64 x: 31 y: 3 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.0 Y0.6
-M3 S-191; pp: -128 x: 21 y: 3 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.8 Y0.6
-M3 S-128; pp: -191 x: 20 y: 3 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X3.6 Y0.6
-M3 S-191; pp: -128 x: 19 y: 3 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.8 Y0.6
-M3 S-128; pp: -191 x: 15 y: 3 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.6 Y0.6
-M3 S-191; pp: -128 x: 14 y: 3 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.0 Y0.6
-M3 S-128; pp: -191 x: 6 y: 3 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.8 Y0.6
-M3 S-64; pp: -128 x: 5 y: 3 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y0.6
-M3 S-128; pp: -64 x: 3 y: 3 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y0.8
-M3 S-255; pp: 0 x: 0 y: 4 img[y][x]: -255.0 pp: 0 ;1. linia
-G1 X0.0 Y0.8
-M3 S-64; pp: -255 x: 1 y: 4 img[y][x]: -64.0 pp: -255 ;3. inny power prev > 0 
-G1 X0.2 Y0.8
-M3 S-128; pp: -64 x: 2 y: 4 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X0.6 Y0.8
-M3 S-64; pp: -128 x: 4 y: 4 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y0.8
-M3 S-128; pp: -64 x: 6 y: 4 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.2 Y0.8
-M3 S-191; pp: -128 x: 7 y: 4 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.4 Y0.8
-M3 S-128; pp: -191 x: 13 y: 4 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.8 Y0.8
-M3 S-191; pp: -128 x: 15 y: 4 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.0 Y0.8
-M3 S-128; pp: -191 x: 21 y: 4 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.2 Y0.8
-M3 S-191; pp: -128 x: 22 y: 4 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.4 Y0.8
-M3 S-128; pp: -191 x: 23 y: 4 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X6.0 Y0.8
-M3 S-64; pp: -128 x: 31 y: 4 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.0 Y0.8
-M3 S-191; pp: -64 x: 36 y: 4 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.6 Y0.8
-M3 S-128; pp: -191 x: 39 y: 4 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.2 Y0.8
-M3 S-64; pp: -128 x: 42 y: 4 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.6 Y0.8
-M3 S-191; pp: -64 x: 44 y: 4 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.2 Y0.8
-M3 S-128; pp: -191 x: 47 y: 4 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y1.0
-M3 S-191; pp: 0 x: 49 y: 5 img[y][x]: -191.0 pp: 0 ; rev 1. linia
-G1 X9.2 Y1.0
-M3 S-128; pp: -191 x: 47 y: 5 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X9.0 Y1.0
-M3 S-191; pp: -128 x: 46 y: 5 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.6 Y1.0
-M3 S-128; pp: -191 x: 44 y: 5 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X8.4 Y1.0
-M3 S-64; pp: -128 x: 43 y: 5 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.2 Y1.0
-M3 S-128; pp: -64 x: 42 y: 5 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X6.8 Y1.0
-M3 S-64; pp: -128 x: 35 y: 5 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.6 Y1.0
-M3 S-128; pp: -64 x: 29 y: 5 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X3.8 Y1.0
-M3 S-191; pp: -128 x: 20 y: 5 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.0 Y1.0
-M3 S-128; pp: -191 x: 16 y: 5 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.6 Y1.0
-M3 S-191; pp: -128 x: 14 y: 5 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.0 Y1.0
-M3 S-128; pp: -191 x: 6 y: 5 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.8 Y1.0
-M3 S-64; pp: -128 x: 5 y: 5 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y1.0
-M3 S-128; pp: -64 x: 3 y: 5 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.0 Y1.0
-M3 S-64; pp: -128 x: 1 y: 5 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y1.2
-M3 S-191; pp: 0 x: 0 y: 6 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.0 Y1.2
-M3 S-64; pp: -191 x: 1 y: 6 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.2 Y1.2
-M3 S-191; pp: -64 x: 2 y: 6 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X0.4 Y1.2
-M3 S-128; pp: -191 x: 3 y: 6 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y1.2
-M3 S-64; pp: -128 x: 4 y: 6 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y1.2
-M3 S-128; pp: -64 x: 6 y: 6 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.2 Y1.2
-M3 S-191; pp: -128 x: 7 y: 6 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.4 Y1.2
-M3 S-128; pp: -191 x: 13 y: 6 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.6 Y1.2
-M3 S-191; pp: -128 x: 14 y: 6 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.8 Y1.2
-M3 S-128; pp: -191 x: 15 y: 6 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.0 Y1.2
-M3 S-191; pp: -128 x: 16 y: 6 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.2 Y1.2
-M3 S-128; pp: -191 x: 17 y: 6 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.6 Y1.2
-M3 S-191; pp: -128 x: 19 y: 6 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.0 Y1.2
-M3 S-128; pp: -191 x: 21 y: 6 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.8 Y1.2
-M3 S-64; pp: -128 x: 30 y: 6 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.0 Y1.2
-M3 S-128; pp: -64 x: 36 y: 6 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.2 Y1.2
-M3 S-64; pp: -128 x: 42 y: 6 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.8 Y1.2
-M3 S-128; pp: -64 x: 45 y: 6 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.2 Y1.2
-M3 S-191; pp: -128 x: 47 y: 6 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.4 Y1.2
-M3 S-128; pp: -191 x: 48 y: 6 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y1.4
-M3 S-128; pp: 0 x: 49 y: 7 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X9.0 Y1.4
-M3 S-191; pp: -128 x: 46 y: 7 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.8 Y1.4
-M3 S-128; pp: -191 x: 45 y: 7 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X8.6 Y1.4
-M3 S-64; pp: -128 x: 44 y: 7 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.0 Y1.4
-M3 S-128; pp: -64 x: 41 y: 7 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X6.8 Y1.4
-M3 S-255; pp: -128 x: 35 y: 7 img[y][x]: -255.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.6 Y1.4
-M3 S-64; pp: -255 x: 34 y: 7 img[y][x]: -64.0 pp: -255 ; rev 3. inny power prev > 0 
-G1 X5.4 Y1.4
-M3 S-128; pp: -64 x: 28 y: 7 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.4 Y1.4
-M3 S-191; pp: -128 x: 23 y: 7 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.2 Y1.4
-M3 S-128; pp: -191 x: 22 y: 7 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X4.0 Y1.4
-M3 S-191; pp: -128 x: 21 y: 7 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.2 Y1.4
-M3 S-64; pp: -191 x: 17 y: 7 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X3.0 Y1.4
-M3 S-128; pp: -64 x: 16 y: 7 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.6 Y1.4
-M3 S-191; pp: -128 x: 14 y: 7 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.0 Y1.4
-M3 S-128; pp: -191 x: 6 y: 7 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.8 Y1.4
-M3 S-64; pp: -128 x: 5 y: 7 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y1.4
-M3 S-128; pp: -64 x: 3 y: 7 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.2 Y1.4
-M3 S-191; pp: -128 x: 2 y: 7 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.0 Y1.4
-M3 S-64; pp: -191 x: 1 y: 7 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y1.6
-M3 S-191; pp: 0 x: 0 y: 8 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.0 Y1.6
-M3 S-64; pp: -191 x: 1 y: 8 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.2 Y1.6
-M3 S-191; pp: -64 x: 2 y: 8 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X0.4 Y1.6
-M3 S-128; pp: -191 x: 3 y: 8 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y1.6
-M3 S-64; pp: -128 x: 4 y: 8 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.2 Y1.6
-M3 S-191; pp: -64 x: 7 y: 8 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X2.8 Y1.6
-M3 S-128; pp: -191 x: 15 y: 8 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.0 Y1.6
-M3 S-191; pp: -128 x: 16 y: 8 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.2 Y1.6
-M3 S-64; pp: -191 x: 17 y: 8 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.4 Y1.6
-M3 S-191; pp: -64 x: 18 y: 8 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X4.2 Y1.6
-M3 S-128; pp: -191 x: 22 y: 8 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.4 Y1.6
-M3 S-191; pp: -128 x: 23 y: 8 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.6 Y1.6
-M3 S-128; pp: -191 x: 24 y: 8 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.6 Y1.6
-M3 S-64; pp: -128 x: 29 y: 8 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.8 Y1.6
-M3 S-191; pp: -64 x: 35 y: 8 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.0 Y1.6
-M3 S-128; pp: -191 x: 36 y: 8 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.4 Y1.6
-M3 S-64; pp: -128 x: 43 y: 8 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.0 Y1.6
-M3 S-191; pp: -64 x: 46 y: 8 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.2 Y1.6
-M3 S-128; pp: -191 x: 47 y: 8 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X9.4 Y1.6
-M3 S-191; pp: -128 x: 48 y: 8 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y1.8
-M3 S-191; pp: 0 x: 49 y: 9 img[y][x]: -191.0 pp: 0 ; rev 1. linia
-G1 X9.4 Y1.8
-M3 S-128; pp: -191 x: 48 y: 9 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X9.2 Y1.8
-M3 S-191; pp: -128 x: 47 y: 9 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.8 Y1.8
-M3 S-64; pp: -191 x: 45 y: 9 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X8.4 Y1.8
-M3 S-128; pp: -64 x: 43 y: 9 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X6.8 Y1.8
-M3 S-191; pp: -128 x: 35 y: 9 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.4 Y1.8
-M3 S-64; pp: -191 x: 33 y: 9 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X5.4 Y1.8
-M3 S-128; pp: -64 x: 28 y: 9 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.4 Y1.8
-M3 S-191; pp: -128 x: 23 y: 9 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.2 Y1.8
-M3 S-128; pp: -191 x: 22 y: 9 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X4.0 Y1.8
-M3 S-191; pp: -128 x: 21 y: 9 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.0 Y1.8
-M3 S-128; pp: -191 x: 16 y: 9 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.6 Y1.8
-M3 S-191; pp: -128 x: 14 y: 9 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.2 Y1.8
-M3 S-128; pp: -191 x: 12 y: 9 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.0 Y1.8
-M3 S-191; pp: -128 x: 11 y: 9 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.0 Y1.8
-M3 S-128; pp: -191 x: 6 y: 9 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.8 Y1.8
-M3 S-64; pp: -128 x: 5 y: 9 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y1.8
-M3 S-128; pp: -64 x: 3 y: 9 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.2 Y1.8
-M3 S-191; pp: -128 x: 2 y: 9 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.0 Y1.8
-M3 S-128; pp: -191 x: 1 y: 9 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y2.0
-M3 S-128; pp: 0 x: 0 y: 10 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.0 Y2.0
-M3 S-191; pp: -128 x: 1 y: 10 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.4 Y2.0
-M3 S-128; pp: -191 x: 3 y: 10 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y2.0
-M3 S-64; pp: -128 x: 4 y: 10 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y2.0
-M3 S-128; pp: -64 x: 6 y: 10 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.2 Y2.0
-M3 S-191; pp: -128 x: 7 y: 10 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.6 Y2.0
-M3 S-255; pp: -191 x: 9 y: 10 img[y][x]: -255.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.8 Y2.0
-M3 S-191; pp: -255 x: 10 y: 10 img[y][x]: -191.0 pp: -255 ;3. inny power prev > 0 
-G1 X2.2 Y2.0
-M3 S-128; pp: -191 x: 12 y: 10 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.4 Y2.0
-M3 S-191; pp: -128 x: 13 y: 10 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.6 Y2.0
-M3 S-128; pp: -191 x: 14 y: 10 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.0 Y2.0
-M3 S-191; pp: -128 x: 16 y: 10 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.6 Y2.0
-M3 S-128; pp: -191 x: 24 y: 10 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.6 Y2.0
-M3 S-64; pp: -128 x: 29 y: 10 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.4 Y2.0
-M3 S-191; pp: -64 x: 33 y: 10 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.2 Y2.0
-M3 S-128; pp: -191 x: 37 y: 10 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.4 Y2.0
-M3 S-191; pp: -128 x: 43 y: 10 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.6 Y2.0
-M3 S-64; pp: -191 x: 44 y: 10 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X9.0 Y2.0
-M3 S-128; pp: -64 x: 46 y: 10 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.2 Y2.0
-M3 S-191; pp: -128 x: 47 y: 10 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y2.2
-M3 S-191; pp: 0 x: 49 y: 11 img[y][x]: -191.0 pp: 0 ; rev 1. linia
-G1 X9.2 Y2.2
-M3 S-128; pp: -191 x: 47 y: 11 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X9.0 Y2.2
-M3 S-64; pp: -128 x: 46 y: 11 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.4 Y2.2
-M3 S-128; pp: -64 x: 43 y: 11 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.0 Y2.2
-M3 S-191; pp: -128 x: 36 y: 11 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.0 Y2.2
-M3 S-64; pp: -191 x: 31 y: 11 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X5.4 Y2.2
-M3 S-128; pp: -64 x: 28 y: 11 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.4 Y2.2
-M3 S-191; pp: -128 x: 23 y: 11 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.6 Y2.2
-M3 S-128; pp: -191 x: 14 y: 11 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.2 Y2.2
-M3 S-191; pp: -128 x: 12 y: 11 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.0 Y2.2
-M3 S-128; pp: -191 x: 11 y: 11 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.8 Y2.2
-M3 S-191; pp: -128 x: 10 y: 11 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.2 Y2.2
-M3 S-128; pp: -191 x: 7 y: 11 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.8 Y2.2
-M3 S-64; pp: -128 x: 5 y: 11 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y2.2
-M3 S-128; pp: -64 x: 3 y: 11 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.2 Y2.2
-M3 S-191; pp: -128 x: 2 y: 11 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y2.4
-M3 S-191; pp: 0 x: 0 y: 12 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.2 Y2.4
-M3 S-128; pp: -191 x: 2 y: 12 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y2.4
-M3 S-64; pp: -128 x: 4 y: 12 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y2.4
-M3 S-191; pp: -64 x: 6 y: 12 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.4 Y2.4
-M3 S-128; pp: -191 x: 8 y: 12 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.6 Y2.4
-M3 S-191; pp: -128 x: 9 y: 12 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.0 Y2.4
-M3 S-128; pp: -191 x: 11 y: 12 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.2 Y2.4
-M3 S-191; pp: -128 x: 12 y: 12 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.4 Y2.4
-M3 S-128; pp: -191 x: 13 y: 12 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.6 Y2.4
-M3 S-64; pp: -128 x: 14 y: 12 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.8 Y2.4
-M3 S-191; pp: -64 x: 15 y: 12 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X5.0 Y2.4
-M3 S-128; pp: -191 x: 26 y: 12 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.4 Y2.4
-M3 S-64; pp: -128 x: 28 y: 12 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X5.6 Y2.4
-M3 S-128; pp: -64 x: 29 y: 12 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X5.8 Y2.4
-M3 S-191; pp: -128 x: 30 y: 12 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.8 Y2.4
-M3 S-128; pp: -191 x: 35 y: 12 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.0 Y2.4
-M3 S-191; pp: -128 x: 36 y: 12 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.2 Y2.4
-M3 S-128; pp: -191 x: 37 y: 12 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.6 Y2.4
-M3 S-64; pp: -128 x: 44 y: 12 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y2.6
-M3 S-64; pp: 0 x: 49 y: 13 img[y][x]: -64.0 pp: 0 ; rev 1. linia
-G1 X8.4 Y2.6
-M3 S-128; pp: -64 x: 43 y: 13 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.0 Y2.6
-M3 S-191; pp: -128 x: 36 y: 13 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.8 Y2.6
-M3 S-128; pp: -191 x: 30 y: 13 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X5.6 Y2.6
-M3 S-64; pp: -128 x: 29 y: 13 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.2 Y2.6
-M3 S-128; pp: -64 x: 27 y: 13 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.4 Y2.6
-M3 S-191; pp: -128 x: 23 y: 13 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.8 Y2.6
-M3 S-64; pp: -191 x: 15 y: 13 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.6 Y2.6
-M3 S-128; pp: -64 x: 14 y: 13 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.4 Y2.6
-M3 S-191; pp: -128 x: 13 y: 13 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.2 Y2.6
-M3 S-128; pp: -191 x: 12 y: 13 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.8 Y2.6
-M3 S-191; pp: -128 x: 10 y: 13 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.4 Y2.6
-M3 S-128; pp: -191 x: 8 y: 13 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.0 Y2.6
-M3 S-191; pp: -128 x: 6 y: 13 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y2.6
-M3 S-64; pp: -191 x: 5 y: 13 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.4 Y2.6
-M3 S-128; pp: -64 x: 3 y: 13 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.0 Y2.6
-M3 S-191; pp: -128 x: 1 y: 13 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y2.8
-M3 S-191; pp: 0 x: 0 y: 14 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.4 Y2.8
-M3 S-128; pp: -191 x: 3 y: 14 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y2.8
-M3 S-64; pp: -128 x: 4 y: 14 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y2.8
-M3 S-191; pp: -64 x: 6 y: 14 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.2 Y2.8
-M3 S-128; pp: -191 x: 7 y: 14 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.4 Y2.8
-M3 S-191; pp: -128 x: 8 y: 14 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.0 Y2.8
-M3 S-128; pp: -191 x: 11 y: 14 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.6 Y2.8
-M3 S-64; pp: -128 x: 14 y: 14 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.8 Y2.8
-M3 S-128; pp: -64 x: 15 y: 14 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X3.0 Y2.8
-M3 S-191; pp: -128 x: 16 y: 14 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.4 Y2.8
-M3 S-128; pp: -191 x: 23 y: 14 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X6.0 Y2.8
-M3 S-191; pp: -128 x: 31 y: 14 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.2 Y2.8
-M3 S-64; pp: -191 x: 37 y: 14 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.4 Y2.8
-M3 S-128; pp: -64 x: 38 y: 14 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.6 Y2.8
-M3 S-64; pp: -128 x: 44 y: 14 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y3.0
-M3 S-64; pp: 0 x: 49 y: 15 img[y][x]: -64.0 pp: 0 ; rev 1. linia
-G1 X8.4 Y3.0
-M3 S-128; pp: -64 x: 43 y: 15 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.0 Y3.0
-M3 S-191; pp: -128 x: 36 y: 15 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.0 Y3.0
-M3 S-128; pp: -191 x: 31 y: 15 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X4.0 Y3.0
-M3 S-191; pp: -128 x: 21 y: 15 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.8 Y3.0
-M3 S0; pp: -191 x: 15 y: 15 img[y][x]: -0.0 pp: -191 ; rev 3. inny power prev > 0 
-G0 X2.6 Y3.0
-M3 S-128; pp: 0 x: 14 y: 15 img[y][x]: -128.0 pp: 0 ; rev 2. inny power prev = 0 
-G1 X2.6 Y3.0
-M3 S-128; pp: -128 x: 14 y: 15 img[y][x]: -128.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.8 Y3.0
-M3 S-191; pp: -128 x: 10 y: 15 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y3.0
-M3 S-64; pp: -191 x: 5 y: 15 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.2 Y3.0
-M3 S-191; pp: -64 x: 2 y: 15 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y3.2
-M3 S-191; pp: 0 x: 0 y: 16 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.4 Y3.2
-M3 S-128; pp: -191 x: 3 y: 16 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y3.2
-M3 S-64; pp: -128 x: 4 y: 16 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y3.2
-M3 S-191; pp: -64 x: 6 y: 16 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.2 Y3.2
-M3 S-128; pp: -191 x: 7 y: 16 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.4 Y3.2
-M3 S-191; pp: -128 x: 8 y: 16 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.6 Y3.2
-M3 S-128; pp: -191 x: 9 y: 16 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.8 Y3.2
-M3 S-191; pp: -128 x: 10 y: 16 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.4 Y3.2
-M3 S-128; pp: -191 x: 13 y: 16 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.6 Y3.2
-M3 S-255; pp: -128 x: 14 y: 16 img[y][x]: -255.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.8 Y3.2
-M3 S-128; pp: -255 x: 15 y: 16 img[y][x]: -128.0 pp: -255 ;3. inny power prev > 0 
-G1 X3.0 Y3.2
-M3 S-64; pp: -128 x: 16 y: 16 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.4 Y3.2
-M3 S-191; pp: -64 x: 18 y: 16 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X4.0 Y3.2
-M3 S-128; pp: -191 x: 21 y: 16 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.6 Y3.2
-M3 S-64; pp: -128 x: 29 y: 16 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.0 Y3.2
-M3 S-128; pp: -64 x: 31 y: 16 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.2 Y3.2
-M3 S-191; pp: -128 x: 32 y: 16 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.0 Y3.2
-M3 S-128; pp: -191 x: 36 y: 16 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.6 Y3.2
-M3 S-64; pp: -128 x: 44 y: 16 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y3.4
-M3 S-64; pp: 0 x: 49 y: 17 img[y][x]: -64.0 pp: 0 ; rev 1. linia
-G1 X8.6 Y3.4
-M3 S-128; pp: -64 x: 44 y: 17 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.2 Y3.4
-M3 S-191; pp: -128 x: 37 y: 17 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.0 Y3.4
-M3 S-128; pp: -191 x: 36 y: 17 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.8 Y3.4
-M3 S-191; pp: -128 x: 35 y: 17 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.2 Y3.4
-M3 S-128; pp: -191 x: 32 y: 17 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X5.8 Y3.4
-M3 S-64; pp: -128 x: 30 y: 17 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.4 Y3.4
-M3 S-128; pp: -64 x: 28 y: 17 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.0 Y3.4
-M3 S-191; pp: -128 x: 21 y: 17 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.4 Y3.4
-M3 S-64; pp: -191 x: 18 y: 17 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X3.2 Y3.4
-M3 S-128; pp: -64 x: 17 y: 17 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.8 Y3.4
-M3 S-191; pp: -128 x: 15 y: 17 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.6 Y3.4
-M3 S-128; pp: -191 x: 14 y: 17 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.4 Y3.4
-M3 S-191; pp: -128 x: 13 y: 17 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.2 Y3.4
-M3 S-128; pp: -191 x: 12 y: 17 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.0 Y3.4
-M3 S-191; pp: -128 x: 11 y: 17 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.4 Y3.4
-M3 S-128; pp: -191 x: 8 y: 17 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.2 Y3.4
-M3 S-191; pp: -128 x: 7 y: 17 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y3.4
-M3 S-64; pp: -191 x: 5 y: 17 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.4 Y3.4
-M3 S-128; pp: -64 x: 3 y: 17 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.2 Y3.4
-M3 S-191; pp: -128 x: 2 y: 17 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y3.6
-M3 S-191; pp: 0 x: 0 y: 18 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.4 Y3.6
-M3 S-128; pp: -191 x: 3 y: 18 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y3.6
-M3 S-64; pp: -128 x: 4 y: 18 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y3.6
-M3 S-128; pp: -64 x: 6 y: 18 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.2 Y3.6
-M3 S-191; pp: -128 x: 7 y: 18 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.2 Y3.6
-M3 S-64; pp: -191 x: 12 y: 18 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.4 Y3.6
-M3 S-191; pp: -64 x: 13 y: 18 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X3.2 Y3.6
-M3 S-255; pp: -191 x: 17 y: 18 img[y][x]: -255.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.4 Y3.6
-M3 S-64; pp: -255 x: 18 y: 18 img[y][x]: -64.0 pp: -255 ;3. inny power prev > 0 
-G1 X3.6 Y3.6
-M3 S-191; pp: -64 x: 19 y: 18 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X4.2 Y3.6
-M3 S-128; pp: -191 x: 22 y: 18 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.8 Y3.6
-M3 S-64; pp: -128 x: 30 y: 18 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.0 Y3.6
-M3 S-128; pp: -64 x: 31 y: 18 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.4 Y3.6
-M3 S-191; pp: -128 x: 33 y: 18 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.0 Y3.6
-M3 S-64; pp: -191 x: 36 y: 18 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.2 Y3.6
-M3 S-191; pp: -64 x: 37 y: 18 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.4 Y3.6
-M3 S-128; pp: -191 x: 38 y: 18 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.8 Y3.6
-M3 S-64; pp: -128 x: 45 y: 18 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y3.8
-M3 S-64; pp: 0 x: 49 y: 19 img[y][x]: -64.0 pp: 0 ; rev 1. linia
-G1 X8.6 Y3.8
-M3 S-128; pp: -64 x: 44 y: 19 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.2 Y3.8
-M3 S-191; pp: -128 x: 37 y: 19 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.0 Y3.8
-M3 S-128; pp: -191 x: 36 y: 19 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.8 Y3.8
-M3 S-191; pp: -128 x: 35 y: 19 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.2 Y3.8
-M3 S-128; pp: -191 x: 32 y: 19 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X5.8 Y3.8
-M3 S-64; pp: -128 x: 30 y: 19 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.6 Y3.8
-M3 S-128; pp: -64 x: 29 y: 19 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X5.0 Y3.8
-M3 S-64; pp: -128 x: 26 y: 19 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.8 Y3.8
-M3 S-128; pp: -64 x: 25 y: 19 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.0 Y3.8
-M3 S-191; pp: -128 x: 21 y: 19 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.6 Y3.8
-M3 S-64; pp: -191 x: 19 y: 19 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X3.4 Y3.8
-M3 S-128; pp: -64 x: 18 y: 19 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X3.2 Y3.8
-M3 S-191; pp: -128 x: 17 y: 19 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.2 Y3.8
-M3 S-128; pp: -191 x: 12 y: 19 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.8 Y3.8
-M3 S-191; pp: -128 x: 10 y: 19 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.6 Y3.8
-M3 S-128; pp: -191 x: 9 y: 19 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.0 Y3.8
-M3 S-191; pp: -128 x: 6 y: 19 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y3.8
-M3 S-64; pp: -191 x: 5 y: 19 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.4 Y3.8
-M3 S-128; pp: -64 x: 3 y: 19 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.2 Y3.8
-M3 S-191; pp: -128 x: 2 y: 19 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y4.0
-M3 S-191; pp: 0 x: 0 y: 20 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.4 Y4.0
-M3 S-128; pp: -191 x: 3 y: 20 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y4.0
-M3 S-64; pp: -128 x: 4 y: 20 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y4.0
-M3 S-191; pp: -64 x: 6 y: 20 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.4 Y4.0
-M3 S-128; pp: -191 x: 8 y: 20 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.8 Y4.0
-M3 S-191; pp: -128 x: 10 y: 20 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.2 Y4.0
-M3 S-128; pp: -191 x: 17 y: 20 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.4 Y4.0
-M3 S-191; pp: -128 x: 18 y: 20 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.6 Y4.0
-M3 S-128; pp: -191 x: 19 y: 20 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.8 Y4.0
-M3 S-64; pp: -128 x: 20 y: 20 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.0 Y4.0
-M3 S-191; pp: -64 x: 21 y: 20 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X4.2 Y4.0
-M3 S-128; pp: -191 x: 22 y: 20 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.8 Y4.0
-M3 S-64; pp: -128 x: 25 y: 20 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X5.2 Y4.0
-M3 S-128; pp: -64 x: 27 y: 20 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X5.8 Y4.0
-M3 S-64; pp: -128 x: 30 y: 20 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.2 Y4.0
-M3 S-128; pp: -64 x: 32 y: 20 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.6 Y4.0
-M3 S-191; pp: -128 x: 34 y: 20 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.0 Y4.0
-M3 S-128; pp: -191 x: 36 y: 20 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.2 Y4.0
-M3 S-191; pp: -128 x: 37 y: 20 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.4 Y4.0
-M3 S-128; pp: -191 x: 38 y: 20 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.6 Y4.0
-M3 S-64; pp: -128 x: 39 y: 20 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.8 Y4.0
-M3 S-128; pp: -64 x: 40 y: 20 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.0 Y4.0
-M3 S-64; pp: -128 x: 46 y: 20 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y4.2
-M3 S-64; pp: 0 x: 49 y: 21 img[y][x]: -64.0 pp: 0 ; rev 1. linia
-G1 X8.8 Y4.2
-M3 S-128; pp: -64 x: 45 y: 21 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.4 Y4.2
-M3 S-191; pp: -128 x: 38 y: 21 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.0 Y4.2
-M3 S-128; pp: -191 x: 36 y: 21 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.8 Y4.2
-M3 S-191; pp: -128 x: 35 y: 21 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.4 Y4.2
-M3 S-128; pp: -191 x: 33 y: 21 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.0 Y4.2
-M3 S-64; pp: -128 x: 31 y: 21 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.6 Y4.2
-M3 S-128; pp: -64 x: 29 y: 21 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X5.2 Y4.2
-M3 S-64; pp: -128 x: 27 y: 21 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.4 Y4.2
-M3 S-128; pp: -64 x: 23 y: 21 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.0 Y4.2
-M3 S-191; pp: -128 x: 21 y: 21 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.8 Y4.2
-M3 S-64; pp: -191 x: 20 y: 21 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X3.6 Y4.2
-M3 S-128; pp: -64 x: 19 y: 21 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X3.4 Y4.2
-M3 S-191; pp: -128 x: 18 y: 21 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.8 Y4.2
-M3 S-128; pp: -191 x: 15 y: 21 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.6 Y4.2
-M3 S-191; pp: -128 x: 14 y: 21 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.6 Y4.2
-M3 S-128; pp: -191 x: 9 y: 21 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.0 Y4.2
-M3 S-191; pp: -128 x: 6 y: 21 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y4.2
-M3 S-64; pp: -191 x: 5 y: 21 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.4 Y4.2
-M3 S-128; pp: -64 x: 3 y: 21 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.2 Y4.2
-M3 S-191; pp: -128 x: 2 y: 21 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y4.4
-M3 S-128; pp: 0 x: 0 y: 22 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.0 Y4.4
-M3 S-191; pp: -128 x: 1 y: 22 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.4 Y4.4
-M3 S-128; pp: -191 x: 3 y: 22 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y4.4
-M3 S-64; pp: -128 x: 4 y: 22 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y4.4
-M3 S-191; pp: -64 x: 6 y: 22 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.4 Y4.4
-M3 S-128; pp: -191 x: 8 y: 22 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.8 Y4.4
-M3 S-191; pp: -128 x: 10 y: 22 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.4 Y4.4
-M3 S-128; pp: -191 x: 13 y: 22 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.6 Y4.4
-M3 S-191; pp: -128 x: 14 y: 22 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.8 Y4.4
-M3 S-128; pp: -191 x: 15 y: 22 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.2 Y4.4
-M3 S-191; pp: -128 x: 17 y: 22 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.8 Y4.4
-M3 S-128; pp: -191 x: 20 y: 22 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.0 Y4.4
-M3 S-64; pp: -128 x: 21 y: 22 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.2 Y4.4
-M3 S-128; pp: -64 x: 22 y: 22 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X5.8 Y4.4
-M3 S0; pp: -128 x: 30 y: 22 img[y][x]: -0.0 pp: -128 ;3. inny power prev > 0 
-G0 X6.0 Y4.4
-M3 S-128; pp: 0 x: 31 y: 22 img[y][x]: -128.0 pp: 0 ;2. inny power prev = 0 
-G1 X6.0 Y4.4
-M3 S-128; pp: -128 x: 31 y: 22 img[y][x]: -128.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.6 Y4.4
-M3 S-191; pp: -128 x: 34 y: 22 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.0 Y4.4
-M3 S-128; pp: -191 x: 36 y: 22 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.2 Y4.4
-M3 S-191; pp: -128 x: 37 y: 22 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.6 Y4.4
-M3 S-128; pp: -191 x: 39 y: 22 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.8 Y4.4
-M3 S-64; pp: -128 x: 40 y: 22 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.0 Y4.4
-M3 S-128; pp: -64 x: 41 y: 22 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.4 Y4.4
-M3 S-64; pp: -128 x: 48 y: 22 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y4.6
-M3 S-128; pp: 0 x: 49 y: 23 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X7.4 Y4.6
-M3 S-191; pp: -128 x: 38 y: 23 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.2 Y4.6
-M3 S-128; pp: -191 x: 32 y: 23 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X5.8 Y4.6
-M3 S-64; pp: -128 x: 30 y: 23 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.6 Y4.6
-M3 S-128; pp: -64 x: 29 y: 23 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X5.0 Y4.6
-M3 S-64; pp: -128 x: 26 y: 23 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.8 Y4.6
-M3 S-128; pp: -64 x: 25 y: 23 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.2 Y4.6
-M3 S-64; pp: -128 x: 22 y: 23 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.8 Y4.6
-M3 S-191; pp: -64 x: 20 y: 23 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.0 Y4.6
-M3 S-64; pp: -191 x: 11 y: 23 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.8 Y4.6
-M3 S-191; pp: -64 x: 10 y: 23 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.6 Y4.6
-M3 S-128; pp: -191 x: 9 y: 23 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.0 Y4.6
-M3 S-191; pp: -128 x: 6 y: 23 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y4.6
-M3 S-64; pp: -191 x: 5 y: 23 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.4 Y4.6
-M3 S-128; pp: -64 x: 3 y: 23 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.2 Y4.6
-M3 S-191; pp: -128 x: 2 y: 23 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y4.8
-M3 S-128; pp: 0 x: 0 y: 24 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.0 Y4.8
-M3 S-191; pp: -128 x: 1 y: 24 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.4 Y4.8
-M3 S-128; pp: -191 x: 3 y: 24 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y4.8
-M3 S-64; pp: -128 x: 4 y: 24 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y4.8
-M3 S-128; pp: -64 x: 5 y: 24 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y4.8
-M3 S-191; pp: -128 x: 6 y: 24 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.4 Y4.8
-M3 S-128; pp: -191 x: 8 y: 24 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.4 Y4.8
-M3 S-191; pp: -128 x: 13 y: 24 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.6 Y4.8
-M3 S-128; pp: -191 x: 14 y: 24 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.0 Y4.8
-M3 S-191; pp: -128 x: 16 y: 24 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.6 Y4.8
-M3 S-128; pp: -191 x: 19 y: 24 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.8 Y4.8
-M3 S-191; pp: -128 x: 20 y: 24 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.0 Y4.8
-M3 S-128; pp: -191 x: 21 y: 24 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.2 Y4.8
-M3 S-64; pp: -128 x: 22 y: 24 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.6 Y4.8
-M3 S-191; pp: -64 x: 24 y: 24 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X5.4 Y4.8
-M3 S-128; pp: -191 x: 28 y: 24 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.8 Y4.8
-M3 S-64; pp: -128 x: 30 y: 24 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.0 Y4.8
-M3 S-128; pp: -64 x: 31 y: 24 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.2 Y4.8
-M3 S-191; pp: -128 x: 32 y: 24 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.8 Y4.8
-M3 S-128; pp: -191 x: 40 y: 24 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y5.0
-M3 S-128; pp: 0 x: 49 y: 25 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X8.0 Y5.0
-M3 S-64; pp: -128 x: 41 y: 25 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.8 Y5.0
-M3 S-128; pp: -64 x: 40 y: 25 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.6 Y5.0
-M3 S-191; pp: -128 x: 39 y: 25 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.2 Y5.0
-M3 S-64; pp: -191 x: 32 y: 25 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X5.4 Y5.0
-M3 S-128; pp: -64 x: 28 y: 25 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X5.2 Y5.0
-M3 S-191; pp: -128 x: 27 y: 25 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.0 Y5.0
-M3 S-128; pp: -191 x: 26 y: 25 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X4.6 Y5.0
-M3 S-64; pp: -128 x: 24 y: 25 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.0 Y5.0
-M3 S-191; pp: -64 x: 21 y: 25 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.6 Y5.0
-M3 S-128; pp: -191 x: 14 y: 25 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.4 Y5.0
-M3 S-191; pp: -128 x: 13 y: 25 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.2 Y5.0
-M3 S-128; pp: -191 x: 12 y: 25 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.2 Y5.0
-M3 S-191; pp: -128 x: 7 y: 25 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y5.0
-M3 S-64; pp: -191 x: 5 y: 25 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.2 Y5.0
-M3 S-191; pp: -64 x: 2 y: 25 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.0 Y5.0
-M3 S-128; pp: -191 x: 1 y: 25 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y5.2
-M3 S-128; pp: 0 x: 0 y: 26 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.2 Y5.2
-M3 S-191; pp: -128 x: 2 y: 26 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.4 Y5.2
-M3 S-64; pp: -191 x: 3 y: 26 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.0 Y5.2
-M3 S-191; pp: -64 x: 6 y: 26 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.2 Y5.2
-M3 S-128; pp: -191 x: 7 y: 26 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.0 Y5.2
-M3 S-191; pp: -128 x: 16 y: 26 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X3.4 Y5.2
-M3 S-128; pp: -191 x: 18 y: 26 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X3.6 Y5.2
-M3 S-191; pp: -128 x: 19 y: 26 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.0 Y5.2
-M3 S-128; pp: -191 x: 21 y: 26 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.4 Y5.2
-M3 S-64; pp: -128 x: 23 y: 26 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X5.0 Y5.2
-M3 S-128; pp: -64 x: 26 y: 26 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X5.2 Y5.2
-M3 S-64; pp: -128 x: 27 y: 26 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.6 Y5.2
-M3 S-191; pp: -64 x: 34 y: 26 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.8 Y5.2
-M3 S-128; pp: -191 x: 40 y: 26 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.2 Y5.2
-M3 S-64; pp: -128 x: 42 y: 26 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.8 Y5.2
-M3 S-128; pp: -64 x: 45 y: 26 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y5.4
-M3 S-128; pp: 0 x: 49 y: 27 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X8.2 Y5.4
-M3 S-64; pp: -128 x: 42 y: 27 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.0 Y5.4
-M3 S-128; pp: -64 x: 41 y: 27 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.8 Y5.4
-M3 S-191; pp: -128 x: 40 y: 27 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.8 Y5.4
-M3 S-64; pp: -191 x: 35 y: 27 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.6 Y5.4
-M3 S-191; pp: -64 x: 34 y: 27 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X6.4 Y5.4
-M3 S-128; pp: -191 x: 33 y: 27 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.2 Y5.4
-M3 S-64; pp: -128 x: 32 y: 27 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.8 Y5.4
-M3 S-128; pp: -64 x: 25 y: 27 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.6 Y5.4
-M3 S-64; pp: -128 x: 24 y: 27 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.4 Y5.4
-M3 S-128; pp: -64 x: 23 y: 27 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.0 Y5.4
-M3 S-191; pp: -128 x: 21 y: 27 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.8 Y5.4
-M3 S-128; pp: -191 x: 15 y: 27 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.4 Y5.4
-M3 S-64; pp: -128 x: 13 y: 27 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.2 Y5.4
-M3 S-128; pp: -64 x: 12 y: 27 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.2 Y5.4
-M3 S-191; pp: -128 x: 7 y: 27 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y5.4
-M3 S-128; pp: -191 x: 5 y: 27 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y5.4
-M3 S-64; pp: -128 x: 4 y: 27 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.2 Y5.4
-M3 S-128; pp: -64 x: 2 y: 27 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y5.6
-M3 S-128; pp: 0 x: 0 y: 28 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.2 Y5.6
-M3 S-191; pp: -128 x: 2 y: 28 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.4 Y5.6
-M3 S-64; pp: -191 x: 3 y: 28 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.0 Y5.6
-M3 S-191; pp: -64 x: 6 y: 28 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.4 Y5.6
-M3 S-128; pp: -191 x: 8 y: 28 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.4 Y5.6
-M3 S-64; pp: -128 x: 13 y: 28 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.6 Y5.6
-M3 S-128; pp: -64 x: 14 y: 28 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X3.2 Y5.6
-M3 S-191; pp: -128 x: 17 y: 28 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.6 Y5.6
-M3 S-128; pp: -191 x: 24 y: 28 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.0 Y5.6
-M3 S-64; pp: -128 x: 26 y: 28 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.4 Y5.6
-M3 S-191; pp: -64 x: 33 y: 28 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.8 Y5.6
-M3 S-64; pp: -191 x: 35 y: 28 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.0 Y5.6
-M3 S-191; pp: -64 x: 36 y: 28 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.0 Y5.6
-M3 S-128; pp: -191 x: 41 y: 28 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.4 Y5.6
-M3 S-64; pp: -128 x: 43 y: 28 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.2 Y5.6
-M3 S-128; pp: -64 x: 47 y: 28 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y5.8
-M3 S-128; pp: 0 x: 49 y: 29 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X9.2 Y5.8
-M3 S-64; pp: -128 x: 47 y: 29 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X9.0 Y5.8
-M3 S-128; pp: -64 x: 46 y: 29 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X8.6 Y5.8
-M3 S-64; pp: -128 x: 44 y: 29 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.2 Y5.8
-M3 S-128; pp: -64 x: 42 y: 29 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X8.0 Y5.8
-M3 S-191; pp: -128 x: 41 y: 29 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.8 Y5.8
-M3 S-128; pp: -191 x: 35 y: 29 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.6 Y5.8
-M3 S-191; pp: -128 x: 34 y: 29 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.2 Y5.8
-M3 S-64; pp: -191 x: 32 y: 29 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X4.8 Y5.8
-M3 S-128; pp: -64 x: 25 y: 29 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.4 Y5.8
-M3 S-191; pp: -128 x: 23 y: 29 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.0 Y5.8
-M3 S-128; pp: -191 x: 21 y: 29 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X3.8 Y5.8
-M3 S-191; pp: -128 x: 20 y: 29 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.2 Y5.8
-M3 S-128; pp: -191 x: 17 y: 29 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.4 Y5.8
-M3 S-64; pp: -128 x: 13 y: 29 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.2 Y5.8
-M3 S-191; pp: -64 x: 12 y: 29 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.0 Y5.8
-M3 S-128; pp: -191 x: 11 y: 29 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.6 Y5.8
-M3 S-191; pp: -128 x: 9 y: 29 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X1.4 Y5.8
-M3 S-128; pp: -191 x: 8 y: 29 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.2 Y5.8
-M3 S-191; pp: -128 x: 7 y: 29 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y5.8
-M3 S-128; pp: -191 x: 5 y: 29 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y5.8
-M3 S-64; pp: -128 x: 4 y: 29 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.2 Y5.8
-M3 S-128; pp: -64 x: 2 y: 29 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y6.0
-M3 S-128; pp: 0 x: 0 y: 30 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.4 Y6.0
-M3 S-64; pp: -128 x: 3 y: 30 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y6.0
-M3 S-128; pp: -64 x: 5 y: 30 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y6.0
-M3 S-191; pp: -128 x: 6 y: 30 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.4 Y6.0
-M3 S-128; pp: -191 x: 8 y: 30 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X1.6 Y6.0
-M3 S-191; pp: -128 x: 9 y: 30 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.8 Y6.0
-M3 S-128; pp: -191 x: 10 y: 30 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.2 Y6.0
-M3 S-64; pp: -128 x: 12 y: 30 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.6 Y6.0
-M3 S-128; pp: -64 x: 14 y: 30 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X3.6 Y6.0
-M3 S-191; pp: -128 x: 19 y: 30 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.8 Y6.0
-M3 S-128; pp: -191 x: 25 y: 30 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X5.0 Y6.0
-M3 S-64; pp: -128 x: 26 y: 30 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.4 Y6.0
-M3 S-128; pp: -64 x: 33 y: 30 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.8 Y6.0
-M3 S-64; pp: -128 x: 35 y: 30 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.2 Y6.0
-M3 S-191; pp: -64 x: 37 y: 30 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.2 Y6.0
-M3 S-128; pp: -191 x: 42 y: 30 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.4 Y6.0
-M3 S-64; pp: -128 x: 43 y: 30 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.2 Y6.0
-M3 S-128; pp: -64 x: 47 y: 30 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y6.2
-M3 S-128; pp: 0 x: 49 y: 31 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X8.8 Y6.2
-M3 S-64; pp: -128 x: 45 y: 31 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.4 Y6.2
-M3 S-128; pp: -64 x: 43 y: 31 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X8.0 Y6.2
-M3 S-191; pp: -128 x: 41 y: 31 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.2 Y6.2
-M3 S-64; pp: -191 x: 37 y: 31 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X7.0 Y6.2
-M3 S-128; pp: -64 x: 36 y: 31 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X6.8 Y6.2
-M3 S-191; pp: -128 x: 35 y: 31 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.6 Y6.2
-M3 S-128; pp: -191 x: 34 y: 31 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.4 Y6.2
-M3 S-64; pp: -128 x: 33 y: 31 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.0 Y6.2
-M3 S-191; pp: -64 x: 26 y: 31 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.4 Y6.2
-M3 S-128; pp: -191 x: 23 y: 31 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X4.2 Y6.2
-M3 S-191; pp: -128 x: 22 y: 31 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.8 Y6.2
-M3 S-128; pp: -191 x: 20 y: 31 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X2.2 Y6.2
-M3 S-64; pp: -128 x: 12 y: 31 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.0 Y6.2
-M3 S-191; pp: -64 x: 11 y: 31 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.8 Y6.2
-M3 S-128; pp: -191 x: 10 y: 31 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.2 Y6.2
-M3 S-191; pp: -128 x: 7 y: 31 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y6.2
-M3 S-64; pp: -191 x: 5 y: 31 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.4 Y6.2
-M3 S-128; pp: -64 x: 3 y: 31 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y6.4
-M3 S-128; pp: 0 x: 0 y: 32 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.4 Y6.4
-M3 S-64; pp: -128 x: 3 y: 32 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.0 Y6.4
-M3 S-191; pp: -64 x: 6 y: 32 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.4 Y6.4
-M3 S-128; pp: -191 x: 8 y: 32 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.0 Y6.4
-M3 S-191; pp: -128 x: 11 y: 32 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.2 Y6.4
-M3 S-64; pp: -191 x: 12 y: 32 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.4 Y6.4
-M3 S-128; pp: -64 x: 13 y: 32 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X4.2 Y6.4
-M3 S-191; pp: -128 x: 22 y: 32 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X4.4 Y6.4
-M3 S-128; pp: -191 x: 23 y: 32 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.8 Y6.4
-M3 S-191; pp: -128 x: 25 y: 32 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X5.6 Y6.4
-M3 S-64; pp: -191 x: 29 y: 32 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.0 Y6.4
-M3 S-128; pp: -64 x: 36 y: 32 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.2 Y6.4
-M3 S-191; pp: -128 x: 37 y: 32 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.4 Y6.4
-M3 S-128; pp: -191 x: 38 y: 32 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.6 Y6.4
-M3 S-191; pp: -128 x: 39 y: 32 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.4 Y6.4
-M3 S-128; pp: -191 x: 43 y: 32 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.6 Y6.4
-M3 S-64; pp: -128 x: 44 y: 32 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.8 Y6.4
-M3 S-128; pp: -64 x: 45 y: 32 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y6.6
-M3 S-128; pp: 0 x: 49 y: 33 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X8.2 Y6.6
-M3 S-191; pp: -128 x: 42 y: 33 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.6 Y6.6
-M3 S-64; pp: -191 x: 39 y: 33 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X7.2 Y6.6
-M3 S-128; pp: -64 x: 37 y: 33 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.0 Y6.6
-M3 S-64; pp: -128 x: 36 y: 33 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.6 Y6.6
-M3 S-128; pp: -64 x: 29 y: 33 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X5.2 Y6.6
-M3 S-64; pp: -128 x: 27 y: 33 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.0 Y6.6
-M3 S-128; pp: -64 x: 26 y: 33 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.8 Y6.6
-M3 S-64; pp: -128 x: 25 y: 33 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.6 Y6.6
-M3 S-128; pp: -64 x: 24 y: 33 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.2 Y6.6
-M3 S-64; pp: -128 x: 22 y: 33 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.8 Y6.6
-M3 S-128; pp: -64 x: 20 y: 33 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.2 Y6.6
-M3 S-64; pp: -128 x: 12 y: 33 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.0 Y6.6
-M3 S-191; pp: -64 x: 11 y: 33 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.8 Y6.6
-M3 S-128; pp: -191 x: 10 y: 33 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.2 Y6.6
-M3 S-191; pp: -128 x: 7 y: 33 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y6.6
-M3 S-128; pp: -191 x: 5 y: 33 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y6.6
-M3 S-64; pp: -128 x: 4 y: 33 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y6.6
-M3 S-128; pp: -64 x: 3 y: 33 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y6.8
-M3 S-128; pp: 0 x: 0 y: 34 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.4 Y6.8
-M3 S-64; pp: -128 x: 3 y: 34 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y6.8
-M3 S-128; pp: -64 x: 5 y: 34 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y6.8
-M3 S-191; pp: -128 x: 6 y: 34 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.4 Y6.8
-M3 S-128; pp: -191 x: 8 y: 34 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.0 Y6.8
-M3 S-191; pp: -128 x: 11 y: 34 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.2 Y6.8
-M3 S-128; pp: -191 x: 12 y: 34 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.6 Y6.8
-M3 S-191; pp: -128 x: 14 y: 34 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.8 Y6.8
-M3 S-128; pp: -191 x: 15 y: 34 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.2 Y6.8
-M3 S-64; pp: -128 x: 22 y: 34 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X5.0 Y6.8
-M3 S-128; pp: -64 x: 26 y: 34 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X5.2 Y6.8
-M3 S-64; pp: -128 x: 27 y: 34 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.4 Y6.8
-M3 S-128; pp: -64 x: 38 y: 34 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.6 Y6.8
-M3 S-64; pp: -128 x: 39 y: 34 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.8 Y6.8
-M3 S-191; pp: -64 x: 40 y: 34 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.6 Y6.8
-M3 S-128; pp: -191 x: 44 y: 34 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.8 Y6.8
-M3 S-64; pp: -128 x: 45 y: 34 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.0 Y6.8
-M3 S-128; pp: -64 x: 46 y: 34 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.2 Y6.8
-M3 S-64; pp: -128 x: 47 y: 34 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.4 Y6.8
-M3 S-128; pp: -64 x: 48 y: 34 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y7.0
-M3 S-128; pp: 0 x: 49 y: 35 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X9.2 Y7.0
-M3 S-64; pp: -128 x: 47 y: 35 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.8 Y7.0
-M3 S-128; pp: -64 x: 45 y: 35 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X8.4 Y7.0
-M3 S-191; pp: -128 x: 43 y: 35 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.8 Y7.0
-M3 S-64; pp: -191 x: 40 y: 35 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X3.6 Y7.0
-M3 S-128; pp: -64 x: 19 y: 35 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.2 Y7.0
-M3 S-64; pp: -128 x: 12 y: 35 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.0 Y7.0
-M3 S-191; pp: -64 x: 11 y: 35 img[y][x]: -191.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.8 Y7.0
-M3 S-128; pp: -191 x: 10 y: 35 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X1.2 Y7.0
-M3 S-191; pp: -128 x: 7 y: 35 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y7.0
-M3 S-128; pp: -191 x: 5 y: 35 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y7.0
-M3 S-64; pp: -128 x: 4 y: 35 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.2 Y7.0
-M3 S-128; pp: -64 x: 2 y: 35 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y7.2
-M3 S-128; pp: 0 x: 0 y: 36 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.6 Y7.2
-M3 S-64; pp: -128 x: 4 y: 36 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y7.2
-M3 S-128; pp: -64 x: 5 y: 36 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y7.2
-M3 S-191; pp: -128 x: 6 y: 36 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.4 Y7.2
-M3 S-128; pp: -191 x: 8 y: 36 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.0 Y7.2
-M3 S-64; pp: -128 x: 21 y: 36 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.4 Y7.2
-M3 S-128; pp: -64 x: 33 y: 36 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.8 Y7.2
-M3 S-64; pp: -128 x: 35 y: 36 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.0 Y7.2
-M3 S-191; pp: -64 x: 41 y: 36 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.8 Y7.2
-M3 S-128; pp: -191 x: 45 y: 36 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y7.4
-M3 S-128; pp: 0 x: 49 y: 37 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X9.4 Y7.4
-M3 S-64; pp: -128 x: 48 y: 37 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X9.0 Y7.4
-M3 S-128; pp: -64 x: 46 y: 37 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X8.8 Y7.4
-M3 S-191; pp: -128 x: 45 y: 37 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.8 Y7.4
-M3 S0; pp: -191 x: 40 y: 37 img[y][x]: -0.0 pp: -191 ; rev 3. inny power prev > 0 
-G0 X7.6 Y7.4
-M3 S-64; pp: 0 x: 39 y: 37 img[y][x]: -64.0 pp: 0 ; rev 2. inny power prev = 0 
-G1 X7.6 Y7.4
-M3 S-64; pp: -64 x: 39 y: 37 img[y][x]: -64.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.2 Y7.4
-M3 S-128; pp: -64 x: 37 y: 37 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X7.0 Y7.4
-M3 S-191; pp: -128 x: 36 y: 37 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.8 Y7.4
-M3 S-128; pp: -191 x: 35 y: 37 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.2 Y7.4
-M3 S-64; pp: -128 x: 32 y: 37 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X3.4 Y7.4
-M3 S-128; pp: -64 x: 18 y: 37 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.2 Y7.4
-M3 S-64; pp: -128 x: 12 y: 37 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.0 Y7.4
-M3 S-128; pp: -64 x: 11 y: 37 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.2 Y7.4
-M3 S-191; pp: -128 x: 7 y: 37 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y7.4
-M3 S-128; pp: -191 x: 5 y: 37 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y7.4
-M3 S-64; pp: -128 x: 4 y: 37 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y7.4
-M3 S-128; pp: -64 x: 3 y: 37 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.0 Y7.4
-M3 S-191; pp: -128 x: 1 y: 37 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y7.6
-M3 S-191; pp: 0 x: 0 y: 38 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.2 Y7.6
-M3 S-128; pp: -191 x: 2 y: 38 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y7.6
-M3 S-64; pp: -128 x: 4 y: 38 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y7.6
-M3 S-128; pp: -64 x: 5 y: 38 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y7.6
-M3 S-191; pp: -128 x: 6 y: 38 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.4 Y7.6
-M3 S-128; pp: -191 x: 8 y: 38 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X2.2 Y7.6
-M3 S-64; pp: -128 x: 12 y: 38 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X2.4 Y7.6
-M3 S-128; pp: -64 x: 13 y: 38 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X4.0 Y7.6
-M3 S-64; pp: -128 x: 21 y: 38 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.2 Y7.6
-M3 S-191; pp: -64 x: 32 y: 38 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.4 Y7.6
-M3 S-128; pp: -191 x: 33 y: 38 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.0 Y7.6
-M3 S-191; pp: -128 x: 36 y: 38 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.4 Y7.6
-M3 S-64; pp: -191 x: 38 y: 38 img[y][x]: -64.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.0 Y7.6
-M3 S-191; pp: -64 x: 41 y: 38 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.0 Y7.6
-M3 S-128; pp: -191 x: 46 y: 38 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X9.4 Y7.6
-M3 S-64; pp: -128 x: 48 y: 38 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y7.8
-M3 S-64; pp: 0 x: 49 y: 39 img[y][x]: -64.0 pp: 0 ; rev 1. linia
-G1 X9.4 Y7.8
-M3 S-128; pp: -64 x: 48 y: 39 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X9.0 Y7.8
-M3 S-191; pp: -128 x: 46 y: 39 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.8 Y7.8
-M3 S-128; pp: -191 x: 40 y: 39 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X7.2 Y7.8
-M3 S-191; pp: -128 x: 37 y: 39 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.8 Y7.8
-M3 S-128; pp: -191 x: 35 y: 39 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.0 Y7.8
-M3 S-191; pp: -128 x: 31 y: 39 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.8 Y7.8
-M3 S-64; pp: -191 x: 30 y: 39 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X4.0 Y7.8
-M3 S-128; pp: -64 x: 21 y: 39 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.2 Y7.8
-M3 S-191; pp: -128 x: 7 y: 39 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y7.8
-M3 S-128; pp: -191 x: 5 y: 39 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y7.8
-M3 S-64; pp: -128 x: 4 y: 39 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y7.8
-M3 S-128; pp: -64 x: 3 y: 39 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.0 Y7.8
-M3 S-191; pp: -128 x: 1 y: 39 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y8.0
-M3 S-191; pp: 0 x: 0 y: 40 img[y][x]: -191.0 pp: 0 ;1. linia
-G1 X0.2 Y8.0
-M3 S-128; pp: -191 x: 2 y: 40 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.6 Y8.0
-M3 S-64; pp: -128 x: 4 y: 40 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y8.0
-M3 S-128; pp: -64 x: 5 y: 40 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y8.0
-M3 S-191; pp: -128 x: 6 y: 40 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.2 Y8.0
-M3 S-128; pp: -191 x: 7 y: 40 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.2 Y8.0
-M3 S-64; pp: -128 x: 22 y: 40 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X5.8 Y8.0
-M3 S-128; pp: -64 x: 30 y: 40 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X6.0 Y8.0
-M3 S-191; pp: -128 x: 31 y: 40 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X6.2 Y8.0
-M3 S-128; pp: -191 x: 32 y: 40 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X7.0 Y8.0
-M3 S-191; pp: -128 x: 36 y: 40 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.2 Y8.0
-M3 S-128; pp: -191 x: 37 y: 40 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.2 Y8.0
-M3 S-191; pp: -128 x: 42 y: 40 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X9.4 Y8.0
-M3 S-128; pp: -191 x: 48 y: 40 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y8.2
-M3 S-128; pp: 0 x: 49 y: 41 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X9.4 Y8.2
-M3 S-191; pp: -128 x: 48 y: 41 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.0 Y8.2
-M3 S-128; pp: -191 x: 41 y: 41 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X7.0 Y8.2
-M3 S-191; pp: -128 x: 36 y: 41 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.8 Y8.2
-M3 S-128; pp: -191 x: 35 y: 41 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X6.0 Y8.2
-M3 S-191; pp: -128 x: 31 y: 41 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.6 Y8.2
-M3 S-64; pp: -191 x: 29 y: 41 img[y][x]: -64.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X4.6 Y8.2
-M3 S-128; pp: -64 x: 24 y: 41 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.4 Y8.2
-M3 S-64; pp: -128 x: 23 y: 41 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.0 Y8.2
-M3 S-128; pp: -64 x: 21 y: 41 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.2 Y8.2
-M3 S-191; pp: -128 x: 7 y: 41 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y8.2
-M3 S-128; pp: -191 x: 5 y: 41 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y8.2
-M3 S-64; pp: -128 x: 4 y: 41 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.2 Y8.2
-M3 S-128; pp: -64 x: 2 y: 41 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X0.0 Y8.2
-M3 S-191; pp: -128 x: 1 y: 41 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y8.4
-M3 S-64; pp: 0 x: 0 y: 42 img[y][x]: -64.0 pp: 0 ;1. linia
-G1 X0.0 Y8.4
-M3 S-191; pp: -64 x: 1 y: 42 img[y][x]: -191.0 pp: -64 ;3. inny power prev > 0 
-G1 X0.2 Y8.4
-M3 S-128; pp: -191 x: 2 y: 42 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X0.4 Y8.4
-M3 S-64; pp: -128 x: 3 y: 42 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y8.4
-M3 S-128; pp: -64 x: 5 y: 42 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y8.4
-M3 S-191; pp: -128 x: 6 y: 42 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.2 Y8.4
-M3 S-128; pp: -191 x: 7 y: 42 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.2 Y8.4
-M3 S-64; pp: -128 x: 22 y: 42 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X5.6 Y8.4
-M3 S-128; pp: -64 x: 29 y: 42 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.4 Y8.4
-M3 S-191; pp: -128 x: 43 y: 42 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y8.6
-M3 S-191; pp: 0 x: 49 y: 43 img[y][x]: -191.0 pp: 0 ; rev 1. linia
-G1 X8.4 Y8.6
-M3 S0; pp: -191 x: 43 y: 43 img[y][x]: -0.0 pp: -191 ; rev 3. inny power prev > 0 
-G0 X8.2 Y8.6
-M3 S-128; pp: 0 x: 42 y: 43 img[y][x]: -128.0 pp: 0 ; rev 2. inny power prev = 0 
-G1 X8.2 Y8.6
-M3 S-128; pp: -128 x: 42 y: 43 img[y][x]: -128.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X5.0 Y8.6
-M3 S-64; pp: -128 x: 26 y: 43 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.0 Y8.6
-M3 S-128; pp: -64 x: 21 y: 43 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X2.8 Y8.6
-M3 S-64; pp: -128 x: 15 y: 43 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X2.6 Y8.6
-M3 S-128; pp: -64 x: 14 y: 43 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.2 Y8.6
-M3 S-191; pp: -128 x: 7 y: 43 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y8.6
-M3 S-128; pp: -191 x: 5 y: 43 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y8.6
-M3 S-64; pp: -128 x: 4 y: 43 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.2 Y8.6
-M3 S-128; pp: -64 x: 2 y: 43 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y8.8
-M3 S-64; pp: 0 x: 0 y: 44 img[y][x]: -64.0 pp: 0 ;1. linia
-G1 X0.2 Y8.8
-M3 S-128; pp: -64 x: 2 y: 44 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X0.6 Y8.8
-M3 S-64; pp: -128 x: 4 y: 44 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y8.8
-M3 S-128; pp: -64 x: 5 y: 44 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y8.8
-M3 S-191; pp: -128 x: 6 y: 44 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.2 Y8.8
-M3 S-128; pp: -191 x: 7 y: 44 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X4.2 Y8.8
-M3 S-64; pp: -128 x: 22 y: 44 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X5.0 Y8.8
-M3 S-128; pp: -64 x: 26 y: 44 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X8.2 Y8.8
-M3 S-64; pp: -128 x: 42 y: 44 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.4 Y8.8
-M3 S0; pp: -64 x: 43 y: 44 img[y][x]: -0.0 pp: -64 ;3. inny power prev > 0 
-G0 X8.6 Y8.8
-M3 S-128; pp: 0 x: 44 y: 44 img[y][x]: -128.0 pp: 0 ;2. inny power prev = 0 
-G1 X8.6 Y8.8
-M3 S-128; pp: -128 x: 44 y: 44 img[y][x]: -128.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.8 Y8.8
-M3 S-191; pp: -128 x: 45 y: 44 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y9.0
-M3 S-191; pp: 0 x: 49 y: 45 img[y][x]: -191.0 pp: 0 ; rev 1. linia
-G1 X8.6 Y9.0
-M3 S-128; pp: -191 x: 44 y: 45 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X8.4 Y9.0
-M3 S-64; pp: -128 x: 43 y: 45 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X8.0 Y9.0
-M3 S-128; pp: -64 x: 41 y: 45 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X4.2 Y9.0
-M3 S-64; pp: -128 x: 22 y: 45 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X4.0 Y9.0
-M3 S-128; pp: -64 x: 21 y: 45 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.0 Y9.0
-M3 S-191; pp: -128 x: 6 y: 45 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y9.0
-M3 S-128; pp: -191 x: 5 y: 45 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.0 Y9.0
-M3 S-64; pp: -128 x: 1 y: 45 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y9.2
-M3 S-128; pp: 0 x: 0 y: 46 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.2 Y9.2
-M3 S-64; pp: -128 x: 2 y: 46 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y9.2
-M3 S-128; pp: -64 x: 5 y: 46 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y9.2
-M3 S-191; pp: -128 x: 6 y: 46 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.2 Y9.2
-M3 S-128; pp: -191 x: 7 y: 46 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X8.0 Y9.2
-M3 S-64; pp: -128 x: 41 y: 46 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.4 Y9.2
-M3 S-128; pp: -64 x: 43 y: 46 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X9.2 Y9.2
-M3 S-191; pp: -128 x: 47 y: 46 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y9.4
-M3 S-191; pp: 0 x: 49 y: 47 img[y][x]: -191.0 pp: 0 ; rev 1. linia
-G1 X9.0 Y9.4
-M3 S-128; pp: -191 x: 46 y: 47 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X8.0 Y9.4
-M3 S-64; pp: -128 x: 41 y: 47 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.8 Y9.4
-M3 S-128; pp: -64 x: 40 y: 47 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X6.8 Y9.4
-M3 S-64; pp: -128 x: 35 y: 47 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X6.4 Y9.4
-M3 S-128; pp: -64 x: 33 y: 47 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.0 Y9.4
-M3 S-191; pp: -128 x: 6 y: 47 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y9.4
-M3 S-128; pp: -191 x: 5 y: 47 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.4 Y9.4
-M3 S-64; pp: -128 x: 3 y: 47 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.2 Y9.4
-M3 S-128; pp: -64 x: 2 y: 47 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-G0 X0.0 Y9.6
-M3 S-128; pp: 0 x: 0 y: 48 img[y][x]: -128.0 pp: 0 ;1. linia
-G1 X0.4 Y9.6
-M3 S-64; pp: -128 x: 3 y: 48 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X0.8 Y9.6
-M3 S-128; pp: -64 x: 5 y: 48 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X1.0 Y9.6
-M3 S-191; pp: -128 x: 6 y: 48 img[y][x]: -191.0 pp: -128 ;3. inny power prev > 0 
-G1 X1.2 Y9.6
-M3 S-128; pp: -191 x: 7 y: 48 img[y][x]: -128.0 pp: -191 ;3. inny power prev > 0 
-G1 X6.8 Y9.6
-M3 S-64; pp: -128 x: 35 y: 48 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X7.0 Y9.6
-M3 S-128; pp: -64 x: 36 y: 48 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-G1 X7.8 Y9.6
-M3 S-64; pp: -128 x: 40 y: 48 img[y][x]: -64.0 pp: -128 ;3. inny power prev > 0 
-G1 X8.2 Y9.6
-M3 S-128; pp: -64 x: 42 y: 48 img[y][x]: -128.0 pp: -64 ;3. inny power prev > 0 
-M5 S0 ; koniec linii
-G0 X9.8 Y9.8
-M3 S-128; pp: 0 x: 49 y: 49 img[y][x]: -128.0 pp: 0 ; rev 1. linia
-G1 X7.8 Y9.8
-M3 S-64; pp: -128 x: 40 y: 49 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X7.4 Y9.8
-M3 S-128; pp: -64 x: 38 y: 49 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-G1 X1.0 Y9.8
-M3 S-191; pp: -128 x: 6 y: 49 img[y][x]: -191.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.8 Y9.8
-M3 S-128; pp: -191 x: 5 y: 49 img[y][x]: -128.0 pp: -191 ; rev 3. inny power prev > 0 
-G1 X0.6 Y9.8
-M3 S-64; pp: -128 x: 4 y: 49 img[y][x]: -64.0 pp: -128 ; rev 3. inny power prev > 0 
-G1 X0.4 Y9.8
-M3 S-128; pp: -64 x: 3 y: 49 img[y][x]: -128.0 pp: -64 ; rev 3. inny power prev > 0 
-M5 S0 ; rev koniec linii
-
+G0 X99.0 Y1.0
+M3 S-1000
+G1 X72.0 Y1.0
+M3 S0
+G0 X42.0 Y1.0
+M3 S-1000
+G1 X42.0 Y1.0
+M3 S-1000
+G1 X40.0 Y1.0
+M3 S0
+G0 X39.0 Y1.0
+M3 S-1000
+G1 X39.0 Y1.0
+M3 S-1000
+G1 X10.0 Y1.0
+M3 S0
+G0 X5.0 Y1.0
+M3 S-1000
+G1 X5.0 Y1.0
+M3 S-1000
+G1 X4.0 Y1.0
+M3 S0
+G0 X1.0 Y1.0
+M3 S-1000
+G1 X1.0 Y1.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y2.0
+M3 S-1000
+G1 X2.0 Y2.0
+M3 S0
+G0 X5.0 Y2.0
+M3 S-1000
+G1 X5.0 Y2.0
+M3 S-1000
+G1 X6.0 Y2.0
+M3 S0
+G0 X11.0 Y2.0
+M3 S-1000
+G1 X11.0 Y2.0
+M3 S-1000
+G1 X23.0 Y2.0
+M3 S0
+G0 X24.0 Y2.0
+M3 S-1000
+G1 X24.0 Y2.0
+M3 S-1000
+G1 X42.0 Y2.0
+M3 S0
+G0 X44.0 Y2.0
+M3 S-1000
+G1 X44.0 Y2.0
+M3 S-1000
+G1 X45.0 Y2.0
+M3 S0
+G0 X73.0 Y2.0
+M3 S-1000
+G1 X73.0 Y2.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y3.0
+M3 S-1000
+G1 X72.0 Y3.0
+M3 S0
+G0 X42.0 Y3.0
+M3 S-1000
+G1 X42.0 Y3.0
+M3 S-1000
+G1 X10.0 Y3.0
+M3 S0
+G0 X5.0 Y3.0
+M3 S-1000
+G1 X5.0 Y3.0
+M3 S-1000
+G1 X4.0 Y3.0
+M3 S0
+G0 X1.0 Y3.0
+M3 S-1000
+G1 X1.0 Y3.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y4.0
+M3 S-1000
+G1 X2.0 Y4.0
+M3 S0
+G0 X4.0 Y4.0
+M3 S-1000
+G1 X4.0 Y4.0
+M3 S-1000
+G1 X6.0 Y4.0
+M3 S0
+G0 X11.0 Y4.0
+M3 S-1000
+G1 X11.0 Y4.0
+M3 S-1000
+G1 X29.0 Y4.0
+M3 S0
+G0 X30.0 Y4.0
+M3 S-1000
+G1 X30.0 Y4.0
+M3 S-1000
+G1 X44.0 Y4.0
+M3 S0
+G0 X73.0 Y4.0
+M3 S-1000
+G1 X73.0 Y4.0
+M3 S-1000
+G1 X81.0 Y4.0
+M3 S0
+G0 X83.0 Y4.0
+M3 S-1000
+G1 X83.0 Y4.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y5.0
+M3 S-1000
+G1 X84.0 Y5.0
+M3 S0
+G0 X80.0 Y5.0
+M3 S-1000
+G1 X80.0 Y5.0
+M3 S-1000
+G1 X71.0 Y5.0
+M3 S0
+G0 X43.0 Y5.0
+M3 S-1000
+G1 X43.0 Y5.0
+M3 S-1000
+G1 X10.0 Y5.0
+M3 S0
+G0 X5.0 Y5.0
+M3 S-1000
+G1 X5.0 Y5.0
+M3 S-1000
+G1 X3.0 Y5.0
+M3 S0
+G0 X0.0 Y5.0
+M3 S-1000
+G1 X0.0 Y5.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y6.0
+M3 S-1000
+G1 X2.0 Y6.0
+M3 S0
+G0 X4.0 Y6.0
+M3 S-1000
+G1 X4.0 Y6.0
+M3 S-1000
+G1 X6.0 Y6.0
+M3 S0
+G0 X11.0 Y6.0
+M3 S-1000
+G1 X11.0 Y6.0
+M3 S-1000
+G1 X29.0 Y6.0
+M3 S0
+G0 X30.0 Y6.0
+M3 S-1000
+G1 X30.0 Y6.0
+M3 S-1000
+G1 X31.0 Y6.0
+M3 S0
+G0 X32.0 Y6.0
+M3 S-1000
+G1 X32.0 Y6.0
+M3 S-1000
+G1 X44.0 Y6.0
+M3 S0
+G0 X72.0 Y6.0
+M3 S-1000
+G1 X72.0 Y6.0
+M3 S-1000
+G1 X81.0 Y6.0
+M3 S0
+G0 X86.0 Y6.0
+M3 S-1000
+G1 X86.0 Y6.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y7.0
+M3 S-1000
+G1 X85.0 Y7.0
+M3 S0
+G0 X80.0 Y7.0
+M3 S-1000
+G1 X80.0 Y7.0
+M3 S-1000
+G1 X71.0 Y7.0
+M3 S0
+G0 X44.0 Y7.0
+M3 S-1000
+G1 X44.0 Y7.0
+M3 S-1000
+G1 X29.0 Y7.0
+M3 S0
+G0 X27.0 Y7.0
+M3 S-1000
+G1 X27.0 Y7.0
+M3 S-1000
+G1 X10.0 Y7.0
+M3 S0
+G0 X5.0 Y7.0
+M3 S-1000
+G1 X5.0 Y7.0
+M3 S-1000
+G1 X3.0 Y7.0
+M3 S0
+G0 X1.0 Y7.0
+M3 S-1000
+G1 X1.0 Y7.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y8.0
+M3 S-1000
+G1 X2.0 Y8.0
+M3 S0
+G0 X4.0 Y8.0
+M3 S-1000
+G1 X4.0 Y8.0
+M3 S-1000
+G1 X6.0 Y8.0
+M3 S0
+G0 X12.0 Y8.0
+M3 S-1000
+G1 X12.0 Y8.0
+M3 S-1000
+G1 X30.0 Y8.0
+M3 S0
+G0 X31.0 Y8.0
+M3 S-1000
+G1 X31.0 Y8.0
+M3 S-1000
+G1 X45.0 Y8.0
+M3 S0
+G0 X71.0 Y8.0
+M3 S-1000
+G1 X71.0 Y8.0
+M3 S-1000
+G1 X81.0 Y8.0
+M3 S0
+G0 X87.0 Y8.0
+M3 S-1000
+G1 X87.0 Y8.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y9.0
+M3 S-1000
+G1 X86.0 Y9.0
+M3 S0
+G0 X77.0 Y9.0
+M3 S-1000
+G1 X77.0 Y9.0
+M3 S-1000
+G1 X70.0 Y9.0
+M3 S0
+G0 X44.0 Y9.0
+M3 S-1000
+G1 X44.0 Y9.0
+M3 S-1000
+G1 X11.0 Y9.0
+M3 S0
+G0 X5.0 Y9.0
+M3 S-1000
+G1 X5.0 Y9.0
+M3 S-1000
+G1 X3.0 Y9.0
+M3 S0
+G0 X1.0 Y9.0
+M3 S-1000
+G1 X1.0 Y9.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y10.0
+M3 S-1000
+G1 X2.0 Y10.0
+M3 S0
+G0 X4.0 Y10.0
+M3 S-1000
+G1 X4.0 Y10.0
+M3 S-1000
+G1 X6.0 Y10.0
+M3 S0
+G0 X12.0 Y10.0
+M3 S-1000
+G1 X12.0 Y10.0
+M3 S-1000
+G1 X32.0 Y10.0
+M3 S0
+G0 X33.0 Y10.0
+M3 S-1000
+G1 X33.0 Y10.0
+M3 S-1000
+G1 X46.0 Y10.0
+M3 S0
+G0 X72.0 Y10.0
+M3 S-1000
+G1 X72.0 Y10.0
+M3 S-1000
+G1 X75.0 Y10.0
+M3 S0
+G0 X88.0 Y10.0
+M3 S-1000
+G1 X88.0 Y10.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y11.0
+M3 S-1000
+G1 X87.0 Y11.0
+M3 S0
+G0 X45.0 Y11.0
+M3 S-1000
+G1 X45.0 Y11.0
+M3 S-1000
+G1 X43.0 Y11.0
+M3 S0
+G0 X42.0 Y11.0
+M3 S-1000
+G1 X42.0 Y11.0
+M3 S-1000
+G1 X11.0 Y11.0
+M3 S0
+G0 X5.0 Y11.0
+M3 S-1000
+G1 X5.0 Y11.0
+M3 S-1000
+G1 X3.0 Y11.0
+M3 S0
+G0 X0.0 Y11.0
+M3 S-1000
+G1 X0.0 Y11.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y12.0
+M3 S-1000
+G1 X1.0 Y12.0
+M3 S0
+G0 X4.0 Y12.0
+M3 S-1000
+G1 X4.0 Y12.0
+M3 S-1000
+G1 X6.0 Y12.0
+M3 S0
+G0 X12.0 Y12.0
+M3 S-1000
+G1 X12.0 Y12.0
+M3 S-1000
+G1 X29.0 Y12.0
+M3 S0
+G0 X30.0 Y12.0
+M3 S-1000
+G1 X30.0 Y12.0
+M3 S-1000
+G1 X31.0 Y12.0
+M3 S0
+G0 X32.0 Y12.0
+M3 S-1000
+G1 X32.0 Y12.0
+M3 S-1000
+G1 X43.0 Y12.0
+M3 S0
+G0 X44.0 Y12.0
+M3 S-1000
+G1 X44.0 Y12.0
+M3 S-1000
+G1 X46.0 Y12.0
+M3 S0
+G0 X70.0 Y12.0
+M3 S-1000
+G1 X70.0 Y12.0
+M3 S-1000
+G1 X72.0 Y12.0
+M3 S0
+G0 X88.0 Y12.0
+M3 S-1000
+G1 X88.0 Y12.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y13.0
+M3 S-1000
+G1 X88.0 Y13.0
+M3 S0
+G0 X81.0 Y13.0
+M3 S-1000
+G1 X81.0 Y13.0
+M3 S-1000
+G1 X80.0 Y13.0
+M3 S0
+G0 X70.0 Y13.0
+M3 S-1000
+G1 X70.0 Y13.0
+M3 S-1000
+G1 X69.0 Y13.0
+M3 S0
+G0 X46.0 Y13.0
+M3 S-1000
+G1 X46.0 Y13.0
+M3 S-1000
+G1 X43.0 Y13.0
+M3 S0
+G0 X42.0 Y13.0
+M3 S-1000
+G1 X42.0 Y13.0
+M3 S-1000
+G1 X34.0 Y13.0
+M3 S0
+G0 X31.0 Y13.0
+M3 S-1000
+G1 X31.0 Y13.0
+M3 S-1000
+G1 X29.0 Y13.0
+M3 S0
+G0 X28.0 Y13.0
+M3 S-1000
+G1 X28.0 Y13.0
+M3 S-1000
+G1 X11.0 Y13.0
+M3 S0
+G0 X5.0 Y13.0
+M3 S-1000
+G1 X5.0 Y13.0
+M3 S-1000
+G1 X2.0 Y13.0
+M3 S0
+G0 X0.0 Y13.0
+M3 S-1000
+G1 X0.0 Y13.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y14.0
+M3 S-1000
+G1 X1.0 Y14.0
+M3 S0
+G0 X3.0 Y14.0
+M3 S-1000
+G1 X3.0 Y14.0
+M3 S-1000
+G1 X6.0 Y14.0
+M3 S0
+G0 X12.0 Y14.0
+M3 S-1000
+G1 X12.0 Y14.0
+M3 S-1000
+G1 X29.0 Y14.0
+M3 S0
+G0 X31.0 Y14.0
+M3 S-1000
+G1 X31.0 Y14.0
+M3 S-1000
+G1 X48.0 Y14.0
+M3 S0
+G0 X70.0 Y14.0
+M3 S-1000
+G1 X70.0 Y14.0
+M3 S-1000
+G1 X71.0 Y14.0
+M3 S0
+G0 X80.0 Y14.0
+M3 S-1000
+G1 X80.0 Y14.0
+M3 S-1000
+G1 X83.0 Y14.0
+M3 S0
+G0 X89.0 Y14.0
+M3 S-1000
+G1 X89.0 Y14.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y15.0
+M3 S-1000
+G1 X89.0 Y15.0
+M3 S0
+G0 X82.0 Y15.0
+M3 S-1000
+G1 X82.0 Y15.0
+M3 S-1000
+G1 X81.0 Y15.0
+M3 S0
+G0 X70.0 Y15.0
+M3 S-1000
+G1 X70.0 Y15.0
+M3 S-1000
+G1 X69.0 Y15.0
+M3 S0
+G0 X46.0 Y15.0
+M3 S-1000
+G1 X46.0 Y15.0
+M3 S-1000
+G1 X33.0 Y15.0
+M3 S0
+G0 X32.0 Y15.0
+M3 S-1000
+G1 X32.0 Y15.0
+M3 S-1000
+G1 X29.0 Y15.0
+M3 S0
+G0 X28.0 Y15.0
+M3 S-1000
+G1 X28.0 Y15.0
+M3 S-1000
+G1 X19.0 Y15.0
+M3 S0
+G0 X18.0 Y15.0
+M3 S-1000
+G1 X18.0 Y15.0
+M3 S-1000
+G1 X11.0 Y15.0
+M3 S0
+G0 X5.0 Y15.0
+M3 S-1000
+G1 X5.0 Y15.0
+M3 S-1000
+G1 X2.0 Y15.0
+M3 S0
+G0 X0.0 Y15.0
+M3 S-1000
+G1 X0.0 Y15.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y16.0
+M3 S-1000
+G1 X1.0 Y16.0
+M3 S0
+G0 X3.0 Y16.0
+M3 S-1000
+G1 X3.0 Y16.0
+M3 S-1000
+G1 X5.0 Y16.0
+M3 S0
+G0 X13.0 Y16.0
+M3 S-1000
+G1 X13.0 Y16.0
+M3 S-1000
+G1 X19.0 Y16.0
+M3 S0
+G0 X20.0 Y16.0
+M3 S-1000
+G1 X20.0 Y16.0
+M3 S-1000
+G1 X29.0 Y16.0
+M3 S0
+G0 X31.0 Y16.0
+M3 S-1000
+G1 X31.0 Y16.0
+M3 S-1000
+G1 X33.0 Y16.0
+M3 S0
+G0 X34.0 Y16.0
+M3 S-1000
+G1 X34.0 Y16.0
+M3 S-1000
+G1 X47.0 Y16.0
+M3 S0
+G0 X69.0 Y16.0
+M3 S-1000
+G1 X69.0 Y16.0
+M3 S-1000
+G1 X72.0 Y16.0
+M3 S0
+G0 X81.0 Y16.0
+M3 S-1000
+G1 X81.0 Y16.0
+M3 S-1000
+G1 X83.0 Y16.0
+M3 S0
+G0 X90.0 Y16.0
+M3 S-1000
+G1 X90.0 Y16.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y17.0
+M3 S-1000
+G1 X89.0 Y17.0
+M3 S0
+G0 X83.0 Y17.0
+M3 S-1000
+G1 X83.0 Y17.0
+M3 S-1000
+G1 X82.0 Y17.0
+M3 S0
+G0 X71.0 Y17.0
+M3 S-1000
+G1 X71.0 Y17.0
+M3 S-1000
+G1 X68.0 Y17.0
+M3 S0
+G0 X46.0 Y17.0
+M3 S-1000
+G1 X46.0 Y17.0
+M3 S-1000
+G1 X30.0 Y17.0
+M3 S0
+G0 X28.0 Y17.0
+M3 S-1000
+G1 X28.0 Y17.0
+M3 S-1000
+G1 X12.0 Y17.0
+M3 S0
+G0 X5.0 Y17.0
+M3 S-1000
+G1 X5.0 Y17.0
+M3 S-1000
+G1 X2.0 Y17.0
+M3 S0
+G0 X0.0 Y17.0
+M3 S-1000
+G1 X0.0 Y17.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y18.0
+M3 S-1000
+G1 X0.0 Y18.0
+M3 S0
+G0 X3.0 Y18.0
+M3 S-1000
+G1 X3.0 Y18.0
+M3 S-1000
+G1 X5.0 Y18.0
+M3 S0
+G0 X12.0 Y18.0
+M3 S-1000
+G1 X12.0 Y18.0
+M3 S-1000
+G1 X28.0 Y18.0
+M3 S0
+G0 X29.0 Y18.0
+M3 S-1000
+G1 X29.0 Y18.0
+M3 S-1000
+G1 X30.0 Y18.0
+M3 S0
+G0 X33.0 Y18.0
+M3 S-1000
+G1 X33.0 Y18.0
+M3 S-1000
+G1 X48.0 Y18.0
+M3 S0
+G0 X68.0 Y18.0
+M3 S-1000
+G1 X68.0 Y18.0
+M3 S-1000
+G1 X72.0 Y18.0
+M3 S0
+G0 X81.0 Y18.0
+M3 S-1000
+G1 X81.0 Y18.0
+M3 S-1000
+G1 X82.0 Y18.0
+M3 S0
+G0 X83.0 Y18.0
+M3 S-1000
+G1 X83.0 Y18.0
+M3 S-1000
+G1 X84.0 Y18.0
+M3 S0
+G0 X85.0 Y18.0
+M3 S-1000
+G1 X85.0 Y18.0
+M3 S-1000
+G1 X86.0 Y18.0
+M3 S0
+G0 X91.0 Y18.0
+M3 S-1000
+G1 X91.0 Y18.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y19.0
+M3 S-1000
+G1 X90.0 Y19.0
+M3 S0
+G0 X85.0 Y19.0
+M3 S-1000
+G1 X85.0 Y19.0
+M3 S-1000
+G1 X84.0 Y19.0
+M3 S0
+G0 X83.0 Y19.0
+M3 S-1000
+G1 X83.0 Y19.0
+M3 S-1000
+G1 X81.0 Y19.0
+M3 S0
+G0 X71.0 Y19.0
+M3 S-1000
+G1 X71.0 Y19.0
+M3 S-1000
+G1 X66.0 Y19.0
+M3 S0
+G0 X48.0 Y19.0
+M3 S-1000
+G1 X48.0 Y19.0
+M3 S-1000
+G1 X33.0 Y19.0
+M3 S0
+G0 X32.0 Y19.0
+M3 S-1000
+G1 X32.0 Y19.0
+M3 S-1000
+G1 X30.0 Y19.0
+M3 S0
+G0 X27.0 Y19.0
+M3 S-1000
+G1 X27.0 Y19.0
+M3 S-1000
+G1 X23.0 Y19.0
+M3 S0
+G0 X22.0 Y19.0
+M3 S-1000
+G1 X22.0 Y19.0
+M3 S-1000
+G1 X12.0 Y19.0
+M3 S0
+G0 X4.0 Y19.0
+M3 S-1000
+G1 X4.0 Y19.0
+M3 S-1000
+G1 X2.0 Y19.0
+M3 S0
+M5 S0
+G0 X2.0 Y20.0
+M3 S-1000
+G1 X2.0 Y20.0
+M3 S-1000
+G1 X5.0 Y20.0
+M3 S0
+G0 X12.0 Y20.0
+M3 S-1000
+G1 X12.0 Y20.0
+M3 S-1000
+G1 X17.0 Y20.0
+M3 S0
+G0 X19.0 Y20.0
+M3 S-1000
+G1 X19.0 Y20.0
+M3 S-1000
+G1 X28.0 Y20.0
+M3 S0
+G0 X30.0 Y20.0
+M3 S-1000
+G1 X30.0 Y20.0
+M3 S-1000
+G1 X31.0 Y20.0
+M3 S0
+G0 X32.0 Y20.0
+M3 S-1000
+G1 X32.0 Y20.0
+M3 S-1000
+G1 X48.0 Y20.0
+M3 S0
+G0 X49.0 Y20.0
+M3 S-1000
+G1 X49.0 Y20.0
+M3 S-1000
+G1 X50.0 Y20.0
+M3 S0
+G0 X66.0 Y20.0
+M3 S-1000
+G1 X66.0 Y20.0
+M3 S-1000
+G1 X72.0 Y20.0
+M3 S0
+G0 X81.0 Y20.0
+M3 S-1000
+G1 X81.0 Y20.0
+M3 S-1000
+G1 X84.0 Y20.0
+M3 S0
+G0 X85.0 Y20.0
+M3 S-1000
+G1 X85.0 Y20.0
+M3 S-1000
+G1 X86.0 Y20.0
+M3 S0
+G0 X92.0 Y20.0
+M3 S-1000
+G1 X92.0 Y20.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y21.0
+M3 S-1000
+G1 X92.0 Y21.0
+M3 S0
+G0 X85.0 Y21.0
+M3 S-1000
+G1 X85.0 Y21.0
+M3 S-1000
+G1 X78.0 Y21.0
+M3 S0
+G0 X71.0 Y21.0
+M3 S-1000
+G1 X71.0 Y21.0
+M3 S-1000
+G1 X64.0 Y21.0
+M3 S0
+G0 X50.0 Y21.0
+M3 S-1000
+G1 X50.0 Y21.0
+M3 S-1000
+G1 X32.0 Y21.0
+M3 S0
+G0 X31.0 Y21.0
+M3 S-1000
+G1 X31.0 Y21.0
+M3 S-1000
+G1 X30.0 Y21.0
+M3 S0
+G0 X29.0 Y21.0
+M3 S-1000
+G1 X29.0 Y21.0
+M3 S-1000
+G1 X23.0 Y21.0
+M3 S0
+G0 X22.0 Y21.0
+M3 S-1000
+G1 X22.0 Y21.0
+M3 S-1000
+G1 X12.0 Y21.0
+M3 S0
+G0 X11.0 Y21.0
+M3 S-1000
+G1 X11.0 Y21.0
+M3 S-1000
+G1 X10.0 Y21.0
+M3 S0
+G0 X5.0 Y21.0
+M3 S-1000
+G1 X5.0 Y21.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y22.0
+M3 S-1000
+G1 X5.0 Y22.0
+M3 S0
+G0 X12.0 Y22.0
+M3 S-1000
+G1 X12.0 Y22.0
+M3 S-1000
+G1 X23.0 Y22.0
+M3 S0
+G0 X24.0 Y22.0
+M3 S-1000
+G1 X24.0 Y22.0
+M3 S-1000
+G1 X25.0 Y22.0
+M3 S0
+G0 X26.0 Y22.0
+M3 S-1000
+G1 X26.0 Y22.0
+M3 S-1000
+G1 X28.0 Y22.0
+M3 S0
+G0 X29.0 Y22.0
+M3 S-1000
+G1 X29.0 Y22.0
+M3 S-1000
+G1 X30.0 Y22.0
+M3 S0
+G0 X32.0 Y22.0
+M3 S-1000
+G1 X32.0 Y22.0
+M3 S-1000
+G1 X50.0 Y22.0
+M3 S0
+G0 X63.0 Y22.0
+M3 S-1000
+G1 X63.0 Y22.0
+M3 S-1000
+G1 X72.0 Y22.0
+M3 S0
+G0 X76.0 Y22.0
+M3 S-1000
+G1 X76.0 Y22.0
+M3 S-1000
+G1 X86.0 Y22.0
+M3 S0
+G0 X94.0 Y22.0
+M3 S-1000
+G1 X94.0 Y22.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y23.0
+M3 S-1000
+G1 X94.0 Y23.0
+M3 S0
+G0 X85.0 Y23.0
+M3 S-1000
+G1 X85.0 Y23.0
+M3 S-1000
+G1 X84.0 Y23.0
+M3 S0
+G0 X80.0 Y23.0
+M3 S-1000
+G1 X80.0 Y23.0
+M3 S-1000
+G1 X73.0 Y23.0
+M3 S0
+G0 X71.0 Y23.0
+M3 S-1000
+G1 X71.0 Y23.0
+M3 S-1000
+G1 X60.0 Y23.0
+M3 S0
+G0 X46.0 Y23.0
+M3 S-1000
+G1 X46.0 Y23.0
+M3 S-1000
+G1 X30.0 Y23.0
+M3 S0
+G0 X29.0 Y23.0
+M3 S-1000
+G1 X29.0 Y23.0
+M3 S-1000
+G1 X28.0 Y23.0
+M3 S0
+G0 X27.0 Y23.0
+M3 S-1000
+G1 X27.0 Y23.0
+M3 S-1000
+G1 X26.0 Y23.0
+M3 S0
+G0 X25.0 Y23.0
+M3 S-1000
+G1 X25.0 Y23.0
+M3 S-1000
+G1 X22.0 Y23.0
+M3 S0
+G0 X20.0 Y23.0
+M3 S-1000
+G1 X20.0 Y23.0
+M3 S-1000
+G1 X12.0 Y23.0
+M3 S0
+G0 X11.0 Y23.0
+M3 S-1000
+G1 X11.0 Y23.0
+M3 S-1000
+G1 X10.0 Y23.0
+M3 S0
+G0 X4.0 Y23.0
+M3 S-1000
+G1 X4.0 Y23.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y24.0
+M3 S-1000
+G1 X5.0 Y24.0
+M3 S0
+G0 X11.0 Y24.0
+M3 S-1000
+G1 X11.0 Y24.0
+M3 S-1000
+G1 X13.0 Y24.0
+M3 S0
+G0 X14.0 Y24.0
+M3 S-1000
+G1 X14.0 Y24.0
+M3 S-1000
+G1 X21.0 Y24.0
+M3 S0
+G0 X22.0 Y24.0
+M3 S-1000
+G1 X22.0 Y24.0
+M3 S-1000
+G1 X27.0 Y24.0
+M3 S0
+G0 X30.0 Y24.0
+M3 S-1000
+G1 X30.0 Y24.0
+M3 S-1000
+G1 X52.0 Y24.0
+M3 S0
+G0 X59.0 Y24.0
+M3 S-1000
+G1 X59.0 Y24.0
+M3 S-1000
+G1 X72.0 Y24.0
+M3 S0
+G0 X74.0 Y24.0
+M3 S-1000
+G1 X74.0 Y24.0
+M3 S-1000
+G1 X76.0 Y24.0
+M3 S0
+G0 X85.0 Y24.0
+M3 S-1000
+G1 X85.0 Y24.0
+M3 S-1000
+G1 X87.0 Y24.0
+M3 S0
+G0 X96.0 Y24.0
+M3 S-1000
+G1 X96.0 Y24.0
+M3 S-1000
+M5 S0
+G0 X86.0 Y25.0
+M3 S-1000
+G1 X86.0 Y25.0
+M3 S-1000
+G1 X85.0 Y25.0
+M3 S0
+G0 X71.0 Y25.0
+M3 S-1000
+G1 X71.0 Y25.0
+M3 S-1000
+G1 X59.0 Y25.0
+M3 S0
+G0 X49.0 Y25.0
+M3 S-1000
+G1 X49.0 Y25.0
+M3 S-1000
+G1 X27.0 Y25.0
+M3 S0
+G0 X26.0 Y25.0
+M3 S-1000
+G1 X26.0 Y25.0
+M3 S-1000
+G1 X25.0 Y25.0
+M3 S0
+G0 X24.0 Y25.0
+M3 S-1000
+G1 X24.0 Y25.0
+M3 S-1000
+G1 X10.0 Y25.0
+M3 S0
+G0 X3.0 Y25.0
+M3 S-1000
+G1 X3.0 Y25.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y26.0
+M3 S-1000
+G1 X5.0 Y26.0
+M3 S0
+G0 X11.0 Y26.0
+M3 S-1000
+G1 X11.0 Y26.0
+M3 S-1000
+G1 X23.0 Y26.0
+M3 S0
+G0 X24.0 Y26.0
+M3 S-1000
+G1 X24.0 Y26.0
+M3 S-1000
+G1 X27.0 Y26.0
+M3 S0
+G0 X28.0 Y26.0
+M3 S-1000
+G1 X28.0 Y26.0
+M3 S-1000
+G1 X29.0 Y26.0
+M3 S0
+G0 X30.0 Y26.0
+M3 S-1000
+G1 X30.0 Y26.0
+M3 S-1000
+G1 X49.0 Y26.0
+M3 S0
+G0 X60.0 Y26.0
+M3 S-1000
+G1 X60.0 Y26.0
+M3 S-1000
+G1 X72.0 Y26.0
+M3 S0
+G0 X86.0 Y26.0
+M3 S-1000
+G1 X86.0 Y26.0
+M3 S-1000
+G1 X87.0 Y26.0
+M3 S0
+M5 S0
+G0 X86.0 Y27.0
+M3 S-1000
+G1 X86.0 Y27.0
+M3 S-1000
+G1 X85.0 Y27.0
+M3 S0
+G0 X71.0 Y27.0
+M3 S-1000
+G1 X71.0 Y27.0
+M3 S-1000
+G1 X59.0 Y27.0
+M3 S0
+G0 X48.0 Y27.0
+M3 S-1000
+G1 X48.0 Y27.0
+M3 S-1000
+G1 X29.0 Y27.0
+M3 S0
+G0 X27.0 Y27.0
+M3 S-1000
+G1 X27.0 Y27.0
+M3 S-1000
+G1 X23.0 Y27.0
+M3 S0
+G0 X22.0 Y27.0
+M3 S-1000
+G1 X22.0 Y27.0
+M3 S-1000
+G1 X21.0 Y27.0
+M3 S0
+G0 X20.0 Y27.0
+M3 S-1000
+G1 X20.0 Y27.0
+M3 S-1000
+G1 X13.0 Y27.0
+M3 S0
+G0 X12.0 Y27.0
+M3 S-1000
+G1 X12.0 Y27.0
+M3 S-1000
+G1 X10.0 Y27.0
+M3 S0
+G0 X4.0 Y27.0
+M3 S-1000
+G1 X4.0 Y27.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y28.0
+M3 S-1000
+G1 X5.0 Y28.0
+M3 S0
+G0 X11.0 Y28.0
+M3 S-1000
+G1 X11.0 Y28.0
+M3 S-1000
+G1 X13.0 Y28.0
+M3 S0
+G0 X14.0 Y28.0
+M3 S-1000
+G1 X14.0 Y28.0
+M3 S-1000
+G1 X21.0 Y28.0
+M3 S0
+G0 X22.0 Y28.0
+M3 S-1000
+G1 X22.0 Y28.0
+M3 S-1000
+G1 X28.0 Y28.0
+M3 S0
+G0 X31.0 Y28.0
+M3 S-1000
+G1 X31.0 Y28.0
+M3 S-1000
+G1 X48.0 Y28.0
+M3 S0
+G0 X55.0 Y28.0
+M3 S-1000
+G1 X55.0 Y28.0
+M3 S-1000
+G1 X58.0 Y28.0
+M3 S0
+G0 X61.0 Y28.0
+M3 S-1000
+G1 X61.0 Y28.0
+M3 S-1000
+G1 X72.0 Y28.0
+M3 S0
+G0 X86.0 Y28.0
+M3 S-1000
+G1 X86.0 Y28.0
+M3 S-1000
+G1 X87.0 Y28.0
+M3 S0
+M5 S0
+G0 X86.0 Y29.0
+M3 S-1000
+G1 X86.0 Y29.0
+M3 S-1000
+G1 X85.0 Y29.0
+M3 S0
+G0 X71.0 Y29.0
+M3 S-1000
+G1 X71.0 Y29.0
+M3 S-1000
+G1 X60.0 Y29.0
+M3 S0
+G0 X53.0 Y29.0
+M3 S-1000
+G1 X53.0 Y29.0
+M3 S-1000
+G1 X52.0 Y29.0
+M3 S0
+G0 X48.0 Y29.0
+M3 S-1000
+G1 X48.0 Y29.0
+M3 S-1000
+G1 X47.0 Y29.0
+M3 S0
+G0 X46.0 Y29.0
+M3 S-1000
+G1 X46.0 Y29.0
+M3 S-1000
+G1 X31.0 Y29.0
+M3 S0
+G0 X30.0 Y29.0
+M3 S-1000
+G1 X30.0 Y29.0
+M3 S-1000
+G1 X29.0 Y29.0
+M3 S0
+G0 X26.0 Y29.0
+M3 S-1000
+G1 X26.0 Y29.0
+M3 S-1000
+G1 X22.0 Y29.0
+M3 S0
+G0 X20.0 Y29.0
+M3 S-1000
+G1 X20.0 Y29.0
+M3 S-1000
+G1 X11.0 Y29.0
+M3 S0
+G0 X4.0 Y29.0
+M3 S-1000
+G1 X4.0 Y29.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y30.0
+M3 S-1000
+G1 X5.0 Y30.0
+M3 S0
+G0 X11.0 Y30.0
+M3 S-1000
+G1 X11.0 Y30.0
+M3 S-1000
+G1 X12.0 Y30.0
+M3 S0
+G0 X13.0 Y30.0
+M3 S-1000
+G1 X13.0 Y30.0
+M3 S-1000
+G1 X14.0 Y30.0
+M3 S0
+G0 X15.0 Y30.0
+M3 S-1000
+G1 X15.0 Y30.0
+M3 S-1000
+G1 X21.0 Y30.0
+M3 S0
+G0 X22.0 Y30.0
+M3 S-1000
+G1 X22.0 Y30.0
+M3 S-1000
+G1 X28.0 Y30.0
+M3 S0
+G0 X29.0 Y30.0
+M3 S-1000
+G1 X29.0 Y30.0
+M3 S-1000
+G1 X30.0 Y30.0
+M3 S0
+G0 X31.0 Y30.0
+M3 S-1000
+G1 X31.0 Y30.0
+M3 S-1000
+G1 X32.0 Y30.0
+M3 S0
+G0 X33.0 Y30.0
+M3 S-1000
+G1 X33.0 Y30.0
+M3 S-1000
+G1 X47.0 Y30.0
+M3 S0
+G0 X52.0 Y30.0
+M3 S-1000
+G1 X52.0 Y30.0
+M3 S-1000
+G1 X54.0 Y30.0
+M3 S0
+G0 X62.0 Y30.0
+M3 S-1000
+G1 X62.0 Y30.0
+M3 S-1000
+G1 X72.0 Y30.0
+M3 S0
+G0 X86.0 Y30.0
+M3 S-1000
+G1 X86.0 Y30.0
+M3 S-1000
+G1 X87.0 Y30.0
+M3 S0
+M5 S0
+G0 X71.0 Y31.0
+M3 S-1000
+G1 X71.0 Y31.0
+M3 S-1000
+G1 X62.0 Y31.0
+M3 S0
+G0 X60.0 Y31.0
+M3 S-1000
+G1 X60.0 Y31.0
+M3 S-1000
+G1 X50.0 Y31.0
+M3 S0
+G0 X44.0 Y31.0
+M3 S-1000
+G1 X44.0 Y31.0
+M3 S-1000
+G1 X33.0 Y31.0
+M3 S0
+G0 X32.0 Y31.0
+M3 S-1000
+G1 X32.0 Y31.0
+M3 S-1000
+G1 X30.0 Y31.0
+M3 S0
+G0 X27.0 Y31.0
+M3 S-1000
+G1 X27.0 Y31.0
+M3 S-1000
+G1 X15.0 Y31.0
+M3 S0
+G0 X14.0 Y31.0
+M3 S-1000
+G1 X14.0 Y31.0
+M3 S-1000
+G1 X10.0 Y31.0
+M3 S0
+G0 X4.0 Y31.0
+M3 S-1000
+G1 X4.0 Y31.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y32.0
+M3 S-1000
+G1 X5.0 Y32.0
+M3 S0
+G0 X11.0 Y32.0
+M3 S-1000
+G1 X11.0 Y32.0
+M3 S-1000
+G1 X29.0 Y32.0
+M3 S0
+G0 X32.0 Y32.0
+M3 S-1000
+G1 X32.0 Y32.0
+M3 S-1000
+G1 X46.0 Y32.0
+M3 S0
+G0 X61.0 Y32.0
+M3 S-1000
+G1 X61.0 Y32.0
+M3 S-1000
+G1 X62.0 Y32.0
+M3 S0
+G0 X63.0 Y32.0
+M3 S-1000
+G1 X63.0 Y32.0
+M3 S-1000
+G1 X72.0 Y32.0
+M3 S0
+G0 X73.0 Y32.0
+M3 S-1000
+G1 X73.0 Y32.0
+M3 S-1000
+G1 X74.0 Y32.0
+M3 S0
+M5 S0
+G0 X73.0 Y33.0
+M3 S-1000
+G1 X73.0 Y33.0
+M3 S-1000
+G1 X72.0 Y33.0
+M3 S0
+G0 X71.0 Y33.0
+M3 S-1000
+G1 X71.0 Y33.0
+M3 S-1000
+G1 X62.0 Y33.0
+M3 S0
+G0 X44.0 Y33.0
+M3 S-1000
+G1 X44.0 Y33.0
+M3 S-1000
+G1 X34.0 Y33.0
+M3 S0
+G0 X33.0 Y33.0
+M3 S-1000
+G1 X33.0 Y33.0
+M3 S-1000
+G1 X32.0 Y33.0
+M3 S0
+G0 X30.0 Y33.0
+M3 S-1000
+G1 X30.0 Y33.0
+M3 S-1000
+G1 X27.0 Y33.0
+M3 S0
+G0 X24.0 Y33.0
+M3 S-1000
+G1 X24.0 Y33.0
+M3 S-1000
+G1 X14.0 Y33.0
+M3 S0
+G0 X13.0 Y33.0
+M3 S-1000
+G1 X13.0 Y33.0
+M3 S-1000
+G1 X10.0 Y33.0
+M3 S0
+G0 X4.0 Y33.0
+M3 S-1000
+G1 X4.0 Y33.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y34.0
+M3 S-1000
+G1 X5.0 Y34.0
+M3 S0
+G0 X11.0 Y34.0
+M3 S-1000
+G1 X11.0 Y34.0
+M3 S-1000
+G1 X15.0 Y34.0
+M3 S0
+G0 X16.0 Y34.0
+M3 S-1000
+G1 X16.0 Y34.0
+M3 S-1000
+G1 X31.0 Y34.0
+M3 S0
+G0 X33.0 Y34.0
+M3 S-1000
+G1 X33.0 Y34.0
+M3 S-1000
+G1 X35.0 Y34.0
+M3 S0
+G0 X36.0 Y34.0
+M3 S-1000
+G1 X36.0 Y34.0
+M3 S-1000
+G1 X45.0 Y34.0
+M3 S0
+G0 X64.0 Y34.0
+M3 S-1000
+G1 X64.0 Y34.0
+M3 S-1000
+G1 X72.0 Y34.0
+M3 S0
+G0 X73.0 Y34.0
+M3 S-1000
+G1 X73.0 Y34.0
+M3 S-1000
+G1 X74.0 Y34.0
+M3 S0
+M5 S0
+G0 X87.0 Y35.0
+M3 S-1000
+G1 X87.0 Y35.0
+M3 S-1000
+G1 X86.0 Y35.0
+M3 S0
+G0 X74.0 Y35.0
+M3 S-1000
+G1 X74.0 Y35.0
+M3 S-1000
+G1 X72.0 Y35.0
+M3 S0
+G0 X71.0 Y35.0
+M3 S-1000
+G1 X71.0 Y35.0
+M3 S-1000
+G1 X63.0 Y35.0
+M3 S0
+G0 X44.0 Y35.0
+M3 S-1000
+G1 X44.0 Y35.0
+M3 S-1000
+G1 X35.0 Y35.0
+M3 S0
+G0 X34.0 Y35.0
+M3 S-1000
+G1 X34.0 Y35.0
+M3 S-1000
+G1 X33.0 Y35.0
+M3 S0
+G0 X32.0 Y35.0
+M3 S-1000
+G1 X32.0 Y35.0
+M3 S-1000
+G1 X25.0 Y35.0
+M3 S0
+G0 X23.0 Y35.0
+M3 S-1000
+G1 X23.0 Y35.0
+M3 S-1000
+G1 X10.0 Y35.0
+M3 S0
+G0 X4.0 Y35.0
+M3 S-1000
+G1 X4.0 Y35.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y36.0
+M3 S-1000
+G1 X5.0 Y36.0
+M3 S0
+G0 X11.0 Y36.0
+M3 S-1000
+G1 X11.0 Y36.0
+M3 S-1000
+G1 X20.0 Y36.0
+M3 S0
+G0 X21.0 Y36.0
+M3 S-1000
+G1 X21.0 Y36.0
+M3 S-1000
+G1 X24.0 Y36.0
+M3 S0
+G0 X26.0 Y36.0
+M3 S-1000
+G1 X26.0 Y36.0
+M3 S-1000
+G1 X34.0 Y36.0
+M3 S0
+G0 X37.0 Y36.0
+M3 S-1000
+G1 X37.0 Y36.0
+M3 S-1000
+G1 X45.0 Y36.0
+M3 S0
+G0 X55.0 Y36.0
+M3 S-1000
+G1 X55.0 Y36.0
+M3 S-1000
+G1 X60.0 Y36.0
+M3 S0
+G0 X65.0 Y36.0
+M3 S-1000
+G1 X65.0 Y36.0
+M3 S-1000
+G1 X72.0 Y36.0
+M3 S0
+G0 X73.0 Y36.0
+M3 S-1000
+G1 X73.0 Y36.0
+M3 S-1000
+G1 X75.0 Y36.0
+M3 S0
+M5 S0
+G0 X74.0 Y37.0
+M3 S-1000
+G1 X74.0 Y37.0
+M3 S-1000
+G1 X72.0 Y37.0
+M3 S0
+G0 X70.0 Y37.0
+M3 S-1000
+G1 X70.0 Y37.0
+M3 S-1000
+G1 X64.0 Y37.0
+M3 S0
+G0 X58.0 Y37.0
+M3 S-1000
+G1 X58.0 Y37.0
+M3 S-1000
+G1 X57.0 Y37.0
+M3 S0
+G0 X55.0 Y37.0
+M3 S-1000
+G1 X55.0 Y37.0
+M3 S-1000
+G1 X54.0 Y37.0
+M3 S0
+G0 X44.0 Y37.0
+M3 S-1000
+G1 X44.0 Y37.0
+M3 S-1000
+G1 X37.0 Y37.0
+M3 S0
+G0 X34.0 Y37.0
+M3 S-1000
+G1 X34.0 Y37.0
+M3 S-1000
+G1 X31.0 Y37.0
+M3 S0
+G0 X30.0 Y37.0
+M3 S-1000
+G1 X30.0 Y37.0
+M3 S-1000
+G1 X10.0 Y37.0
+M3 S0
+G0 X4.0 Y37.0
+M3 S-1000
+G1 X4.0 Y37.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y38.0
+M3 S-1000
+G1 X5.0 Y38.0
+M3 S0
+G0 X11.0 Y38.0
+M3 S-1000
+G1 X11.0 Y38.0
+M3 S-1000
+G1 X15.0 Y38.0
+M3 S0
+G0 X16.0 Y38.0
+M3 S-1000
+G1 X16.0 Y38.0
+M3 S-1000
+G1 X21.0 Y38.0
+M3 S0
+G0 X22.0 Y38.0
+M3 S-1000
+G1 X22.0 Y38.0
+M3 S-1000
+G1 X23.0 Y38.0
+M3 S0
+G0 X24.0 Y38.0
+M3 S-1000
+G1 X24.0 Y38.0
+M3 S-1000
+G1 X36.0 Y38.0
+M3 S0
+G0 X38.0 Y38.0
+M3 S-1000
+G1 X38.0 Y38.0
+M3 S-1000
+G1 X45.0 Y38.0
+M3 S0
+G0 X55.0 Y38.0
+M3 S-1000
+G1 X55.0 Y38.0
+M3 S-1000
+G1 X56.0 Y38.0
+M3 S0
+G0 X57.0 Y38.0
+M3 S-1000
+G1 X57.0 Y38.0
+M3 S-1000
+G1 X59.0 Y38.0
+M3 S0
+G0 X65.0 Y38.0
+M3 S-1000
+G1 X65.0 Y38.0
+M3 S-1000
+G1 X71.0 Y38.0
+M3 S0
+G0 X73.0 Y38.0
+M3 S-1000
+G1 X73.0 Y38.0
+M3 S-1000
+G1 X75.0 Y38.0
+M3 S0
+G0 X88.0 Y38.0
+M3 S-1000
+G1 X88.0 Y38.0
+M3 S-1000
+G1 X89.0 Y38.0
+M3 S0
+M5 S0
+G0 X75.0 Y39.0
+M3 S-1000
+G1 X75.0 Y39.0
+M3 S-1000
+G1 X72.0 Y39.0
+M3 S0
+G0 X70.0 Y39.0
+M3 S-1000
+G1 X70.0 Y39.0
+M3 S-1000
+G1 X64.0 Y39.0
+M3 S0
+G0 X58.0 Y39.0
+M3 S-1000
+G1 X58.0 Y39.0
+M3 S-1000
+G1 X56.0 Y39.0
+M3 S0
+G0 X45.0 Y39.0
+M3 S-1000
+G1 X45.0 Y39.0
+M3 S-1000
+G1 X38.0 Y39.0
+M3 S0
+G0 X35.0 Y39.0
+M3 S-1000
+G1 X35.0 Y39.0
+M3 S-1000
+G1 X32.0 Y39.0
+M3 S0
+G0 X31.0 Y39.0
+M3 S-1000
+G1 X31.0 Y39.0
+M3 S-1000
+G1 X29.0 Y39.0
+M3 S0
+G0 X28.0 Y39.0
+M3 S-1000
+G1 X28.0 Y39.0
+M3 S-1000
+G1 X24.0 Y39.0
+M3 S0
+G0 X23.0 Y39.0
+M3 S-1000
+G1 X23.0 Y39.0
+M3 S-1000
+G1 X14.0 Y39.0
+M3 S0
+G0 X13.0 Y39.0
+M3 S-1000
+G1 X13.0 Y39.0
+M3 S-1000
+G1 X10.0 Y39.0
+M3 S0
+G0 X4.0 Y39.0
+M3 S-1000
+G1 X4.0 Y39.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y40.0
+M3 S-1000
+G1 X5.0 Y40.0
+M3 S0
+G0 X11.0 Y40.0
+M3 S-1000
+G1 X11.0 Y40.0
+M3 S-1000
+G1 X13.0 Y40.0
+M3 S0
+G0 X14.0 Y40.0
+M3 S-1000
+G1 X14.0 Y40.0
+M3 S-1000
+G1 X16.0 Y40.0
+M3 S0
+G0 X17.0 Y40.0
+M3 S-1000
+G1 X17.0 Y40.0
+M3 S-1000
+G1 X23.0 Y40.0
+M3 S0
+G0 X24.0 Y40.0
+M3 S-1000
+G1 X24.0 Y40.0
+M3 S-1000
+G1 X32.0 Y40.0
+M3 S0
+G0 X34.0 Y40.0
+M3 S-1000
+G1 X34.0 Y40.0
+M3 S-1000
+G1 X38.0 Y40.0
+M3 S0
+G0 X40.0 Y40.0
+M3 S-1000
+G1 X40.0 Y40.0
+M3 S-1000
+G1 X44.0 Y40.0
+M3 S0
+G0 X57.0 Y40.0
+M3 S-1000
+G1 X57.0 Y40.0
+M3 S-1000
+G1 X58.0 Y40.0
+M3 S0
+G0 X66.0 Y40.0
+M3 S-1000
+G1 X66.0 Y40.0
+M3 S-1000
+G1 X71.0 Y40.0
+M3 S0
+G0 X73.0 Y40.0
+M3 S-1000
+G1 X73.0 Y40.0
+M3 S-1000
+G1 X76.0 Y40.0
+M3 S0
+M5 S0
+G0 X75.0 Y41.0
+M3 S-1000
+G1 X75.0 Y41.0
+M3 S-1000
+G1 X71.0 Y41.0
+M3 S0
+G0 X70.0 Y41.0
+M3 S-1000
+G1 X70.0 Y41.0
+M3 S-1000
+G1 X65.0 Y41.0
+M3 S0
+G0 X57.0 Y41.0
+M3 S-1000
+G1 X57.0 Y41.0
+M3 S-1000
+G1 X56.0 Y41.0
+M3 S0
+G0 X43.0 Y41.0
+M3 S-1000
+G1 X43.0 Y41.0
+M3 S-1000
+G1 X39.0 Y41.0
+M3 S0
+G0 X37.0 Y41.0
+M3 S-1000
+G1 X37.0 Y41.0
+M3 S-1000
+G1 X33.0 Y41.0
+M3 S0
+G0 X31.0 Y41.0
+M3 S-1000
+G1 X31.0 Y41.0
+M3 S-1000
+G1 X10.0 Y41.0
+M3 S0
+G0 X4.0 Y41.0
+M3 S-1000
+G1 X4.0 Y41.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y42.0
+M3 S-1000
+G1 X5.0 Y42.0
+M3 S0
+G0 X11.0 Y42.0
+M3 S-1000
+G1 X11.0 Y42.0
+M3 S-1000
+G1 X14.0 Y42.0
+M3 S0
+G0 X17.0 Y42.0
+M3 S-1000
+G1 X17.0 Y42.0
+M3 S-1000
+G1 X24.0 Y42.0
+M3 S0
+G0 X25.0 Y42.0
+M3 S-1000
+G1 X25.0 Y42.0
+M3 S-1000
+G1 X32.0 Y42.0
+M3 S0
+G0 X33.0 Y42.0
+M3 S-1000
+G1 X33.0 Y42.0
+M3 S-1000
+G1 X39.0 Y42.0
+M3 S0
+G0 X41.0 Y42.0
+M3 S-1000
+G1 X41.0 Y42.0
+M3 S-1000
+G1 X44.0 Y42.0
+M3 S0
+G0 X58.0 Y42.0
+M3 S-1000
+G1 X58.0 Y42.0
+M3 S-1000
+G1 X59.0 Y42.0
+M3 S0
+G0 X65.0 Y42.0
+M3 S-1000
+G1 X65.0 Y42.0
+M3 S-1000
+G1 X71.0 Y42.0
+M3 S0
+G0 X72.0 Y42.0
+M3 S-1000
+G1 X72.0 Y42.0
+M3 S-1000
+G1 X77.0 Y42.0
+M3 S0
+M5 S0
+G0 X76.0 Y43.0
+M3 S-1000
+G1 X76.0 Y43.0
+M3 S-1000
+G1 X71.0 Y43.0
+M3 S0
+G0 X70.0 Y43.0
+M3 S-1000
+G1 X70.0 Y43.0
+M3 S-1000
+G1 X64.0 Y43.0
+M3 S0
+G0 X44.0 Y43.0
+M3 S-1000
+G1 X44.0 Y43.0
+M3 S-1000
+G1 X41.0 Y43.0
+M3 S0
+G0 X38.0 Y43.0
+M3 S-1000
+G1 X38.0 Y43.0
+M3 S-1000
+G1 X31.0 Y43.0
+M3 S0
+G0 X30.0 Y43.0
+M3 S-1000
+G1 X30.0 Y43.0
+M3 S-1000
+G1 X23.0 Y43.0
+M3 S0
+G0 X22.0 Y43.0
+M3 S-1000
+G1 X22.0 Y43.0
+M3 S-1000
+G1 X19.0 Y43.0
+M3 S0
+G0 X17.0 Y43.0
+M3 S-1000
+G1 X17.0 Y43.0
+M3 S-1000
+G1 X10.0 Y43.0
+M3 S0
+G0 X4.0 Y43.0
+M3 S-1000
+G1 X4.0 Y43.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y44.0
+M3 S-1000
+G1 X5.0 Y44.0
+M3 S0
+G0 X11.0 Y44.0
+M3 S-1000
+G1 X11.0 Y44.0
+M3 S-1000
+G1 X17.0 Y44.0
+M3 S0
+G0 X18.0 Y44.0
+M3 S-1000
+G1 X18.0 Y44.0
+M3 S-1000
+G1 X31.0 Y44.0
+M3 S0
+G0 X32.0 Y44.0
+M3 S-1000
+G1 X32.0 Y44.0
+M3 S-1000
+G1 X40.0 Y44.0
+M3 S0
+G0 X43.0 Y44.0
+M3 S-1000
+G1 X43.0 Y44.0
+M3 S-1000
+G1 X45.0 Y44.0
+M3 S0
+G0 X55.0 Y44.0
+M3 S-1000
+G1 X55.0 Y44.0
+M3 S-1000
+G1 X56.0 Y44.0
+M3 S0
+G0 X64.0 Y44.0
+M3 S-1000
+G1 X64.0 Y44.0
+M3 S-1000
+G1 X71.0 Y44.0
+M3 S0
+G0 X72.0 Y44.0
+M3 S-1000
+G1 X72.0 Y44.0
+M3 S-1000
+G1 X77.0 Y44.0
+M3 S0
+G0 X92.0 Y44.0
+M3 S-1000
+G1 X92.0 Y44.0
+M3 S-1000
+G1 X93.0 Y44.0
+M3 S0
+M5 S0
+G0 X76.0 Y45.0
+M3 S-1000
+G1 X76.0 Y45.0
+M3 S-1000
+G1 X71.0 Y45.0
+M3 S0
+G0 X70.0 Y45.0
+M3 S-1000
+G1 X70.0 Y45.0
+M3 S-1000
+G1 X62.0 Y45.0
+M3 S0
+G0 X57.0 Y45.0
+M3 S-1000
+G1 X57.0 Y45.0
+M3 S-1000
+G1 X56.0 Y45.0
+M3 S0
+G0 X55.0 Y45.0
+M3 S-1000
+G1 X55.0 Y45.0
+M3 S-1000
+G1 X54.0 Y45.0
+M3 S0
+G0 X50.0 Y45.0
+M3 S-1000
+G1 X50.0 Y45.0
+M3 S-1000
+G1 X49.0 Y45.0
+M3 S0
+G0 X44.0 Y45.0
+M3 S-1000
+G1 X44.0 Y45.0
+M3 S-1000
+G1 X43.0 Y45.0
+M3 S0
+G0 X38.0 Y45.0
+M3 S-1000
+G1 X38.0 Y45.0
+M3 S-1000
+G1 X25.0 Y45.0
+M3 S0
+G0 X24.0 Y45.0
+M3 S-1000
+G1 X24.0 Y45.0
+M3 S-1000
+G1 X19.0 Y45.0
+M3 S0
+G0 X17.0 Y45.0
+M3 S-1000
+G1 X17.0 Y45.0
+M3 S-1000
+G1 X10.0 Y45.0
+M3 S0
+G0 X4.0 Y45.0
+M3 S-1000
+G1 X4.0 Y45.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y46.0
+M3 S-1000
+G1 X5.0 Y46.0
+M3 S0
+G0 X11.0 Y46.0
+M3 S-1000
+G1 X11.0 Y46.0
+M3 S-1000
+G1 X20.0 Y46.0
+M3 S0
+G0 X22.0 Y46.0
+M3 S-1000
+G1 X22.0 Y46.0
+M3 S-1000
+G1 X31.0 Y46.0
+M3 S0
+G0 X32.0 Y46.0
+M3 S-1000
+G1 X32.0 Y46.0
+M3 S-1000
+G1 X41.0 Y46.0
+M3 S0
+G0 X45.0 Y46.0
+M3 S-1000
+G1 X45.0 Y46.0
+M3 S-1000
+G1 X47.0 Y46.0
+M3 S0
+G0 X48.0 Y46.0
+M3 S-1000
+G1 X48.0 Y46.0
+M3 S-1000
+G1 X50.0 Y46.0
+M3 S0
+G0 X56.0 Y46.0
+M3 S-1000
+G1 X56.0 Y46.0
+M3 S-1000
+G1 X57.0 Y46.0
+M3 S0
+G0 X61.0 Y46.0
+M3 S-1000
+G1 X61.0 Y46.0
+M3 S-1000
+G1 X62.0 Y46.0
+M3 S0
+G0 X65.0 Y46.0
+M3 S-1000
+G1 X65.0 Y46.0
+M3 S-1000
+G1 X71.0 Y46.0
+M3 S0
+G0 X72.0 Y46.0
+M3 S-1000
+G1 X72.0 Y46.0
+M3 S-1000
+G1 X78.0 Y46.0
+M3 S0
+M5 S0
+G0 X77.0 Y47.0
+M3 S-1000
+G1 X77.0 Y47.0
+M3 S-1000
+G1 X71.0 Y47.0
+M3 S0
+G0 X70.0 Y47.0
+M3 S-1000
+G1 X70.0 Y47.0
+M3 S-1000
+G1 X64.0 Y47.0
+M3 S0
+G0 X63.0 Y47.0
+M3 S-1000
+G1 X63.0 Y47.0
+M3 S-1000
+G1 X60.0 Y47.0
+M3 S0
+G0 X56.0 Y47.0
+M3 S-1000
+G1 X56.0 Y47.0
+M3 S-1000
+G1 X53.0 Y47.0
+M3 S0
+G0 X51.0 Y47.0
+M3 S-1000
+G1 X51.0 Y47.0
+M3 S-1000
+G1 X45.0 Y47.0
+M3 S0
+G0 X40.0 Y47.0
+M3 S-1000
+G1 X40.0 Y47.0
+M3 S-1000
+G1 X22.0 Y47.0
+M3 S0
+G0 X20.0 Y47.0
+M3 S-1000
+G1 X20.0 Y47.0
+M3 S-1000
+G1 X10.0 Y47.0
+M3 S0
+G0 X4.0 Y47.0
+M3 S-1000
+G1 X4.0 Y47.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y48.0
+M3 S-1000
+G1 X5.0 Y48.0
+M3 S0
+G0 X11.0 Y48.0
+M3 S-1000
+G1 X11.0 Y48.0
+M3 S-1000
+G1 X20.0 Y48.0
+M3 S0
+G0 X21.0 Y48.0
+M3 S-1000
+G1 X21.0 Y48.0
+M3 S-1000
+G1 X22.0 Y48.0
+M3 S0
+G0 X24.0 Y48.0
+M3 S-1000
+G1 X24.0 Y48.0
+M3 S-1000
+G1 X27.0 Y48.0
+M3 S0
+G0 X28.0 Y48.0
+M3 S-1000
+G1 X28.0 Y48.0
+M3 S-1000
+G1 X31.0 Y48.0
+M3 S0
+G0 X32.0 Y48.0
+M3 S-1000
+G1 X32.0 Y48.0
+M3 S-1000
+G1 X41.0 Y48.0
+M3 S0
+G0 X46.0 Y48.0
+M3 S-1000
+G1 X46.0 Y48.0
+M3 S-1000
+G1 X52.0 Y48.0
+M3 S0
+G0 X53.0 Y48.0
+M3 S-1000
+G1 X53.0 Y48.0
+M3 S-1000
+G1 X55.0 Y48.0
+M3 S0
+G0 X61.0 Y48.0
+M3 S-1000
+G1 X61.0 Y48.0
+M3 S-1000
+G1 X64.0 Y48.0
+M3 S0
+G0 X65.0 Y48.0
+M3 S-1000
+G1 X65.0 Y48.0
+M3 S-1000
+G1 X70.0 Y48.0
+M3 S0
+G0 X71.0 Y48.0
+M3 S-1000
+G1 X71.0 Y48.0
+M3 S-1000
+G1 X78.0 Y48.0
+M3 S0
+M5 S0
+G0 X78.0 Y49.0
+M3 S-1000
+G1 X78.0 Y49.0
+M3 S-1000
+G1 X70.0 Y49.0
+M3 S0
+G0 X69.0 Y49.0
+M3 S-1000
+G1 X69.0 Y49.0
+M3 S-1000
+G1 X62.0 Y49.0
+M3 S0
+G0 X56.0 Y49.0
+M3 S-1000
+G1 X56.0 Y49.0
+M3 S-1000
+G1 X55.0 Y49.0
+M3 S0
+G0 X54.0 Y49.0
+M3 S-1000
+G1 X54.0 Y49.0
+M3 S-1000
+G1 X46.0 Y49.0
+M3 S0
+G0 X42.0 Y49.0
+M3 S-1000
+G1 X42.0 Y49.0
+M3 S-1000
+G1 X29.0 Y49.0
+M3 S0
+G0 X28.0 Y49.0
+M3 S-1000
+G1 X28.0 Y49.0
+M3 S-1000
+G1 X25.0 Y49.0
+M3 S0
+G0 X19.0 Y49.0
+M3 S-1000
+G1 X19.0 Y49.0
+M3 S-1000
+G1 X10.0 Y49.0
+M3 S0
+G0 X4.0 Y49.0
+M3 S-1000
+G1 X4.0 Y49.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y50.0
+M3 S-1000
+G1 X5.0 Y50.0
+M3 S0
+G0 X11.0 Y50.0
+M3 S-1000
+G1 X11.0 Y50.0
+M3 S-1000
+G1 X22.0 Y50.0
+M3 S0
+G0 X25.0 Y50.0
+M3 S-1000
+G1 X25.0 Y50.0
+M3 S-1000
+G1 X42.0 Y50.0
+M3 S0
+G0 X49.0 Y50.0
+M3 S-1000
+G1 X49.0 Y50.0
+M3 S-1000
+G1 X50.0 Y50.0
+M3 S0
+G0 X51.0 Y50.0
+M3 S-1000
+G1 X51.0 Y50.0
+M3 S-1000
+G1 X52.0 Y50.0
+M3 S0
+G0 X53.0 Y50.0
+M3 S-1000
+G1 X53.0 Y50.0
+M3 S-1000
+G1 X57.0 Y50.0
+M3 S0
+G0 X63.0 Y50.0
+M3 S-1000
+G1 X63.0 Y50.0
+M3 S-1000
+G1 X70.0 Y50.0
+M3 S0
+G0 X71.0 Y50.0
+M3 S-1000
+G1 X71.0 Y50.0
+M3 S-1000
+G1 X79.0 Y50.0
+M3 S0
+M5 S0
+G0 X78.0 Y51.0
+M3 S-1000
+G1 X78.0 Y51.0
+M3 S-1000
+G1 X70.0 Y51.0
+M3 S0
+G0 X69.0 Y51.0
+M3 S-1000
+G1 X69.0 Y51.0
+M3 S-1000
+G1 X65.0 Y51.0
+M3 S0
+G0 X54.0 Y51.0
+M3 S-1000
+G1 X54.0 Y51.0
+M3 S-1000
+G1 X51.0 Y51.0
+M3 S0
+G0 X43.0 Y51.0
+M3 S-1000
+G1 X43.0 Y51.0
+M3 S-1000
+G1 X27.0 Y51.0
+M3 S0
+G0 X26.0 Y51.0
+M3 S-1000
+G1 X26.0 Y51.0
+M3 S-1000
+G1 X23.0 Y51.0
+M3 S0
+G0 X22.0 Y51.0
+M3 S-1000
+G1 X22.0 Y51.0
+M3 S-1000
+G1 X10.0 Y51.0
+M3 S0
+G0 X4.0 Y51.0
+M3 S-1000
+G1 X4.0 Y51.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y52.0
+M3 S-1000
+G1 X5.0 Y52.0
+M3 S0
+G0 X11.0 Y52.0
+M3 S-1000
+G1 X11.0 Y52.0
+M3 S-1000
+G1 X26.0 Y52.0
+M3 S0
+G0 X27.0 Y52.0
+M3 S-1000
+G1 X27.0 Y52.0
+M3 S-1000
+G1 X28.0 Y52.0
+M3 S0
+G0 X30.0 Y52.0
+M3 S-1000
+G1 X30.0 Y52.0
+M3 S-1000
+G1 X45.0 Y52.0
+M3 S0
+G0 X51.0 Y52.0
+M3 S-1000
+G1 X51.0 Y52.0
+M3 S-1000
+G1 X52.0 Y52.0
+M3 S0
+G0 X67.0 Y52.0
+M3 S-1000
+G1 X67.0 Y52.0
+M3 S-1000
+G1 X70.0 Y52.0
+M3 S0
+G0 X71.0 Y52.0
+M3 S-1000
+G1 X71.0 Y52.0
+M3 S-1000
+G1 X80.0 Y52.0
+M3 S0
+M5 S0
+G0 X79.0 Y53.0
+M3 S-1000
+G1 X79.0 Y53.0
+M3 S-1000
+G1 X70.0 Y53.0
+M3 S0
+G0 X69.0 Y53.0
+M3 S-1000
+G1 X69.0 Y53.0
+M3 S-1000
+G1 X66.0 Y53.0
+M3 S0
+G0 X43.0 Y53.0
+M3 S-1000
+G1 X43.0 Y53.0
+M3 S-1000
+G1 X28.0 Y53.0
+M3 S0
+G0 X26.0 Y53.0
+M3 S-1000
+G1 X26.0 Y53.0
+M3 S-1000
+G1 X10.0 Y53.0
+M3 S0
+G0 X4.0 Y53.0
+M3 S-1000
+G1 X4.0 Y53.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y54.0
+M3 S-1000
+G1 X5.0 Y54.0
+M3 S0
+G0 X11.0 Y54.0
+M3 S-1000
+G1 X11.0 Y54.0
+M3 S-1000
+G1 X25.0 Y54.0
+M3 S0
+G0 X26.0 Y54.0
+M3 S-1000
+G1 X26.0 Y54.0
+M3 S-1000
+G1 X29.0 Y54.0
+M3 S0
+G0 X30.0 Y54.0
+M3 S-1000
+G1 X30.0 Y54.0
+M3 S-1000
+G1 X45.0 Y54.0
+M3 S0
+G0 X66.0 Y54.0
+M3 S-1000
+G1 X66.0 Y54.0
+M3 S-1000
+G1 X70.0 Y54.0
+M3 S0
+G0 X71.0 Y54.0
+M3 S-1000
+G1 X71.0 Y54.0
+M3 S-1000
+G1 X80.0 Y54.0
+M3 S0
+M5 S0
+G0 X80.0 Y55.0
+M3 S-1000
+G1 X80.0 Y55.0
+M3 S-1000
+G1 X70.0 Y55.0
+M3 S0
+G0 X69.0 Y55.0
+M3 S-1000
+G1 X69.0 Y55.0
+M3 S-1000
+G1 X65.0 Y55.0
+M3 S0
+G0 X45.0 Y55.0
+M3 S-1000
+G1 X45.0 Y55.0
+M3 S-1000
+G1 X43.0 Y55.0
+M3 S0
+G0 X42.0 Y55.0
+M3 S-1000
+G1 X42.0 Y55.0
+M3 S-1000
+G1 X30.0 Y55.0
+M3 S0
+G0 X28.0 Y55.0
+M3 S-1000
+G1 X28.0 Y55.0
+M3 S-1000
+G1 X25.0 Y55.0
+M3 S0
+G0 X24.0 Y55.0
+M3 S-1000
+G1 X24.0 Y55.0
+M3 S-1000
+G1 X20.0 Y55.0
+M3 S0
+G0 X19.0 Y55.0
+M3 S-1000
+G1 X19.0 Y55.0
+M3 S-1000
+G1 X10.0 Y55.0
+M3 S0
+G0 X4.0 Y55.0
+M3 S-1000
+G1 X4.0 Y55.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y56.0
+M3 S-1000
+G1 X5.0 Y56.0
+M3 S0
+G0 X11.0 Y56.0
+M3 S-1000
+G1 X11.0 Y56.0
+M3 S-1000
+G1 X25.0 Y56.0
+M3 S0
+G0 X26.0 Y56.0
+M3 S-1000
+G1 X26.0 Y56.0
+M3 S-1000
+G1 X30.0 Y56.0
+M3 S0
+G0 X31.0 Y56.0
+M3 S-1000
+G1 X31.0 Y56.0
+M3 S-1000
+G1 X43.0 Y56.0
+M3 S0
+G0 X44.0 Y56.0
+M3 S-1000
+G1 X44.0 Y56.0
+M3 S-1000
+G1 X47.0 Y56.0
+M3 S0
+G0 X66.0 Y56.0
+M3 S-1000
+G1 X66.0 Y56.0
+M3 S-1000
+G1 X69.0 Y56.0
+M3 S0
+G0 X71.0 Y56.0
+M3 S-1000
+G1 X71.0 Y56.0
+M3 S-1000
+G1 X81.0 Y56.0
+M3 S0
+G0 X82.0 Y56.0
+M3 S-1000
+G1 X82.0 Y56.0
+M3 S-1000
+G1 X83.0 Y56.0
+M3 S0
+M5 S0
+G0 X81.0 Y57.0
+M3 S-1000
+G1 X81.0 Y57.0
+M3 S-1000
+G1 X70.0 Y57.0
+M3 S0
+G0 X68.0 Y57.0
+M3 S-1000
+G1 X68.0 Y57.0
+M3 S-1000
+G1 X65.0 Y57.0
+M3 S0
+G0 X48.0 Y57.0
+M3 S-1000
+G1 X48.0 Y57.0
+M3 S-1000
+G1 X32.0 Y57.0
+M3 S0
+G0 X30.0 Y57.0
+M3 S-1000
+G1 X30.0 Y57.0
+M3 S-1000
+G1 X26.0 Y57.0
+M3 S0
+G0 X24.0 Y57.0
+M3 S-1000
+G1 X24.0 Y57.0
+M3 S-1000
+G1 X10.0 Y57.0
+M3 S0
+G0 X4.0 Y57.0
+M3 S-1000
+G1 X4.0 Y57.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y58.0
+M3 S-1000
+G1 X5.0 Y58.0
+M3 S0
+G0 X11.0 Y58.0
+M3 S-1000
+G1 X11.0 Y58.0
+M3 S-1000
+G1 X24.0 Y58.0
+M3 S0
+G0 X27.0 Y58.0
+M3 S-1000
+G1 X27.0 Y58.0
+M3 S-1000
+G1 X30.0 Y58.0
+M3 S0
+G0 X31.0 Y58.0
+M3 S-1000
+G1 X31.0 Y58.0
+M3 S-1000
+G1 X32.0 Y58.0
+M3 S0
+G0 X33.0 Y58.0
+M3 S-1000
+G1 X33.0 Y58.0
+M3 S-1000
+G1 X51.0 Y58.0
+M3 S0
+G0 X65.0 Y58.0
+M3 S-1000
+G1 X65.0 Y58.0
+M3 S-1000
+G1 X69.0 Y58.0
+M3 S0
+G0 X71.0 Y58.0
+M3 S-1000
+G1 X71.0 Y58.0
+M3 S-1000
+G1 X82.0 Y58.0
+M3 S0
+G0 X83.0 Y58.0
+M3 S-1000
+G1 X83.0 Y58.0
+M3 S-1000
+G1 X84.0 Y58.0
+M3 S0
+M5 S0
+G0 X82.0 Y59.0
+M3 S-1000
+G1 X82.0 Y59.0
+M3 S-1000
+G1 X71.0 Y59.0
+M3 S0
+G0 X69.0 Y59.0
+M3 S-1000
+G1 X69.0 Y59.0
+M3 S-1000
+G1 X68.0 Y59.0
+M3 S0
+G0 X67.0 Y59.0
+M3 S-1000
+G1 X67.0 Y59.0
+M3 S-1000
+G1 X66.0 Y59.0
+M3 S0
+G0 X65.0 Y59.0
+M3 S-1000
+G1 X65.0 Y59.0
+M3 S-1000
+G1 X64.0 Y59.0
+M3 S0
+G0 X51.0 Y59.0
+M3 S-1000
+G1 X51.0 Y59.0
+M3 S-1000
+G1 X50.0 Y59.0
+M3 S0
+G0 X49.0 Y59.0
+M3 S-1000
+G1 X49.0 Y59.0
+M3 S-1000
+G1 X33.0 Y59.0
+M3 S0
+G0 X31.0 Y59.0
+M3 S-1000
+G1 X31.0 Y59.0
+M3 S-1000
+G1 X26.0 Y59.0
+M3 S0
+G0 X23.0 Y59.0
+M3 S-1000
+G1 X23.0 Y59.0
+M3 S-1000
+G1 X10.0 Y59.0
+M3 S0
+G0 X4.0 Y59.0
+M3 S-1000
+G1 X4.0 Y59.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y60.0
+M3 S-1000
+G1 X4.0 Y60.0
+M3 S0
+G0 X11.0 Y60.0
+M3 S-1000
+G1 X11.0 Y60.0
+M3 S-1000
+G1 X24.0 Y60.0
+M3 S0
+G0 X27.0 Y60.0
+M3 S-1000
+G1 X27.0 Y60.0
+M3 S-1000
+G1 X34.0 Y60.0
+M3 S0
+G0 X36.0 Y60.0
+M3 S-1000
+G1 X36.0 Y60.0
+M3 S-1000
+G1 X51.0 Y60.0
+M3 S0
+G0 X64.0 Y60.0
+M3 S-1000
+G1 X64.0 Y60.0
+M3 S-1000
+G1 X69.0 Y60.0
+M3 S0
+G0 X73.0 Y60.0
+M3 S-1000
+G1 X73.0 Y60.0
+M3 S-1000
+G1 X83.0 Y60.0
+M3 S0
+M5 S0
+G0 X82.0 Y61.0
+M3 S-1000
+G1 X82.0 Y61.0
+M3 S-1000
+G1 X73.0 Y61.0
+M3 S0
+G0 X68.0 Y61.0
+M3 S-1000
+G1 X68.0 Y61.0
+M3 S-1000
+G1 X64.0 Y61.0
+M3 S0
+G0 X50.0 Y61.0
+M3 S-1000
+G1 X50.0 Y61.0
+M3 S-1000
+G1 X37.0 Y61.0
+M3 S0
+G0 X36.0 Y61.0
+M3 S-1000
+G1 X36.0 Y61.0
+M3 S-1000
+G1 X35.0 Y61.0
+M3 S0
+G0 X34.0 Y61.0
+M3 S-1000
+G1 X34.0 Y61.0
+M3 S-1000
+G1 X30.0 Y61.0
+M3 S0
+G0 X28.0 Y61.0
+M3 S-1000
+G1 X28.0 Y61.0
+M3 S-1000
+G1 X27.0 Y61.0
+M3 S0
+G0 X22.0 Y61.0
+M3 S-1000
+G1 X22.0 Y61.0
+M3 S-1000
+G1 X10.0 Y61.0
+M3 S0
+G0 X3.0 Y61.0
+M3 S-1000
+G1 X3.0 Y61.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y62.0
+M3 S-1000
+G1 X4.0 Y62.0
+M3 S0
+G0 X11.0 Y62.0
+M3 S-1000
+G1 X11.0 Y62.0
+M3 S-1000
+G1 X23.0 Y62.0
+M3 S0
+G0 X26.0 Y62.0
+M3 S-1000
+G1 X26.0 Y62.0
+M3 S-1000
+G1 X27.0 Y62.0
+M3 S0
+G0 X28.0 Y62.0
+M3 S-1000
+G1 X28.0 Y62.0
+M3 S-1000
+G1 X30.0 Y62.0
+M3 S0
+G0 X32.0 Y62.0
+M3 S-1000
+G1 X32.0 Y62.0
+M3 S-1000
+G1 X34.0 Y62.0
+M3 S0
+G0 X35.0 Y62.0
+M3 S-1000
+G1 X35.0 Y62.0
+M3 S-1000
+G1 X36.0 Y62.0
+M3 S0
+G0 X38.0 Y62.0
+M3 S-1000
+G1 X38.0 Y62.0
+M3 S-1000
+G1 X39.0 Y62.0
+M3 S0
+G0 X40.0 Y62.0
+M3 S-1000
+G1 X40.0 Y62.0
+M3 S-1000
+G1 X53.0 Y62.0
+M3 S0
+G0 X67.0 Y62.0
+M3 S-1000
+G1 X67.0 Y62.0
+M3 S-1000
+G1 X71.0 Y62.0
+M3 S0
+G0 X75.0 Y62.0
+M3 S-1000
+G1 X75.0 Y62.0
+M3 S-1000
+G1 X84.0 Y62.0
+M3 S0
+M5 S0
+G0 X83.0 Y63.0
+M3 S-1000
+G1 X83.0 Y63.0
+M3 S-1000
+G1 X75.0 Y63.0
+M3 S0
+G0 X73.0 Y63.0
+M3 S-1000
+G1 X73.0 Y63.0
+M3 S-1000
+G1 X68.0 Y63.0
+M3 S0
+G0 X55.0 Y63.0
+M3 S-1000
+G1 X55.0 Y63.0
+M3 S-1000
+G1 X54.0 Y63.0
+M3 S0
+G0 X53.0 Y63.0
+M3 S-1000
+G1 X53.0 Y63.0
+M3 S-1000
+G1 X40.0 Y63.0
+M3 S0
+G0 X39.0 Y63.0
+M3 S-1000
+G1 X39.0 Y63.0
+M3 S-1000
+G1 X38.0 Y63.0
+M3 S0
+G0 X36.0 Y63.0
+M3 S-1000
+G1 X36.0 Y63.0
+M3 S-1000
+G1 X35.0 Y63.0
+M3 S0
+G0 X33.0 Y63.0
+M3 S-1000
+G1 X33.0 Y63.0
+M3 S-1000
+G1 X32.0 Y63.0
+M3 S0
+G0 X30.0 Y63.0
+M3 S-1000
+G1 X30.0 Y63.0
+M3 S-1000
+G1 X28.0 Y63.0
+M3 S0
+G0 X26.0 Y63.0
+M3 S-1000
+G1 X26.0 Y63.0
+M3 S-1000
+G1 X25.0 Y63.0
+M3 S0
+G0 X21.0 Y63.0
+M3 S-1000
+G1 X21.0 Y63.0
+M3 S-1000
+G1 X10.0 Y63.0
+M3 S0
+G0 X3.0 Y63.0
+M3 S-1000
+G1 X3.0 Y63.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y64.0
+M3 S-1000
+G1 X4.0 Y64.0
+M3 S0
+G0 X11.0 Y64.0
+M3 S-1000
+G1 X11.0 Y64.0
+M3 S-1000
+G1 X22.0 Y64.0
+M3 S0
+G0 X26.0 Y64.0
+M3 S-1000
+G1 X26.0 Y64.0
+M3 S-1000
+G1 X31.0 Y64.0
+M3 S0
+G0 X37.0 Y64.0
+M3 S-1000
+G1 X37.0 Y64.0
+M3 S-1000
+G1 X38.0 Y64.0
+M3 S0
+G0 X42.0 Y64.0
+M3 S-1000
+G1 X42.0 Y64.0
+M3 S-1000
+G1 X56.0 Y64.0
+M3 S0
+G0 X71.0 Y64.0
+M3 S-1000
+G1 X71.0 Y64.0
+M3 S-1000
+G1 X75.0 Y64.0
+M3 S0
+G0 X78.0 Y64.0
+M3 S-1000
+G1 X78.0 Y64.0
+M3 S-1000
+G1 X85.0 Y64.0
+M3 S0
+M5 S0
+G0 X84.0 Y65.0
+M3 S-1000
+G1 X84.0 Y65.0
+M3 S-1000
+G1 X77.0 Y65.0
+M3 S0
+G0 X75.0 Y65.0
+M3 S-1000
+G1 X75.0 Y65.0
+M3 S-1000
+G1 X73.0 Y65.0
+M3 S0
+G0 X55.0 Y65.0
+M3 S-1000
+G1 X55.0 Y65.0
+M3 S-1000
+G1 X51.0 Y65.0
+M3 S0
+G0 X50.0 Y65.0
+M3 S-1000
+G1 X50.0 Y65.0
+M3 S-1000
+G1 X47.0 Y65.0
+M3 S0
+G0 X45.0 Y65.0
+M3 S-1000
+G1 X45.0 Y65.0
+M3 S-1000
+G1 X42.0 Y65.0
+M3 S0
+G0 X35.0 Y65.0
+M3 S-1000
+G1 X35.0 Y65.0
+M3 S-1000
+G1 X34.0 Y65.0
+M3 S0
+G0 X31.0 Y65.0
+M3 S-1000
+G1 X31.0 Y65.0
+M3 S-1000
+G1 X30.0 Y65.0
+M3 S0
+G0 X29.0 Y65.0
+M3 S-1000
+G1 X29.0 Y65.0
+M3 S-1000
+G1 X27.0 Y65.0
+M3 S0
+G0 X21.0 Y65.0
+M3 S-1000
+G1 X21.0 Y65.0
+M3 S-1000
+G1 X10.0 Y65.0
+M3 S0
+G0 X3.0 Y65.0
+M3 S-1000
+G1 X3.0 Y65.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y66.0
+M3 S-1000
+G1 X4.0 Y66.0
+M3 S0
+G0 X11.0 Y66.0
+M3 S-1000
+G1 X11.0 Y66.0
+M3 S-1000
+G1 X22.0 Y66.0
+M3 S0
+G0 X28.0 Y66.0
+M3 S-1000
+G1 X28.0 Y66.0
+M3 S-1000
+G1 X29.0 Y66.0
+M3 S0
+G0 X36.0 Y66.0
+M3 S-1000
+G1 X36.0 Y66.0
+M3 S-1000
+G1 X37.0 Y66.0
+M3 S0
+G0 X42.0 Y66.0
+M3 S-1000
+G1 X42.0 Y66.0
+M3 S-1000
+G1 X44.0 Y66.0
+M3 S0
+G0 X47.0 Y66.0
+M3 S-1000
+G1 X47.0 Y66.0
+M3 S-1000
+G1 X48.0 Y66.0
+M3 S0
+G0 X75.0 Y66.0
+M3 S-1000
+G1 X75.0 Y66.0
+M3 S-1000
+G1 X77.0 Y66.0
+M3 S0
+G0 X78.0 Y66.0
+M3 S-1000
+G1 X78.0 Y66.0
+M3 S-1000
+G1 X86.0 Y66.0
+M3 S0
+M5 S0
+G0 X85.0 Y67.0
+M3 S-1000
+G1 X85.0 Y67.0
+M3 S-1000
+G1 X78.0 Y67.0
+M3 S0
+G0 X37.0 Y67.0
+M3 S-1000
+G1 X37.0 Y67.0
+M3 S-1000
+G1 X36.0 Y67.0
+M3 S0
+G0 X33.0 Y67.0
+M3 S-1000
+G1 X33.0 Y67.0
+M3 S-1000
+G1 X32.0 Y67.0
+M3 S0
+G0 X29.0 Y67.0
+M3 S-1000
+G1 X29.0 Y67.0
+M3 S-1000
+G1 X26.0 Y67.0
+M3 S0
+G0 X21.0 Y67.0
+M3 S-1000
+G1 X21.0 Y67.0
+M3 S-1000
+G1 X10.0 Y67.0
+M3 S0
+G0 X3.0 Y67.0
+M3 S-1000
+G1 X3.0 Y67.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y68.0
+M3 S-1000
+G1 X4.0 Y68.0
+M3 S0
+G0 X11.0 Y68.0
+M3 S-1000
+G1 X11.0 Y68.0
+M3 S-1000
+G1 X22.0 Y68.0
+M3 S0
+G0 X27.0 Y68.0
+M3 S-1000
+G1 X27.0 Y68.0
+M3 S-1000
+G1 X31.0 Y68.0
+M3 S0
+G0 X34.0 Y68.0
+M3 S-1000
+G1 X34.0 Y68.0
+M3 S-1000
+G1 X35.0 Y68.0
+M3 S0
+G0 X79.0 Y68.0
+M3 S-1000
+G1 X79.0 Y68.0
+M3 S-1000
+G1 X86.0 Y68.0
+M3 S0
+M5 S0
+G0 X86.0 Y69.0
+M3 S-1000
+G1 X86.0 Y69.0
+M3 S-1000
+G1 X79.0 Y69.0
+M3 S0
+G0 X35.0 Y69.0
+M3 S-1000
+G1 X35.0 Y69.0
+M3 S-1000
+G1 X34.0 Y69.0
+M3 S0
+G0 X31.0 Y69.0
+M3 S-1000
+G1 X31.0 Y69.0
+M3 S-1000
+G1 X25.0 Y69.0
+M3 S0
+G0 X21.0 Y69.0
+M3 S-1000
+G1 X21.0 Y69.0
+M3 S-1000
+G1 X10.0 Y69.0
+M3 S0
+G0 X4.0 Y69.0
+M3 S-1000
+G1 X4.0 Y69.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y70.0
+M3 S-1000
+G1 X5.0 Y70.0
+M3 S0
+G0 X11.0 Y70.0
+M3 S-1000
+G1 X11.0 Y70.0
+M3 S-1000
+G1 X22.0 Y70.0
+M3 S0
+G0 X26.0 Y70.0
+M3 S-1000
+G1 X26.0 Y70.0
+M3 S-1000
+G1 X33.0 Y70.0
+M3 S0
+G0 X80.0 Y70.0
+M3 S-1000
+G1 X80.0 Y70.0
+M3 S-1000
+G1 X88.0 Y70.0
+M3 S0
+M5 S0
+G0 X87.0 Y71.0
+M3 S-1000
+G1 X87.0 Y71.0
+M3 S-1000
+G1 X79.0 Y71.0
+M3 S0
+G0 X37.0 Y71.0
+M3 S-1000
+G1 X37.0 Y71.0
+M3 S-1000
+G1 X36.0 Y71.0
+M3 S0
+G0 X33.0 Y71.0
+M3 S-1000
+G1 X33.0 Y71.0
+M3 S-1000
+G1 X32.0 Y71.0
+M3 S0
+G0 X31.0 Y71.0
+M3 S-1000
+G1 X31.0 Y71.0
+M3 S-1000
+G1 X30.0 Y71.0
+M3 S0
+G0 X29.0 Y71.0
+M3 S-1000
+G1 X29.0 Y71.0
+M3 S-1000
+G1 X24.0 Y71.0
+M3 S0
+G0 X21.0 Y71.0
+M3 S-1000
+G1 X21.0 Y71.0
+M3 S-1000
+G1 X10.0 Y71.0
+M3 S0
+G0 X4.0 Y71.0
+M3 S-1000
+G1 X4.0 Y71.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y72.0
+M3 S-1000
+G1 X4.0 Y72.0
+M3 S0
+G0 X11.0 Y72.0
+M3 S-1000
+G1 X11.0 Y72.0
+M3 S-1000
+G1 X23.0 Y72.0
+M3 S0
+G0 X24.0 Y72.0
+M3 S-1000
+G1 X24.0 Y72.0
+M3 S-1000
+G1 X35.0 Y72.0
+M3 S0
+G0 X80.0 Y72.0
+M3 S-1000
+G1 X80.0 Y72.0
+M3 S-1000
+G1 X89.0 Y72.0
+M3 S0
+M5 S0
+G0 X89.0 Y73.0
+M3 S-1000
+G1 X89.0 Y73.0
+M3 S-1000
+G1 X80.0 Y73.0
+M3 S0
+G0 X69.0 Y73.0
+M3 S-1000
+G1 X69.0 Y73.0
+M3 S-1000
+G1 X68.0 Y73.0
+M3 S0
+G0 X35.0 Y73.0
+M3 S-1000
+G1 X35.0 Y73.0
+M3 S-1000
+G1 X31.0 Y73.0
+M3 S0
+G0 X30.0 Y73.0
+M3 S-1000
+G1 X30.0 Y73.0
+M3 S-1000
+G1 X23.0 Y73.0
+M3 S0
+G0 X22.0 Y73.0
+M3 S-1000
+G1 X22.0 Y73.0
+M3 S-1000
+G1 X10.0 Y73.0
+M3 S0
+G0 X4.0 Y73.0
+M3 S-1000
+G1 X4.0 Y73.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y74.0
+M3 S-1000
+G1 X5.0 Y74.0
+M3 S0
+G0 X11.0 Y74.0
+M3 S-1000
+G1 X11.0 Y74.0
+M3 S-1000
+G1 X23.0 Y74.0
+M3 S0
+G0 X25.0 Y74.0
+M3 S-1000
+G1 X25.0 Y74.0
+M3 S-1000
+G1 X33.0 Y74.0
+M3 S0
+G0 X36.0 Y74.0
+M3 S-1000
+G1 X36.0 Y74.0
+M3 S-1000
+G1 X37.0 Y74.0
+M3 S0
+G0 X70.0 Y74.0
+M3 S-1000
+G1 X70.0 Y74.0
+M3 S-1000
+G1 X71.0 Y74.0
+M3 S0
+G0 X81.0 Y74.0
+M3 S-1000
+G1 X81.0 Y74.0
+M3 S-1000
+G1 X90.0 Y74.0
+M3 S0
+M5 S0
+G0 X90.0 Y75.0
+M3 S-1000
+G1 X90.0 Y75.0
+M3 S-1000
+G1 X80.0 Y75.0
+M3 S0
+G0 X72.0 Y75.0
+M3 S-1000
+G1 X72.0 Y75.0
+M3 S-1000
+G1 X69.0 Y75.0
+M3 S0
+G0 X64.0 Y75.0
+M3 S-1000
+G1 X64.0 Y75.0
+M3 S-1000
+G1 X63.0 Y75.0
+M3 S0
+G0 X37.0 Y75.0
+M3 S-1000
+G1 X37.0 Y75.0
+M3 S-1000
+G1 X34.0 Y75.0
+M3 S0
+G0 X33.0 Y75.0
+M3 S-1000
+G1 X33.0 Y75.0
+M3 S-1000
+G1 X31.0 Y75.0
+M3 S0
+G0 X29.0 Y75.0
+M3 S-1000
+G1 X29.0 Y75.0
+M3 S-1000
+G1 X24.0 Y75.0
+M3 S0
+G0 X22.0 Y75.0
+M3 S-1000
+G1 X22.0 Y75.0
+M3 S-1000
+G1 X10.0 Y75.0
+M3 S0
+G0 X4.0 Y75.0
+M3 S-1000
+G1 X4.0 Y75.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y76.0
+M3 S-1000
+G1 X5.0 Y76.0
+M3 S0
+G0 X11.0 Y76.0
+M3 S-1000
+G1 X11.0 Y76.0
+M3 S-1000
+G1 X23.0 Y76.0
+M3 S0
+G0 X25.0 Y76.0
+M3 S-1000
+G1 X25.0 Y76.0
+M3 S-1000
+G1 X33.0 Y76.0
+M3 S0
+G0 X38.0 Y76.0
+M3 S-1000
+G1 X38.0 Y76.0
+M3 S-1000
+G1 X39.0 Y76.0
+M3 S0
+G0 X63.0 Y76.0
+M3 S-1000
+G1 X63.0 Y76.0
+M3 S-1000
+G1 X65.0 Y76.0
+M3 S0
+G0 X70.0 Y76.0
+M3 S-1000
+G1 X70.0 Y76.0
+M3 S-1000
+G1 X74.0 Y76.0
+M3 S0
+G0 X80.0 Y76.0
+M3 S-1000
+G1 X80.0 Y76.0
+M3 S-1000
+G1 X91.0 Y76.0
+M3 S0
+M5 S0
+G0 X91.0 Y77.0
+M3 S-1000
+G1 X91.0 Y77.0
+M3 S-1000
+G1 X79.0 Y77.0
+M3 S0
+G0 X74.0 Y77.0
+M3 S-1000
+G1 X74.0 Y77.0
+M3 S-1000
+G1 X69.0 Y77.0
+M3 S0
+G0 X64.0 Y77.0
+M3 S-1000
+G1 X64.0 Y77.0
+M3 S-1000
+G1 X62.0 Y77.0
+M3 S0
+G0 X39.0 Y77.0
+M3 S-1000
+G1 X39.0 Y77.0
+M3 S-1000
+G1 X37.0 Y77.0
+M3 S0
+G0 X30.0 Y77.0
+M3 S-1000
+G1 X30.0 Y77.0
+M3 S-1000
+G1 X24.0 Y77.0
+M3 S0
+G0 X23.0 Y77.0
+M3 S-1000
+G1 X23.0 Y77.0
+M3 S-1000
+G1 X10.0 Y77.0
+M3 S0
+G0 X4.0 Y77.0
+M3 S-1000
+G1 X4.0 Y77.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y78.0
+M3 S-1000
+G1 X4.0 Y78.0
+M3 S0
+G0 X11.0 Y78.0
+M3 S-1000
+G1 X11.0 Y78.0
+M3 S-1000
+G1 X24.0 Y78.0
+M3 S0
+G0 X25.0 Y78.0
+M3 S-1000
+G1 X25.0 Y78.0
+M3 S-1000
+G1 X34.0 Y78.0
+M3 S0
+G0 X40.0 Y78.0
+M3 S-1000
+G1 X40.0 Y78.0
+M3 S-1000
+G1 X42.0 Y78.0
+M3 S0
+G0 X62.0 Y78.0
+M3 S-1000
+G1 X62.0 Y78.0
+M3 S-1000
+G1 X65.0 Y78.0
+M3 S0
+G0 X70.0 Y78.0
+M3 S-1000
+G1 X70.0 Y78.0
+M3 S-1000
+G1 X77.0 Y78.0
+M3 S0
+G0 X80.0 Y78.0
+M3 S-1000
+G1 X80.0 Y78.0
+M3 S-1000
+G1 X93.0 Y78.0
+M3 S0
+M5 S0
+G0 X93.0 Y79.0
+M3 S-1000
+G1 X93.0 Y79.0
+M3 S-1000
+G1 X80.0 Y79.0
+M3 S0
+G0 X74.0 Y79.0
+M3 S-1000
+G1 X74.0 Y79.0
+M3 S-1000
+G1 X69.0 Y79.0
+M3 S0
+G0 X64.0 Y79.0
+M3 S-1000
+G1 X64.0 Y79.0
+M3 S-1000
+G1 X60.0 Y79.0
+M3 S0
+G0 X42.0 Y79.0
+M3 S-1000
+G1 X42.0 Y79.0
+M3 S-1000
+G1 X41.0 Y79.0
+M3 S0
+G0 X34.0 Y79.0
+M3 S-1000
+G1 X34.0 Y79.0
+M3 S-1000
+G1 X10.0 Y79.0
+M3 S0
+G0 X4.0 Y79.0
+M3 S-1000
+G1 X4.0 Y79.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y80.0
+M3 S-1000
+G1 X5.0 Y80.0
+M3 S0
+G0 X11.0 Y80.0
+M3 S-1000
+G1 X11.0 Y80.0
+M3 S-1000
+G1 X25.0 Y80.0
+M3 S0
+G0 X26.0 Y80.0
+M3 S-1000
+G1 X26.0 Y80.0
+M3 S-1000
+G1 X34.0 Y80.0
+M3 S0
+G0 X61.0 Y80.0
+M3 S-1000
+G1 X61.0 Y80.0
+M3 S-1000
+G1 X65.0 Y80.0
+M3 S0
+G0 X70.0 Y80.0
+M3 S-1000
+G1 X70.0 Y80.0
+M3 S-1000
+G1 X75.0 Y80.0
+M3 S0
+G0 X82.0 Y80.0
+M3 S-1000
+G1 X82.0 Y80.0
+M3 S-1000
+G1 X95.0 Y80.0
+M3 S0
+M5 S0
+G0 X94.0 Y81.0
+M3 S-1000
+G1 X94.0 Y81.0
+M3 S-1000
+G1 X82.0 Y81.0
+M3 S0
+G0 X73.0 Y81.0
+M3 S-1000
+G1 X73.0 Y81.0
+M3 S-1000
+G1 X69.0 Y81.0
+M3 S0
+G0 X63.0 Y81.0
+M3 S-1000
+G1 X63.0 Y81.0
+M3 S-1000
+G1 X58.0 Y81.0
+M3 S0
+G0 X35.0 Y81.0
+M3 S-1000
+G1 X35.0 Y81.0
+M3 S-1000
+G1 X10.0 Y81.0
+M3 S0
+G0 X4.0 Y81.0
+M3 S-1000
+G1 X4.0 Y81.0
+M3 S-1000
+M5 S0
+G0 X0.0 Y82.0
+M3 S-1000
+G1 X0.0 Y82.0
+M3 S-1000
+G1 X4.0 Y82.0
+M3 S0
+G0 X11.0 Y82.0
+M3 S-1000
+G1 X11.0 Y82.0
+M3 S-1000
+G1 X35.0 Y82.0
+M3 S0
+G0 X36.0 Y82.0
+M3 S-1000
+G1 X36.0 Y82.0
+M3 S-1000
+G1 X37.0 Y82.0
+M3 S0
+G0 X38.0 Y82.0
+M3 S-1000
+G1 X38.0 Y82.0
+M3 S-1000
+G1 X39.0 Y82.0
+M3 S0
+G0 X59.0 Y82.0
+M3 S-1000
+G1 X59.0 Y82.0
+M3 S-1000
+G1 X65.0 Y82.0
+M3 S0
+G0 X70.0 Y82.0
+M3 S-1000
+G1 X70.0 Y82.0
+M3 S-1000
+G1 X73.0 Y82.0
+M3 S0
+G0 X83.0 Y82.0
+M3 S-1000
+G1 X83.0 Y82.0
+M3 S-1000
+G1 X96.0 Y82.0
+M3 S0
+M5 S0
+G0 X96.0 Y83.0
+M3 S-1000
+G1 X96.0 Y83.0
+M3 S-1000
+G1 X83.0 Y83.0
+M3 S0
+G0 X72.0 Y83.0
+M3 S-1000
+G1 X72.0 Y83.0
+M3 S-1000
+G1 X69.0 Y83.0
+M3 S0
+G0 X63.0 Y83.0
+M3 S-1000
+G1 X63.0 Y83.0
+M3 S-1000
+G1 X57.0 Y83.0
+M3 S0
+G0 X39.0 Y83.0
+M3 S-1000
+G1 X39.0 Y83.0
+M3 S-1000
+G1 X38.0 Y83.0
+M3 S0
+G0 X35.0 Y83.0
+M3 S-1000
+G1 X35.0 Y83.0
+M3 S-1000
+G1 X27.0 Y83.0
+M3 S0
+G0 X26.0 Y83.0
+M3 S-1000
+G1 X26.0 Y83.0
+M3 S-1000
+G1 X10.0 Y83.0
+M3 S0
+G0 X4.0 Y83.0
+M3 S-1000
+G1 X4.0 Y83.0
+M3 S-1000
+M5 S0
+G0 X1.0 Y84.0
+M3 S-1000
+G1 X1.0 Y84.0
+M3 S-1000
+G1 X5.0 Y84.0
+M3 S0
+G0 X11.0 Y84.0
+M3 S-1000
+G1 X11.0 Y84.0
+M3 S-1000
+G1 X28.0 Y84.0
+M3 S0
+G0 X29.0 Y84.0
+M3 S-1000
+G1 X29.0 Y84.0
+M3 S-1000
+G1 X35.0 Y84.0
+M3 S0
+G0 X57.0 Y84.0
+M3 S-1000
+G1 X57.0 Y84.0
+M3 S-1000
+G1 X64.0 Y84.0
+M3 S0
+G0 X70.0 Y84.0
+M3 S-1000
+G1 X70.0 Y84.0
+M3 S-1000
+G1 X72.0 Y84.0
+M3 S0
+G0 X85.0 Y84.0
+M3 S-1000
+G1 X85.0 Y84.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y85.0
+M3 S-1000
+G1 X84.0 Y85.0
+M3 S0
+G0 X63.0 Y85.0
+M3 S-1000
+G1 X63.0 Y85.0
+M3 S-1000
+G1 X55.0 Y85.0
+M3 S0
+G0 X39.0 Y85.0
+M3 S-1000
+G1 X39.0 Y85.0
+M3 S-1000
+G1 X38.0 Y85.0
+M3 S0
+G0 X34.0 Y85.0
+M3 S-1000
+G1 X34.0 Y85.0
+M3 S-1000
+G1 X33.0 Y85.0
+M3 S0
+G0 X32.0 Y85.0
+M3 S-1000
+G1 X32.0 Y85.0
+M3 S-1000
+G1 X28.0 Y85.0
+M3 S0
+G0 X27.0 Y85.0
+M3 S-1000
+G1 X27.0 Y85.0
+M3 S-1000
+G1 X10.0 Y85.0
+M3 S0
+G0 X4.0 Y85.0
+M3 S-1000
+G1 X4.0 Y85.0
+M3 S-1000
+G1 X1.0 Y85.0
+M3 S0
+M5 S0
+G0 X2.0 Y86.0
+M3 S-1000
+G1 X2.0 Y86.0
+M3 S-1000
+G1 X4.0 Y86.0
+M3 S0
+G0 X11.0 Y86.0
+M3 S-1000
+G1 X11.0 Y86.0
+M3 S-1000
+G1 X29.0 Y86.0
+M3 S0
+G0 X30.0 Y86.0
+M3 S-1000
+G1 X30.0 Y86.0
+M3 S-1000
+G1 X38.0 Y86.0
+M3 S0
+G0 X55.0 Y86.0
+M3 S-1000
+G1 X55.0 Y86.0
+M3 S-1000
+G1 X64.0 Y86.0
+M3 S0
+G0 X86.0 Y86.0
+M3 S-1000
+G1 X86.0 Y86.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y87.0
+M3 S-1000
+G1 X86.0 Y87.0
+M3 S0
+G0 X63.0 Y87.0
+M3 S-1000
+G1 X63.0 Y87.0
+M3 S-1000
+G1 X52.0 Y87.0
+M3 S0
+G0 X35.0 Y87.0
+M3 S-1000
+G1 X35.0 Y87.0
+M3 S-1000
+G1 X10.0 Y87.0
+M3 S0
+G0 X3.0 Y87.0
+M3 S-1000
+G1 X3.0 Y87.0
+M3 S-1000
+G1 X2.0 Y87.0
+M3 S0
+M5 S0
+G0 X3.0 Y88.0
+M3 S-1000
+G1 X3.0 Y88.0
+M3 S-1000
+G1 X5.0 Y88.0
+M3 S0
+G0 X11.0 Y88.0
+M3 S-1000
+G1 X11.0 Y88.0
+M3 S-1000
+G1 X27.0 Y88.0
+M3 S0
+G0 X29.0 Y88.0
+M3 S-1000
+G1 X29.0 Y88.0
+M3 S-1000
+G1 X32.0 Y88.0
+M3 S0
+G0 X34.0 Y88.0
+M3 S-1000
+G1 X34.0 Y88.0
+M3 S-1000
+G1 X35.0 Y88.0
+M3 S0
+G0 X52.0 Y88.0
+M3 S-1000
+G1 X52.0 Y88.0
+M3 S-1000
+G1 X54.0 Y88.0
+M3 S0
+G0 X55.0 Y88.0
+M3 S-1000
+G1 X55.0 Y88.0
+M3 S-1000
+G1 X65.0 Y88.0
+M3 S0
+G0 X88.0 Y88.0
+M3 S-1000
+G1 X88.0 Y88.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y89.0
+M3 S-1000
+G1 X86.0 Y89.0
+M3 S0
+G0 X63.0 Y89.0
+M3 S-1000
+G1 X63.0 Y89.0
+M3 S-1000
+G1 X56.0 Y89.0
+M3 S0
+G0 X55.0 Y89.0
+M3 S-1000
+G1 X55.0 Y89.0
+M3 S-1000
+G1 X54.0 Y89.0
+M3 S0
+G0 X53.0 Y89.0
+M3 S-1000
+G1 X53.0 Y89.0
+M3 S-1000
+G1 X49.0 Y89.0
+M3 S0
+G0 X35.0 Y89.0
+M3 S-1000
+G1 X35.0 Y89.0
+M3 S-1000
+G1 X33.0 Y89.0
+M3 S0
+G0 X31.0 Y89.0
+M3 S-1000
+G1 X31.0 Y89.0
+M3 S-1000
+G1 X30.0 Y89.0
+M3 S0
+G0 X25.0 Y89.0
+M3 S-1000
+G1 X25.0 Y89.0
+M3 S-1000
+G1 X24.0 Y89.0
+M3 S0
+G0 X23.0 Y89.0
+M3 S-1000
+G1 X23.0 Y89.0
+M3 S-1000
+G1 X10.0 Y89.0
+M3 S0
+M5 S0
+G0 X11.0 Y90.0
+M3 S-1000
+G1 X11.0 Y90.0
+M3 S-1000
+G1 X23.0 Y90.0
+M3 S0
+G0 X24.0 Y90.0
+M3 S-1000
+G1 X24.0 Y90.0
+M3 S-1000
+G1 X30.0 Y90.0
+M3 S0
+G0 X31.0 Y90.0
+M3 S-1000
+G1 X31.0 Y90.0
+M3 S-1000
+G1 X32.0 Y90.0
+M3 S0
+G0 X36.0 Y90.0
+M3 S-1000
+G1 X36.0 Y90.0
+M3 S-1000
+G1 X37.0 Y90.0
+M3 S0
+G0 X38.0 Y90.0
+M3 S-1000
+G1 X38.0 Y90.0
+M3 S-1000
+G1 X39.0 Y90.0
+M3 S0
+G0 X47.0 Y90.0
+M3 S-1000
+G1 X47.0 Y90.0
+M3 S-1000
+G1 X51.0 Y90.0
+M3 S0
+G0 X56.0 Y90.0
+M3 S-1000
+G1 X56.0 Y90.0
+M3 S-1000
+G1 X57.0 Y90.0
+M3 S0
+G0 X59.0 Y90.0
+M3 S-1000
+G1 X59.0 Y90.0
+M3 S-1000
+G1 X65.0 Y90.0
+M3 S0
+G0 X87.0 Y90.0
+M3 S-1000
+G1 X87.0 Y90.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y91.0
+M3 S-1000
+G1 X85.0 Y91.0
+M3 S0
+G0 X64.0 Y91.0
+M3 S-1000
+G1 X64.0 Y91.0
+M3 S-1000
+G1 X55.0 Y91.0
+M3 S0
+G0 X50.0 Y91.0
+M3 S-1000
+G1 X50.0 Y91.0
+M3 S-1000
+G1 X49.0 Y91.0
+M3 S0
+G0 X47.0 Y91.0
+M3 S-1000
+G1 X47.0 Y91.0
+M3 S-1000
+G1 X39.0 Y91.0
+M3 S0
+G0 X35.0 Y91.0
+M3 S-1000
+G1 X35.0 Y91.0
+M3 S-1000
+G1 X34.0 Y91.0
+M3 S0
+G0 X33.0 Y91.0
+M3 S-1000
+G1 X33.0 Y91.0
+M3 S-1000
+G1 X32.0 Y91.0
+M3 S0
+G0 X31.0 Y91.0
+M3 S-1000
+G1 X31.0 Y91.0
+M3 S-1000
+G1 X30.0 Y91.0
+M3 S0
+G0 X27.0 Y91.0
+M3 S-1000
+G1 X27.0 Y91.0
+M3 S-1000
+G1 X26.0 Y91.0
+M3 S0
+G0 X25.0 Y91.0
+M3 S-1000
+G1 X25.0 Y91.0
+M3 S-1000
+G1 X10.0 Y91.0
+M3 S0
+M5 S0
+G0 X11.0 Y92.0
+M3 S-1000
+G1 X11.0 Y92.0
+M3 S-1000
+G1 X31.0 Y92.0
+M3 S0
+G0 X32.0 Y92.0
+M3 S-1000
+G1 X32.0 Y92.0
+M3 S-1000
+G1 X33.0 Y92.0
+M3 S0
+G0 X35.0 Y92.0
+M3 S-1000
+G1 X35.0 Y92.0
+M3 S-1000
+G1 X36.0 Y92.0
+M3 S0
+G0 X37.0 Y92.0
+M3 S-1000
+G1 X37.0 Y92.0
+M3 S-1000
+G1 X49.0 Y92.0
+M3 S0
+G0 X53.0 Y92.0
+M3 S-1000
+G1 X53.0 Y92.0
+M3 S-1000
+G1 X58.0 Y92.0
+M3 S0
+G0 X59.0 Y92.0
+M3 S-1000
+G1 X59.0 Y92.0
+M3 S-1000
+G1 X64.0 Y92.0
+M3 S0
+G0 X86.0 Y92.0
+M3 S-1000
+G1 X86.0 Y92.0
+M3 S-1000
+G1 X90.0 Y92.0
+M3 S0
+G0 X91.0 Y92.0
+M3 S-1000
+G1 X91.0 Y92.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y93.0
+M3 S-1000
+G1 X91.0 Y93.0
+M3 S0
+G0 X90.0 Y93.0
+M3 S-1000
+G1 X90.0 Y93.0
+M3 S-1000
+G1 X84.0 Y93.0
+M3 S0
+G0 X63.0 Y93.0
+M3 S-1000
+G1 X63.0 Y93.0
+M3 S-1000
+G1 X55.0 Y93.0
+M3 S0
+G0 X54.0 Y93.0
+M3 S-1000
+G1 X54.0 Y93.0
+M3 S-1000
+G1 X52.0 Y93.0
+M3 S0
+G0 X48.0 Y93.0
+M3 S-1000
+G1 X48.0 Y93.0
+M3 S-1000
+G1 X47.0 Y93.0
+M3 S0
+G0 X45.0 Y93.0
+M3 S-1000
+G1 X45.0 Y93.0
+M3 S-1000
+G1 X37.0 Y93.0
+M3 S0
+G0 X35.0 Y93.0
+M3 S-1000
+G1 X35.0 Y93.0
+M3 S-1000
+G1 X34.0 Y93.0
+M3 S0
+G0 X27.0 Y93.0
+M3 S-1000
+G1 X27.0 Y93.0
+M3 S-1000
+G1 X26.0 Y93.0
+M3 S0
+G0 X23.0 Y93.0
+M3 S-1000
+G1 X23.0 Y93.0
+M3 S-1000
+G1 X10.0 Y93.0
+M3 S0
+M5 S0
+G0 X11.0 Y94.0
+M3 S-1000
+G1 X11.0 Y94.0
+M3 S-1000
+G1 X26.0 Y94.0
+M3 S0
+G0 X27.0 Y94.0
+M3 S-1000
+G1 X27.0 Y94.0
+M3 S-1000
+G1 X28.0 Y94.0
+M3 S0
+G0 X29.0 Y94.0
+M3 S-1000
+G1 X29.0 Y94.0
+M3 S-1000
+G1 X30.0 Y94.0
+M3 S0
+G0 X38.0 Y94.0
+M3 S-1000
+G1 X38.0 Y94.0
+M3 S-1000
+G1 X42.0 Y94.0
+M3 S0
+G0 X43.0 Y94.0
+M3 S-1000
+G1 X43.0 Y94.0
+M3 S-1000
+G1 X45.0 Y94.0
+M3 S0
+G0 X47.0 Y94.0
+M3 S-1000
+G1 X47.0 Y94.0
+M3 S-1000
+G1 X48.0 Y94.0
+M3 S0
+G0 X53.0 Y94.0
+M3 S-1000
+G1 X53.0 Y94.0
+M3 S-1000
+G1 X57.0 Y94.0
+M3 S0
+G0 X58.0 Y94.0
+M3 S-1000
+G1 X58.0 Y94.0
+M3 S-1000
+G1 X64.0 Y94.0
+M3 S0
+G0 X84.0 Y94.0
+M3 S-1000
+G1 X84.0 Y94.0
+M3 S-1000
+G1 X92.0 Y94.0
+M3 S0
+G0 X93.0 Y94.0
+M3 S-1000
+G1 X93.0 Y94.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y95.0
+M3 S-1000
+G1 X93.0 Y95.0
+M3 S0
+G0 X91.0 Y95.0
+M3 S-1000
+G1 X91.0 Y95.0
+M3 S-1000
+G1 X83.0 Y95.0
+M3 S0
+G0 X63.0 Y95.0
+M3 S-1000
+G1 X63.0 Y95.0
+M3 S-1000
+G1 X52.0 Y95.0
+M3 S0
+G0 X44.0 Y95.0
+M3 S-1000
+G1 X44.0 Y95.0
+M3 S-1000
+G1 X42.0 Y95.0
+M3 S0
+G0 X40.0 Y95.0
+M3 S-1000
+G1 X40.0 Y95.0
+M3 S-1000
+G1 X39.0 Y95.0
+M3 S0
+G0 X38.0 Y95.0
+M3 S-1000
+G1 X38.0 Y95.0
+M3 S-1000
+G1 X36.0 Y95.0
+M3 S0
+G0 X35.0 Y95.0
+M3 S-1000
+G1 X35.0 Y95.0
+M3 S-1000
+G1 X34.0 Y95.0
+M3 S0
+G0 X29.0 Y95.0
+M3 S-1000
+G1 X29.0 Y95.0
+M3 S-1000
+G1 X28.0 Y95.0
+M3 S0
+G0 X25.0 Y95.0
+M3 S-1000
+G1 X25.0 Y95.0
+M3 S-1000
+G1 X10.0 Y95.0
+M3 S0
+M5 S0
+G0 X11.0 Y96.0
+M3 S-1000
+G1 X11.0 Y96.0
+M3 S-1000
+G1 X23.0 Y96.0
+M3 S0
+G0 X24.0 Y96.0
+M3 S-1000
+G1 X24.0 Y96.0
+M3 S-1000
+G1 X25.0 Y96.0
+M3 S0
+G0 X54.0 Y96.0
+M3 S-1000
+G1 X54.0 Y96.0
+M3 S-1000
+G1 X55.0 Y96.0
+M3 S0
+G0 X59.0 Y96.0
+M3 S-1000
+G1 X59.0 Y96.0
+M3 S-1000
+G1 X64.0 Y96.0
+M3 S0
+G0 X83.0 Y96.0
+M3 S-1000
+G1 X83.0 Y96.0
+M3 S-1000
+G1 X93.0 Y96.0
+M3 S0
+G0 X95.0 Y96.0
+M3 S-1000
+G1 X95.0 Y96.0
+M3 S-1000
+M5 S0
+G0 X99.0 Y97.0
+M3 S-1000
+G1 X95.0 Y97.0
+M3 S0
+G0 X94.0 Y97.0
+M3 S-1000
+G1 X94.0 Y97.0
+M3 S-1000
+G1 X82.0 Y97.0
+M3 S0
+G0 X62.0 Y97.0
+M3 S-1000
+G1 X62.0 Y97.0
+M3 S-1000
+G1 X56.0 Y97.0
+M3 S0
+G0 X55.0 Y97.0
+M3 S-1000
+G1 X55.0 Y97.0
+M3 S-1000
+G1 X54.0 Y97.0
+M3 S0
+G0 X48.0 Y97.0
+M3 S-1000
+G1 X48.0 Y97.0
+M3 S-1000
+G1 X47.0 Y97.0
+M3 S0
+G0 X42.0 Y97.0
+M3 S-1000
+G1 X42.0 Y97.0
+M3 S-1000
+G1 X41.0 Y97.0
+M3 S0
+G0 X30.0 Y97.0
+M3 S-1000
+G1 X30.0 Y97.0
+M3 S-1000
+G1 X28.0 Y97.0
+M3 S0
+G0 X25.0 Y97.0
+M3 S-1000
+G1 X25.0 Y97.0
+M3 S-1000
+G1 X10.0 Y97.0
+M3 S0
+M5 S0
+G0 X11.0 Y98.0
+M3 S-1000
+G1 X11.0 Y98.0
+M3 S-1000
+G1 X22.0 Y98.0
+M3 S0
+G0 X23.0 Y98.0
+M3 S-1000
+G1 X23.0 Y98.0
+M3 S-1000
+G1 X25.0 Y98.0
+M3 S0
+G0 X26.0 Y98.0
+M3 S-1000
+G1 X26.0 Y98.0
+M3 S-1000
+G1 X27.0 Y98.0
+M3 S0
+G0 X39.0 Y98.0
+M3 S-1000
+G1 X39.0 Y98.0
+M3 S-1000
+G1 X40.0 Y98.0
+M3 S0
+G0 X56.0 Y98.0
+M3 S-1000
+G1 X56.0 Y98.0
+M3 S-1000
+G1 X57.0 Y98.0
+M3 S0
+G0 X58.0 Y98.0
+M3 S-1000
+G1 X58.0 Y98.0
+M3 S-1000
+G1 X63.0 Y98.0
+M3 S0
+G0 X82.0 Y98.0
+M3 S-1000
+G1 X82.0 Y98.0
+M3 S-1000
+G1 X96.0 Y98.0
+M3 S0
+G0 X97.0 Y98.0
+M3 S-1000
+G1 X97.0 Y98.0
+M3 S-1000
+M5 S0
+G0 X96.0 Y99.0
+M3 S-1000
+G1 X96.0 Y99.0
+M3 S-1000
+G1 X81.0 Y99.0
+M3 S0
+G0 X61.0 Y99.0
+M3 S-1000
+G1 X61.0 Y99.0
+M3 S-1000
+G1 X56.0 Y99.0
+M3 S0
+G0 X54.0 Y99.0
+M3 S-1000
+G1 X54.0 Y99.0
+M3 S-1000
+G1 X53.0 Y99.0
+M3 S0
+G0 X52.0 Y99.0
+M3 S-1000
+G1 X52.0 Y99.0
+M3 S-1000
+G1 X51.0 Y99.0
+M3 S0
+G0 X41.0 Y99.0
+M3 S-1000
+G1 X41.0 Y99.0
+M3 S-1000
+G1 X40.0 Y99.0
+M3 S0
+G0 X27.0 Y99.0
+M3 S-1000
+G1 X27.0 Y99.0
+M3 S-1000
+G1 X26.0 Y99.0
+M3 S0
+G0 X25.0 Y99.0
+M3 S-1000
+G1 X25.0 Y99.0
+M3 S-1000
+G1 X24.0 Y99.0
+M3 S0
+G0 X23.0 Y99.0
+M3 S-1000
+G1 X23.0 Y99.0
+M3 S-1000
+G1 X10.0 Y99.0
+M3 S0
+M5 S0
