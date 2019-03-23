@@ -12,6 +12,7 @@
 # requirements contains list of modules I had it working on
 # 
 # todo:
+# add feedrate!
 # offsets are not implemented yet...
 # check and correct variable types, round floats
 # add some manual
