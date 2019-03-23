@@ -149,19 +149,19 @@ for y in range(y_size_output):
         for x in range(x_size_output):
             if (x == 0  and img[y][x] != 0): #first point, diffrent from 0
                 f.write("G0 X"+str(round(x*pixel_size_mm,4))+" Y" + str(round(y*pixel_size_mm,4))+"\n\r")                                                                                                              
-                f.write("M3 S"+str(int(img[y][x]))+"; pp: "+str(prev_power)+" x: "+str(x)+" y: "+str(y)+" img[y][x]: "+str(img[y][x])+" pp: "+str(prev_power)+" ;1. linia\n\r")                                                                     # turn on laser set power to img[y][x]
+                f.write("M3 S"+str(int(img[y][x]))+"\n\r")                                                                     
                 prev_power = int(img[y][x])
             elif x==(x_size_output-1):#eol
-                f.write("M5 S0 ; koniec linii\n\r")
+                f.write("M5 S0\n\r")
                 prev_power=0
             elif (prev_power != img[y][x]):#different power
                 if (prev_power==0): #transition from 0 to higher power
                     f.write("G0 X"+str(round((x-1)*pixel_size_mm,4))+" Y" + str(round(y*pixel_size_mm,4))+"\n\r")      
-                    f.write("M3 S"+str(int(img[y][x]))+"; pp: "+str(prev_power)+" x: "+str(x)+" y: "+str(y)+" img[y][x]: "+str(img[y][x])+" pp: "+str(prev_power)+" ;2. inny power prev = 0 \n\r")                                                                     # turn on laser set power to img[y][x]
+                    f.write("M3 S"+str(int(img[y][x]))+"\n\r")                                                                     
                     prev_power = int(img[y][x])
                 if(prev_power != 0):# transition from some power to another
                     f.write("G1 X"+str(round((x-1)*pixel_size_mm,4))+" Y" + str(round(y*pixel_size_mm,4))+"\n\r")      
-                    f.write("M3 S"+str(int(img[y][x]))+"; pp: "+str(prev_power)+" x: "+str(x)+" y: "+str(y)+" img[y][x]: "+str(img[y][x])+" pp: "+str(prev_power)+" ;3. inny power prev > 0 \n\r")                                                                     # turn on laser set power to img[y][x]
+                    f.write("M3 S"+str(int(img[y][x]))+"\n\r")                                                                     
                     prev_power = int(img[y][x])
         
     else:
@@ -169,19 +169,19 @@ for y in range(y_size_output):
         for x in reversed(range(x_size_output)):
             if (x == x_size_output-1  and img[y][x] != 0): #first point, diffrent from 0
                 f.write("G0 X"+str(round(x*pixel_size_mm,4))+" Y" + str(round(y*pixel_size_mm,4))+"\n\r")                                                                                                              
-                f.write("M3 S"+str(int(img[y][x]))+"; pp: "+str(prev_power)+" x: "+str(x)+" y: "+str(y)+" img[y][x]: "+str(img[y][x])+" pp: "+str(prev_power)+" ; rev 1. linia\n\r")                                                                     # turn on laser set power to img[y][x]
+                f.write("M3 S"+str(int(img[y][x]))+"\n\r")                                                                     
                 prev_power = int(img[y][x])
             elif x==0:#eol
-                f.write("M5 S0 ; rev koniec linii\n\r")
+                f.write("M5 S0\n\r")
                 prev_power=0
             elif (prev_power != img[y][x]):#different power
                 if (prev_power==0): #transition from 0 to higher power
                     f.write("G0 X"+str(round((x-1)*pixel_size_mm,4))+" Y" + str(round(y*pixel_size_mm,4))+"\n\r")      
-                    f.write("M3 S"+str(int(img[y][x]))+"; pp: "+str(prev_power)+" x: "+str(x)+" y: "+str(y)+" img[y][x]: "+str(img[y][x])+" pp: "+str(prev_power)+" ; rev 2. inny power prev = 0 \n\r")                                                                     # turn on laser set power to img[y][x]
+                    f.write("M3 S"+str(int(img[y][x]))+"\n\r")                                                                     
                     prev_power = int(img[y][x])
                 if(prev_power != 0):# transition from some power to another
                     f.write("G1 X"+str(round((x-1)*pixel_size_mm,4))+" Y" + str(round(y*pixel_size_mm,4))+"\n\r")      
-                    f.write("M3 S"+str(int(img[y][x]))+"; pp: "+str(prev_power)+" x: "+str(x)+" y: "+str(y)+" img[y][x]: "+str(img[y][x])+" pp: "+str(prev_power)+" ; rev 3. inny power prev > 0 \n\r")                                                                     # turn on laser set power to img[y][x]
+                    f.write("M3 S"+str(int(img[y][x]))+"\n\r")                                                                     
                     prev_power = int(img[y][x])
 f.close()
             
