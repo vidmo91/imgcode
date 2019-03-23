@@ -4,7 +4,7 @@
 # github.com/vidmo91
 # hackaday.io/vidmo91
 # 
-# correct execution command: python imgcode.py image_path output_file_path x_offset_mm y_offset_mm output_image_horizontal_size_mm pixel_size_mm max_feedrate_rpm number_of_colours
+# correct execution command: python imgcode.py image_path output_file_path x_offset_mm y_offset_mm output_image_horizontal_size_mm pixel_size_mm max_laser_power number_of_colours
 # e.g. of correct execution commands:
 # python .\imgcode.py "C:\lena.png" test.nc 0 0 10 0.5 1000 2
 # python .\imgcode.py lena.png test.nc 0 0 10 0.2 255 5
@@ -71,7 +71,7 @@ if len(sys.argv) != 9:
     print(colorama.Fore.RED+'Number of arguments:', len(sys.argv), 'arguments. (required 9 arguments)')
     print('Argument List:', str(sys.argv))
     print("correct execution command: ")
-    print("python imgcode.py image_path output_file_path x_offset_mm y_offset_mm output_image_horizontal_size_mm pixel_size_mm max_feedrate_rpm number_of_colours")
+    print("python imgcode.py image_path output_file_path x_offset_mm y_offset_mm output_image_horizontal_size_mm pixel_size_mm max_laser_power number_of_colours")
     print("e.g. python .\imgcode.py lena.png test.nc 0 0 10 0.2 255 5")
     print("e.g. python .\imgcode.py \"C:\\Documents\\laser files\\lena.png\" \"C:\\laser files\\out files\\output_gcode.nc\" 0 0 10 0.2 255 5"+colorama.Fore.RESET)    
     raise NameError("wrong execution command")
@@ -94,7 +94,7 @@ try:
     y_offset_mm = float(sys.argv[4])
     output_image_horizontal_size_mm = float(sys.argv[5])
     pixel_size_mm = float(sys.argv[6])
-    max_feedrate_rpm = int(sys.argv[7])
+    max_laser_power = int(sys.argv[7])
     number_of_colours = int(sys.argv[8])
     print("parameters look OK...")
 except:
@@ -131,7 +131,7 @@ img_out = img_out.astype(numpy.uint8)
 imageio.imwrite('out_img.png',img_out)
 
 #convert to feedrates
-img = numpy.rint(numpy.multiply(img, max_feedrate_rpm/number_of_colours))
+img = numpy.rint(numpy.multiply(img, max_laser_power/number_of_colours))
 
 # plot image (uncomment to display before processing)
 # matplotlib.pyplot.imshow(img, cmap='gray')
