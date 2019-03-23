@@ -141,8 +141,16 @@ img = numpy.rint(numpy.multiply(img, max_laser_power/number_of_colours))
 img=numpy.flip(img,0)
 
 #Gcode processing
-f.write("") #add your G-CODE file header here
-f.write("M5 S0\n\r")
+f.write("; imgcode generated code")
+f.write("; developed by M. \"Vidmo\" Widomski") 
+f.write(";  github.com/vidmo91")
+f.write(";  hackaday.io/vidmo91")
+f.write("")
+f.write("H5 S0")
+f.write("F100")
+f.write("G0 Z0 ; for some grbl senders compatibility")
+f.write("e") #add your G-CODE file header here
+# f.write("M5 S0\n\r")
 for y in range(y_size_output):
 
     if 1-y%2:
