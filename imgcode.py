@@ -1,4 +1,4 @@
-# imgcode v0.2 23/03/2019
+# imgcode v0.2.1 29/03/2019
 # utility for CNC lasers image etching
 # developed by M. "Vidmo" Widomski  
 # github.com/vidmo91
@@ -12,6 +12,9 @@
 # requirements contains list of modules I had it working on
 # 
 # todo:
+# compile exe
+# there probably something is wrong with last etched line logic. have to check that.
+# 
 # offsets are not implemented yet...
 # check and correct variable types, round floats
 # add some manual
@@ -42,6 +45,10 @@ import imageio
 import PIL.Image
 import sys
 import colorama
+colorama.init()
+
+# uncoment for berry veautiful splash screen
+print(colorama.Fore.GREEN+"\t           _         __"+"\n"+"\t \\    / | | \\  |\\/| |  |"+"\n"+"\t  \\  /  | |  | |  | |  |"+"\n"+"\t   \\/   | |_/  |  | |__|\n \t\tpresents \n"+colorama.Fore.RED+"\t\timgcode"+colorama.Fore.RESET+"\n"+"\t"+colorama.Back.LIGHTCYAN_EX+colorama.Fore.RED+"mmmh... those aesthetics!!!"+colorama.Back.RESET+colorama.Fore.RESET+"\n\t"+colorama.Back.LIGHTCYAN_EX+colorama.Fore.RED+"  just berry veautiful!!!  "+colorama.Back.RESET+colorama.Fore.RESET+"\n\n")
 
 def fileDialog(fileName):
     try:
@@ -64,15 +71,14 @@ def fileDialog(fileName):
             raise NameError("wrong answer")
     return f
 
-colorama.init()
 if len(sys.argv) != 10:
 
     print(colorama.Fore.RED+'Number of arguments:', len(sys.argv), 'arguments. (required 10 arguments)')
     print('Argument List:', str(sys.argv))
     print("correct execution command: ")
     print("python imgcode.py image_path output_file_path x_offset_mm y_offset_mm output_image_horizontal_size_mm pixel_size_mm feedrate max_laser_power number_of_colours")
-    print("e.g. python .\imgcode.py lena.png test.nc 0 0 10 0.2 100 255 5")
-    print("e.g. python .\imgcode.py \"C:\\Documents\\laser files\\lena.png\" \"C:\\laser files\\out files\\output_gcode.nc\" 0 0 10 0.2 100 255 5"+colorama.Fore.RESET)    
+    print("e.g. python .\\imgcode.py lena.png test.nc 0 0 10 0.2 100 255 5")
+    print("e.g. python .\\imgcode.py \"C:\\Documents\\laser files\\lena.png\" \"C:\\laser files\\out files\\output_gcode.nc\" 0 0 10 0.2 100 255 5"+colorama.Fore.RESET)    
     raise NameError("wrong execution command")
 print("so far so good, now parsing values...")
 
@@ -118,23 +124,24 @@ y_size_output = len(img)
 x_size_output = len(img[0])
 
 # negative for laser etching 
-img=numpy.subtract(img,255)
+img=numpy.subtract(255,img)
 
 # set max value of image colour to number of colours 
 number_of_colours -= 1
 img = numpy.rint(numpy.multiply(img, number_of_colours/255))
 
-#save grayscale (comment to disable)
-img_out=numpy.empty((x_size_output,y_size_output))
-img_out=numpy.rint(numpy.multiply(img, 255/number_of_colours))
-img_out = img_out.astype(numpy.uint8)
-imageio.imwrite('out_img.png',img_out)
+#save grayscale (uncomment to enable)
+# img_out=numpy.empty((x_size_output,y_size_output))
+# img_out=numpy.rint(numpy.multiply(img, 255/number_of_colours))
+# img_out = img_out.astype(numpy.uint8)
+# imageio.imwrite('out_img.png',img_out)
 
 #convert to feedrates
 img = numpy.rint(numpy.multiply(img, max_laser_power/number_of_colours))
 
 # plot image (uncomment to display before processing)
-# matplotlib.pyplot.imshow(img, cmap='gray')
+# img2=numpy.subtract(number_of_colours,img)
+# matplotlib.pyplot.imshow(img2, cmap='gray')
 # matplotlib.pyplot.show()
 
 # flip up-down for simplicity 
@@ -166,11 +173,11 @@ for y in range(y_size_output):
             elif (prev_power != img[y][x]):#different power
                 if (prev_power==0): #transition from 0 to higher power
                     f.write("G0 X"+str(round((x-1)*pixel_size_mm,4))+" Y" + str(round(y*pixel_size_mm,4))+"\n")      
-                    f.write("M3 S"+str(int(img[y][x]))+"\n")                                                                     
+                    f.write("M3 S"+str(int(img[y][x]))+"\n") 
                     prev_power = int(img[y][x])
                 if(prev_power != 0):# transition from some power to another
                     f.write("G1 X"+str(round((x-1)*pixel_size_mm,4))+" Y" + str(round(y*pixel_size_mm,4))+"\n")      
-                    f.write("M3 S"+str(int(img[y][x]))+"\n")                                                                     
+                    f.write("M3 S"+str(int(img[y][x]))+"\n")  
                     prev_power = int(img[y][x])
         
     else:
@@ -194,4 +201,5 @@ for y in range(y_size_output):
                     prev_power = int(img[y][x])
 f.close()
             
-input("everything done, press ENTER to exit, goodbye!")
+#input("everything done, press ENTER to exit, goodbye!")
+print(colorama.Fore.GREEN+"\neverything done, buh bye!\n")
