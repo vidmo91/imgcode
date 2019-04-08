@@ -2,3 +2,5 @@
 build
 __pycache__
 imgcode.spec
+imgcode_gui.spec
+imgcode_cli4gui.spec

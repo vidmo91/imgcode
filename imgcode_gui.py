@@ -73,12 +73,14 @@ save_gcode_button.pack(fill='x')
 
 def run_button_click():
     p = subprocess.Popen("python .\imgcode_cli4gui.py "+img_file_name+" "+gcode_file_name+" "+x_offset_entry.get()+" "+y_offset_entry.get()+" "+output_size_entry.get()+" "+pixel_size_entry.get()+" "+feed_rate_entry.get()+" "+laser_power_entry.get()+" "+colours_entry.get() ,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+#     p = subprocess.Popen(".\imgcode_cli4gui.exe "+img_file_name+" "+gcode_file_name+" "+x_offset_entry.get()+" "+y_offset_entry.get()+" "+output_size_entry.get()+" "+pixel_size_entry.get()+" "+feed_rate_entry.get()+" "+laser_power_entry.get()+" "+colours_entry.get() ,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     global output
     global show_preview_var
     output = p.communicate()
     text.pack()
     text.delete(1.0,END)
     text_var="python .\imgcode_cli4gui.py "+img_file_name+" "+gcode_file_name+" "+x_offset_entry.get()+" "+y_offset_entry.get()+" "+output_size_entry.get()+" "+pixel_size_entry.get()+" "+feed_rate_entry.get()+" "+laser_power_entry.get()+" "+colours_entry.get()+"\n\n\n"
+#     text_var=".\imgcode_cli4gui.exe "+img_file_name+" "+gcode_file_name+" "+x_offset_entry.get()+" "+y_offset_entry.get()+" "+output_size_entry.get()+" "+pixel_size_entry.get()+" "+feed_rate_entry.get()+" "+laser_power_entry.get()+" "+colours_entry.get()+"\n\n\n"
     text.pack()
     text.insert(END,text_var)    
     text.pack()
