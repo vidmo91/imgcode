@@ -1,10 +1,11 @@
 <h1>imgcode</h1>
 <p>simple image etching gcode generator</p> 
 <p><a target="_blank" rel="noopener noreferrer" href="http://www.hackaday.io/project/164855-imgcode-simple-image-etching-gcode-generator">hackaday project entry with more detailed manual</a></p>
-<p>functional, but still work in progress </p> 
-<p>python 3.7.2 was used for creation of this software, necessary python modules are listed in requirements.txt</p> 
+<br><p>python 3.7.2 was used for creation of this software, necessary python modules are listed in requirements.txt</p> 
 <br>
-<h3>correct execution command:</h3> 
+<p>I made GUI! It's pretty straight forward, just run python imgcode_gui.py or dist/imgcode_gui.exe and load image, choose gcode file, change parameters and hit run button. Output window will show verbose output of imgcode_cli4gui. You can also uncheck preview generating option.</p> 
+<br>
+<h3>correct CLI execution command:</h3> 
 <p>python imgcode.py image_path output_file_path x_offset_mm y_offset_mm output_image_horizontal_size_mm pixel_size_mm feedrate max_laser_power number_of_colours</p> 
 <p>e.g. python .\imgcode.py lena.png test.nc 0 0 10 0.2 100 255 5</p> 
 <p>e.g. python .\imgcode.py "C:\Documents\laser files\lena.png" "C:\laser files\out files\output_gcode.nc" 0 0 10 0.2 220 1000 5</p> 
