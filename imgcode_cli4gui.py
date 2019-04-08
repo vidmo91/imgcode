@@ -1,21 +1,10 @@
-# imgcode v0.3 08/04/2019
+# imgcode_cli4gui v0.3 08/04/2019
 # utility for CNC lasers image etching
 # developed by M. "Vidmo" Widomski  
 # github.com/vidmo91
 # hackaday.io/vidmo91
 # 
-# correct execution command: python imgcode.py image_path output_file_path x_offset_mm y_offset_mm output_image_horizontal_size_mm pixel_size_mm feedrate max_laser_power number_of_colours
-# e.g. of correct execution commands:
-# python .\imgcode.py "C:\lena.png" test.nc 0 0 10 0.5 100 1000 2
-# python .\imgcode.py lena.png test.nc 0 0 10 0.2 220 255 5
-# 
-# requirements contains list of modules I had it working on
-# 
-# todo:
-# 
-# check and correct variable types, round floats
-# add some GUI maybe?
-#
+# command line program for graphic overlay only. do not use as standalone 
 # 
 # 
 # 
@@ -58,16 +47,9 @@ def fileDialog(fileName):
         f = open(fileName, 'w')
         f.close
     else:
-        answer = input(
-            fileName+" exists, do you want to overwrite it? (Y/n): ")
-        if (answer == 'y')or(answer == 'Y')or(answer == ''):
-            f = open(fileName, 'w')
-            print(fileName+' will be overwritten')
-            f.close
-        elif answer == 'n'or(answer == 'N'):
-            raise NameError("Specify right path next time")
-        else:
-            raise NameError("wrong answer")
+        f = open(fileName, 'w')
+        print(fileName+' will be overwritten')
+        f.close
     return f
 
 if len(sys.argv) != 10:
@@ -210,4 +192,3 @@ f.close()
             
 #input("everything done, press ENTER to exit, goodbye!")
 print(colorama.Fore.GREEN+"\neverything done, buh bye!\n")
-input("press ENTER to exit")
