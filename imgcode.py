@@ -44,8 +44,11 @@ import sys
 import colorama
 colorama.init()
 
+print("\n\n"+colorama.Fore.CYAN+"imgcode - simple image etching gcode generator"+colorama.Fore.RESET+"\n\n")
 # uncoment for berry veautiful splash screen
-print(colorama.Fore.GREEN+"\t           _         __"+"\n"+"\t \\    / | | \\  |\\/| |  |"+"\n"+"\t  \\  /  | |  | |  | |  |"+"\n"+"\t   \\/   | |_/  |  | |__|\n \t\tpresents \n"+colorama.Fore.RED+"\t\timgcode"+colorama.Fore.RESET+"\n"+"\t"+colorama.Back.LIGHTCYAN_EX+colorama.Fore.RED+"mmmh... those aesthetics!!!"+colorama.Back.RESET+colorama.Fore.RESET+"\n\t"+colorama.Back.LIGHTCYAN_EX+colorama.Fore.RED+"  just berry veautiful!!!  "+colorama.Back.RESET+colorama.Fore.RESET+"\n\n")
+# print(colorama.Fore.GREEN+"\t           _         __"+"\n"+"\t \\    / | | \\  |\\/| |  |"+"\n"+"\t  \\  /  | |  | |  | |  |"+"\n"+"\t   \\/   | |_/  |  | |__|\n \t\tpresents \n"+colorama.Fore.RED+"\t\timgcode"+colorama.Fore.RESET+"\n"+"\t"+colorama.Back.LIGHTCYAN_EX+colorama.Fore.RED+"mmmh... those aesthetics!!!"+colorama.Back.RESET+colorama.Fore.RESET+"\n\t"+colorama.Back.LIGHTCYAN_EX+colorama.Fore.RED+"  just berry veautiful!!!  "+colorama.Back.RESET+colorama.Fore.RESET+"\n\n")
+
+
 
 def fileDialog(fileName):
     try:
