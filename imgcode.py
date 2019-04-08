@@ -12,7 +12,6 @@
 # requirements contains list of modules I had it working on
 # 
 # todo:
-# there probably something is wrong with last etched line logic. have to check that.
 # 
 # check and correct variable types, round floats
 # add some manual
@@ -146,27 +145,32 @@ img = numpy.rint(numpy.multiply(img, max_laser_power/number_of_colours))
 img=numpy.flip(img,0)
 
 #Gcode processing
-f.write("; imgcode generated code \n")
-f.write("; developed by M. \"Vidmo\" Widomski \n") 
-f.write(";  github.com/vidmo91 \n")
-f.write(";  hackaday.io/vidmo91 \n")
+f.write("( imgcode generated code )\n")
+f.write("( developed by M. \"Vidmo\" Widomski )\n") 
+f.write("(  github.com/vidmo91 )\n")
+f.write("(  hackaday.io/vidmo91 )\n")
 f.write(" \n")
 f.write("H5 S0 \n")
 f.write("F"+str(feedrate)+"\n")
-f.write("G0 Z0 ; for some grbl senders compatibility \n")
+f.write("G0 Z0 ( for some grbl senders compatibility )\n")
 f.write(" \n") #add your G-CODE file header here
 # f.write("M5 S0\n")
 for y in range(y_size_output):
-
+    prev_power=int(0)
+  
     if 1-y%2:
-        prev_power=int(0)
+        # prev_power=int(0)
         for x in range(x_size_output):
             if (x == 0  and img[y][x] != 0): #first point, diffrent from 0
                 f.write("G0 X"+str(round(x*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")                                                                                                              
                 f.write("M3 S"+str(int(img[y][x]))+"\n")                                                                     
                 prev_power = int(img[y][x])
             elif x==(x_size_output-1):#eol
-                f.write("M5 S0\n")
+                if (prev_power==0):
+                    f.write("M5 S0\n")
+                else:
+                    f.write("G1 X"+str(round((x)*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")      
+                    f.write("M5 S0\n")
                 prev_power=0
             elif (prev_power != img[y][x]):#different power
                 if (prev_power==0): #transition from 0 to higher power
@@ -177,24 +181,27 @@ for y in range(y_size_output):
                     f.write("G1 X"+str(round((x-1)*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")      
                     f.write("M3 S"+str(int(img[y][x]))+"\n")  
                     prev_power = int(img[y][x])
-        
     else:
-        prev_power=int(0)
+        # prev_power=int(0)
         for x in reversed(range(x_size_output)):
             if (x == x_size_output-1  and img[y][x] != 0): #first point, diffrent from 0
                 f.write("G0 X"+str(round(x*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")                                                                                                              
                 f.write("M3 S"+str(int(img[y][x]))+"\n")                                                                     
                 prev_power = int(img[y][x])
             elif x==0:#eol
-                f.write("M5 S0\n")
+                if (prev_power==0):
+                    f.write("M5 S0\n")
+                else:
+                    f.write("G1 X"+str(round((x)*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")      
+                    f.write("M5 S0\n")
                 prev_power=0
             elif (prev_power != img[y][x]):#different power
                 if (prev_power==0): #transition from 0 to higher power
-                    f.write("G0 X"+str(round((x-1)*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")      
+                    f.write("G0 X"+str(round((x)*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")      
                     f.write("M3 S"+str(int(img[y][x]))+"\n")                                                                     
                     prev_power = int(img[y][x])
                 if(prev_power != 0):# transition from some power to another
-                    f.write("G1 X"+str(round((x-1)*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")      
+                    f.write("G1 X"+str(round((x)*pixel_size_mm+x_offset_mm,4))+" Y" + str(round(y*pixel_size_mm+y_offset_mm,4))+"\n")      
                     f.write("M3 S"+str(int(img[y][x]))+"\n")                                                                     
                     prev_power = int(img[y][x])
 f.close()

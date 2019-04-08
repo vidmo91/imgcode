@@ -1,1 +1,4 @@
 .vscode
+build
+__pycache__
+imgcode.spec
