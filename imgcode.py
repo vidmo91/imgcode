@@ -1,4 +1,4 @@
-# imgcode v0.2.1 29/03/2019
+# imgcode v0.2.1 08/04/2019
 # utility for CNC lasers image etching
 # developed by M. "Vidmo" Widomski  
 # github.com/vidmo91
@@ -14,7 +14,6 @@
 # todo:
 # 
 # check and correct variable types, round floats
-# add some manual
 # add some GUI maybe?
 #
 # 
