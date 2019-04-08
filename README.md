@@ -1,6 +1,6 @@
 <h1>imgcode</h1>
 <p>simple image etching gcode generator</p> 
-<p><u href="hackaday.io/project/164855-imgcode-simple-image-etching-gcode-generator">hackaday project entry with more detailed manual</u></p>
+<p><a href="hackaday.io/project/164855-imgcode-simple-image-etching-gcode-generator">hackaday project entry with more detailed manual</a></p>
 <p>functional, but still work in progress </p> 
 <p>python 3.7.2 was used for creation of this software, necessary python modules are listed in requirements.txt</p> 
 <br>
