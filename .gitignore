@@ -1,7 +1,7 @@
 .vscode
-.git
-.vs
-imGcode\.vs
+.git/
+.vs/
+imGcode/.vs/
 build
 __pycache__
 imgcode.spec
